@@ -1,0 +1,84 @@
+---
+title: "Genética Quantitativa"
+date: "`r Sys.Date()`"
+author: "[Statistical Genetics Lab](http://statgen.esalq.usp.br) <br/> Department of Genetics <br/> Luiz de Queiroz College of Agriculture <br/> University of São Paulo"
+output:
+    rmdformats::readthedown:
+      css: readthedownstatgen.css
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Aula 01 - Introdução à Genética Quantitativa
+##  Características Quantitativas
+
+**Características quantitativas** são de natureza métricas, ou seja, temos que avalia-las usando alguma escala de medida. Por terem natureza métrica são controladas por _muitos genes_. Elas foram descobertas por Fisher (1918), onde muitos conceitos foram consolidados neste paper. Na época:
+
+- existia um embate entre mendelianos e biometristas;
+
+- muitos biometristas consideravam as leis de Mendel como um caso particular e serviam apenas para características qualitativas;
+
+- Fisher colocou um ponto final nessa discussão ao descobrir que as características quantitativas eram controlados por diversos genes.
+
+Por serem governadas por muitos genes, elas precisam ser avaliadas usando _métodos estatísticos_, podendo ser contínuas ou discretas. Essas características também são conhecidas como _poligênicas_ ou _multifatorias_. E por serem controladas por muito genes elas são altamente influenciadas pelo ambiente. Também temos que:
+
+- as características qualitativas _quase não_ são influenciadas pelo ambiente;
+
+- já nas características quantitativas, cada gene reflete uma pequena influência do ambiente e de maneira geral a característica como um todo sofre uma grande influência do ambiente;
+
+- é um _erro_ pensa que quanto maior o número de genes maior será ainfluência do ambiente. A partir de um pequeno número genes podemos ter uma influência do ambiente. A partir de um pequeno número de genes podemos ter uma influência maior ou menos, o _efeito do ambiente_ em cada gene pode variar.
+
+Dessa forma, é necessário métodos estatísticos para estudar essas características. Assim, pode-se diferenciar genética quantitativa e estatística:
+
+- genética quantitativa é estudar a _transmissão e herança_ dos caracteres quantitativos;
+
+- genética genética estatística é _desenvolvimento de modelos_ ara analisar dados de genética que pode ser caracteres quantitativos ou qualitativos. Ou seja, o desenvolvimento de métodos estatísticos para fenômenos genéticos.
+
+## Papers Seminais
+**Fisher(1918)** - com esse paper Fisher colocou um ponto final na briga dos biometristas e mendelianos. Ele mostrou que um caráter quantitatibo tem sim heranla mendeliana. Nesse paper ele também apresentou o conceito de ANOVA, decomposição da variância, delinamentos experimentais, verossimilhança, evolução quantitativa.
+
+**Wright (1921)** 
+
+**Lockerham (1954)** - decompopsição da variância genética e componentes devio aos diferentes tipos de epistasia.
+
+
+## Histórico
+A genética quantitativa começou com esse paper do Fisher, mas a discussão a respeito da herdabilidade das características quantitativas começou antes com vários autores. 
+
+**Mendel** 
+
+- Mendel apresentou a herança das características discretas, ou seja, variáveis qualitativas e definiu primeira e segunda lei de Mendel;
+
+- O paper de Mendel na época não teve tanto destaque porque na mesma época Darwin publicou o paper dele que teve muito impacto na época.
+
+**Darwin**
+
+- Apresenta a teoria da evolução.
+
+**Galton (1889) - Regression toward mediocraty**
+
+- Era primo de Darwin e foi uma das pessoas que propôs o conceito de eugenia;
+
+- Ele fez uma interpretação errrônea de alguns conjuntos de dados e, em 1889 ele apresentou o conceito de regressão para mediocridade.
+
+**Pearson (1908)**
+
+- Em 1903, Pearson interpretou os dados do Galton corretamente e para interpretar ele propôs alguns conceitos, como por exemplo resposta à seleção e regressão linear.
+
+## Galton's Data
+Galton tinha a altura média dos pais e a altura média dos filos. Ele obteve um gráfico mais ou menos assim:
+
+![Galton's Data](img1.png)
+
+Em uma primeira visualização podemos observar que pais mais altos tendem a ter filhos mais altos e, pais mais baixos tendem a ter filhos mais baixos. Existe, portanto, uma tendência, mas que não é _absoluta_. Observa-se também uma concentração de pontos em torno da media, ou seja, indivíduos medianos tem filhos com alturas medianas.
+
+Galton passou uma linha nesse gráfico com coeficiente angular *b = 1*, este determina a inclinação de uma reta. O coeficiente angular pode ser demonstrado pela fórmula:
+
+$$cA = \frac{\delta y}{\delta x}$$
+$\delta$ = variação
+
+Ter um $cA = 1$ significa que a altura do pai é igual a altura do filho. 
