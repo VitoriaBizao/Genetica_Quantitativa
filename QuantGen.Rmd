@@ -81,4 +81,127 @@ Galton passou uma linha nesse gráfico com coeficiente angular *b = 1*, este det
 $$cA = \frac{\delta y}{\delta x}$$
 $\delta$ = variação
 
-Ter um $cA = 1$ significa que a altura do pai é igual a altura do filho. 
+Ter um $cA = 1$ significa que a altura do pai é igual a altura do filho. Se a análise do gráfico for feita quando o _coeficiente angular = 1_, nota-se que temos muito mais filhos baixos para pais mais altos do que o contrário. A quantidade de pontos é bem maior para filhos mais baixos. Portanto, parece que os pais mais altos têm tendência de ter filhos mais baixos do que seria esperado em uma reta igual a 1.
+
+Seguindo essa análise, ao olharmos na região de pais mais baixos, nota-se que tem mais pontos na parte acima da reta. Ou seja, os pais mais baixos tendem a ter filhos mais altos, Filhos mais baixos tem a tendência a ter filhos mais altos na próxima geração.
+
+Portanto, a interpretação de Galton foi: pais mais altos tendem a ter filhos mais baixos e pais mais baixos tendem a ter filhos mais altos. Ou seja, de uma geração para outra os que são muito alto vão tender a ficar mais baixos e os que são mais baixos vão tendem a ficam mais altos. E com isso, ao longo das gerações irá _regredir em torno da mediocridade_, ou seja, regressão em direção à média.
+
+Ou seja, a população irá caminhar para uma altura mediana, se acumulando em torno da média. Com isso, a amplitude de variação de uma geração para outra irá diminuir.
+
+Galton generalizou isso para todas as características e com isso porpôs a _eugenia_ (melhoramento de humanos). Ele queria fazer uma selação de pessoas para que com o passar das gerações a espécie humana não caminhasse para a mediocridade.
+
+## Interpretação de Pearson
+Pearson interpretou novamente os dados de Galton a partir de uma regressão. Pearson ajustou o coeficiente angular da reta a apartir dos mínimos quadrados ajustados aos pontos, assom teve:
+
+- $\hat{\beta} = 0.65$ como a reta que melhor se ajusta aos dados;
+
+- Na regressão, a soma de quadrados dos desvios em torno da reta é a menos possível;
+
+- De acorodo com essa reta metade dos indivíduos estão acima da reta e metade está abaixo. Então, o argumento de Galton não é verdadeiro quando passamos a reta de mínimos quadrados.
+
+
+A herdabilidade do caráter é uma _função do coeficiente angular_ da regressão. Ou seja, o quanto _transmite_ de uma geração para outra depende da reta do coeficiente angular. Quando fazemos uma regressão de uma característica, o coeficiente angular é proporcional ao coeficiente de herdabilidade.
+
+Esse $\hat{\beta}$ não é igual a 1 porque a _herdabilidade_ de uma característica _nunca é igual a 1_, pois existe o _efeito do ambiente_ e o _efeito da transmissão_ (um pai nunca transmite os genótipos para os filhos e sim os gametas). Na média os gametas se combinam para formar a próxima geração. Não transmitimos de uma geração para outra integralmente os fenômesmo que observamos em uma geração. Ou seja, nem tudo que medimos em uma geração vai passar para outra. O que estamos medindo em um geração tem erros e causas ambientais que não são herdáveis (por isso $\hat{\beta}$ nunca será igual a 1).
+
+A média e a variância _se mantém_ ao longo dos anos, ou seja, a média de uma população não muda de uma geração para outra. Elas vão se alterar se fizermos seleção (pressão seletiva).
+
+A herdabilidade está _relacionada com a covariância_ entre os eixos, porque o $\beta$ da regressão é uma função da covariância entre os dois eixos. É uma covariância entre as gerações ou entre indivíduos aparentados. Quando medimos a covariância entre indivíduos aparentados estamos medindo uma função da herdabilidade. Tem que haver uma dependência ou uma covariância entre eixos para termos progresso de uma geração para outra.
+
+Galton estava errado em dizer que haveria uma regressão em torno da média. Na verdade, se não fizermos nada a média e a variância continuarão sendo as mesmas. Se selecionarmos os pais com as maiores alturas termos a média dos indivíduos selecionados e alteraremos a média da geração seguinte:
+
+![Equação do melhorista](img2.png)
+
+Quando selecionamos a geração atual (ms) temos uma média igual a m1 da geração seguinte. Essa diferença entre a média da população e a média dos selecionado é o **diferencial de seleção**. Que pode ser exemplificado da seguinte maneira:
+
+$$ms - m = \delta s$$
+
+e a diferença entre o m1 e m é o **ganho de seleção**. Exemplificado da seguinte maneira:
+
+$$m1 -m = G$$
+
+a relação entre o cateto oposto e o cateto adjacente é a tangente do ângulo:
+
+$$tg \ \alpha = \frac{C.O.}{C.A.}$$
+a tangente desse ângulo é o coeficiente angular da reta:
+
+$$cA = \frac{\delta y}{\delta x}$$
+
+o coeficiente angular dita quão grande é esse ganho, quanto maior o $\beta$ que é a tangente do ângulo, maior será o ganho de seleção:
+
+$$\therefore \beta = \frac{G}{S} \\
+\therefore G = \beta.S \\
+\therefore G = h^2.S$$
+
+Quando fazemos uma regressão dos pais em relação aos filhos, o slope da regressão (coeficiente angular da reta) é proporcional à herdabilidade no sentido restrito. Ele mede o quando eu ganho no eixo y (cateto oposto) quando eu ando no eixo x (cateto adjacente). E se pararmos para pensar, o cateto adjacente nada mais é do que o diferencial de seleção (alteração do fenótipo causado pela selação) e o cateto oposto é o ganho de seleção (resposta à seleção).
+
+E Pearson nouto exatemente isso, a resposta à seleção através das gerações é a diferençã média da altura dos pais selecionados e a média da altura antes da seleção.
+
+## Dias "Atuais"
+
+**Shull (1905)** - Reparou que a uniformidade genética diminui a variabilidade. Portanto, as características devem ter uma base genética grande.
+
+**Nelson-Ehle (1909)** - Estudou a segregação em três locos e observou que isso tinha uma influência na variabilidade.
+
+**Johannsen (1903) & Johannsen (1909)** 
+
+- Propôs a separação entre genótipo e fenótipo;
+
+- Observou que os caracteres sofrem influência do ambiente;
+
+- Observou que não existe ganho de seleção em materiais homogêneos, ou seja, é necessário ter variabilidade genética para se ter ganho.
+
+## Tecnologias Modernas
+
+**Quantitative Trait Loci** - hoje conseguimos encontrar quais são os locos que controlam as características (onde eles estão localizados no cromossomos), quais são os efeitos desses QTL na característica e qual influência do ambiente sobre eles.
+
+**Seleção Genômica** - são métodos que usm muitos locos ao mesmo tempo para tentar fazer a predição de características quantitativas.
+
+**Objetivos da Genética Quantitativa** 
+
+- Entender e estimar a proporção das variações fenotípicas explicadas por causas genéticas. QUais são as bases genéticas da variabilidade que a gente observa?
+
+- Entender as consequências da endogamia e heterose;
+
+- Entender e estimar o ganho de seleção;
+
+- Estimar o breeding value.
+
+## Tarefa
+
+- Ler o capítulo 1 Lynch & Walsh (1998);
+
+- Escrever o que entendeu da discussão Galton x Pearson
+
+### Capítulo 01
+
+**Foundations of Quantitative Genetics**
+
+A seleção natural é o que temos mais próximo a uma lei em biologia. Portanto, é lógico que a adotemos como uma referência em nossas tentativas de entender a natureza. Enquanto a teoria de otimização pode ser bem sucedida em predizer o que deve evoluir, mas no diz pouco de como deve acontecer. O objetivo principal da genética quantitativa é entender os mecanismos do processo evolutivo.
+
+
+**Quantitative Genetics and Phenotypic Evolution**
+
+A problemática central na natureza do processo que define a evolução de características morfológicas, fisiológicas e comportamentais, que são o foco da maioria dos programas de melhoramento, onde o homem em vez da natureza define a intensidade e direção da seleção.
+
+Apesar da cultura e/ou transmissão dos efeitos ambientais terem papel importante em alguns casos, evolução é primeiramente um processo genético.
+
+Na genética quantitativa, a maioria das formulações são ditas em termos de médias fenotípicas e variâncias. Seus princípios foram delineados por Fisher (1918) e Wright (1921).
+
+Os princípios Mendelianos nos quais as teorias da genética quantitativa são fundadas são universais, aplicadas às espécies domesticadas e populações naturais. Mesmo assim, devido os sistemas de cruzamento, forças evolucionárias encontradas em populações naturais são geralmente bem diferentes do que programas controlados impõem nas plantas domesticadas, estudos de herança de características quantitativas em populações naturais apresentam muitos desafios. A maioria dos parâmetros são estimados pela comparação de fenótipos de indivíduos com grau de relacionamento conhecidos. Idealmente, análises genéticas controladas devem ser realizadas em conjuntos específicos em ambientes específicos. Essa falta de controle pode comprometer os tipos de parentes que podem ser testados e o grau de "balanceamento" do conjunto final de dados. Tais problemas incentivaram o desenvolvimento de novas estatísticas como BLUP e REML.
+
+**Historical Background**
+
+A genética quantitativa desenvolvida nesse século em resposta à uma controvérsia que ainda há remanescentes. A redescoderta da genética Mendeliana focou na herança de caracteres discretos, enquanto que Galton se concentrou em caracteres contínuos. A maior discussão era se caracteres possuíam as mesmas propriedades de hereditariedade e evolução que os caracteres contínuos. Os Mendelianos acreditavam que a variação nos caracteres discretos levavam a evolução ao surgimento de novas macromutações, enquanto que os biometricos viam a evolução como resultado da seleção natural agindo em caracteres distribuídos continuamente.
+
+Darwin assumiuque características contínuas exibiam herança misturada. O problema desse pensamento já foi apontado por Jenkin (1867), que metade da variação existente é removida a cada geração com herança misturada.
+
+Galton apontou outro problema. Quando ele plotou a altura média de filhos contra altura média dos pais. No entnato, a inclinação da reta indicava que a progênie era, em média, menos exepcional que seus pais. Pais cuja média eram baixa tendiam a ter progênie mais alta, mas ainda abaixo da média. Galton chamou essa tendência de regressão para a mediocridade e, argumentou que isso iria erosar qualquer progresso seletivo. Ele concluiu que a evolução deve ser baseada em mutações de grandes efeitos ao invés de selecionar variações contínuas.
+
+Pearson (1903) apontou o erro de Galton. Imagine que a seleção aja de maneira que apenas pais altos se reproduzam, então a altura média dos adultos reprodutivos após a seleção ($\mu s$) é maior do que a altura média antes da seleção ($\mu$). Se $\mu_0$ é  a altura média da progênie dos pais selecionados, então a resposta à seleção entre gerações é $\mu_0 - \mu$. Uma vez que a inclinação da relação parental-progênie é menor do que 1, a progênie adulta não pe esperada ser tão grande quanto aos pais selecionados. No entanto, a altura média é estável, se a seleção for parada, a nova altura não pe esperada decair ao valor original. Galton aparentemente falhou ao perceber que a seleção começa de uma nova média a cada geração e é para essa nova média que a próxima geração regressa. 
+
+
+### Minha Resposta
+
+_Após a redescoberta das leis de Mendel surgiu a questão se era possível explicar caracteres contínuos por essas leis, uma vez que estas foram inicialmente estabelecidas por meio de estudos com caracteres discretos. E então começou-se um embate entre os Mendelianos e os Biometristas. Para os Mendelianos, o surgimento de novas mutações eram consequência da variação dos caracteres discretos, já para os Biometristas a seleção natural agia nos caracteres distribuídos continuamente. Darwin tentou descrever essas características quantitativas através de uma “herança de mistura”, em que a progênie seria a média de seus genitores, o que foi contestado por Jenkin (1867), uma vez que caso isso ocorresse a cada geração metade de sua variação seria desfeita. Como um adepto aos biometristas, Galton, primo de Darwin, tentou desenvolver uma estatísticas que pudesse descrever a passagem de caracteres contínuos de uma população parental para sua prole. Para isso ele plotou em um gráfico a média da altura dos pais (eixo x) contra a altura dos filhos (eixo y), e então traçou uma reta com ângulo de inclinação igual a 1. A partir desse gráfico ele observou que na extremidade com os pais mais baixos a maioria de seus filhos estavam acima da reta traçada, ou seja, eram mais altos que seus pais. E na outra extremidade ele observou o contrário, pais mais altos tinham mais filhos cuja altura estava abaixo da reta, ou seja eram mais baixos que seus pais. Isso o fez concluir que ao longo das gerações iria ocorrer uma “regressão à mediocridade”, isto é, a população  iria caminhar até uma altura mediana onde haveria uma estagnação. Atualmente sabemos que diversos fatores influenciam na característica observada, como o ambiente, o ambiente e a sua interação com o genótipo, o grau de herdabilidade, o pedigree - que me fez pensar sobre os dados obtidos pelo Galton, uma vez que casamentos entre primos (consanguíneos) eram mais comuns no século 19 (o próprio Darwin era casado com sua prima), o que pode ter efeitos negativos na progênie - entre outros. Mas o erro de Galton não foi não levar em consideração esses fatores que hoje sabemos ser importantes, e sim na sua interpretação ao estabelecer uma reta com inclinação, b =1. O que foi corrigido, em 1903, por Pearson ao ajustar uma reta que melhor adequasse os dados, através dos mínimos quadrados. A nova reta ajustada obteve coeficiente angular igual a 0.65 com, metade da progênie está acima da reta e outra metade abaixo. E então, Pearson interpretou que caso nenhuma seleção fosse aplicada a média e a variância de uma população continuará a mesma de uma geração para outra. E caso haja alguma pressão de seleção a média terá uma tendência para onde há a seleção e uma nova média irá compor a nova geração. Galton não percebeu que a seleção começa em uma nova média e é pra ela que a próxima geração regressa._
