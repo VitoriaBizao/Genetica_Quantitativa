@@ -205,3 +205,54 @@ Pearson (1903) apontou o erro de Galton. Imagine que a seleção aja de maneira 
 ### Minha Resposta
 
 _Após a redescoberta das leis de Mendel surgiu a questão se era possível explicar caracteres contínuos por essas leis, uma vez que estas foram inicialmente estabelecidas por meio de estudos com caracteres discretos. E então começou-se um embate entre os Mendelianos e os Biometristas. Para os Mendelianos, o surgimento de novas mutações eram consequência da variação dos caracteres discretos, já para os Biometristas a seleção natural agia nos caracteres distribuídos continuamente. Darwin tentou descrever essas características quantitativas através de uma “herança de mistura”, em que a progênie seria a média de seus genitores, o que foi contestado por Jenkin (1867), uma vez que caso isso ocorresse a cada geração metade de sua variação seria desfeita. Como um adepto aos biometristas, Galton, primo de Darwin, tentou desenvolver uma estatísticas que pudesse descrever a passagem de caracteres contínuos de uma população parental para sua prole. Para isso ele plotou em um gráfico a média da altura dos pais (eixo x) contra a altura dos filhos (eixo y), e então traçou uma reta com ângulo de inclinação igual a 1. A partir desse gráfico ele observou que na extremidade com os pais mais baixos a maioria de seus filhos estavam acima da reta traçada, ou seja, eram mais altos que seus pais. E na outra extremidade ele observou o contrário, pais mais altos tinham mais filhos cuja altura estava abaixo da reta, ou seja eram mais baixos que seus pais. Isso o fez concluir que ao longo das gerações iria ocorrer uma “regressão à mediocridade”, isto é, a população  iria caminhar até uma altura mediana onde haveria uma estagnação. Atualmente sabemos que diversos fatores influenciam na característica observada, como o ambiente, o ambiente e a sua interação com o genótipo, o grau de herdabilidade, o pedigree - que me fez pensar sobre os dados obtidos pelo Galton, uma vez que casamentos entre primos (consanguíneos) eram mais comuns no século 19 (o próprio Darwin era casado com sua prima), o que pode ter efeitos negativos na progênie - entre outros. Mas o erro de Galton não foi não levar em consideração esses fatores que hoje sabemos ser importantes, e sim na sua interpretação ao estabelecer uma reta com inclinação, b =1. O que foi corrigido, em 1903, por Pearson ao ajustar uma reta que melhor adequasse os dados, através dos mínimos quadrados. A nova reta ajustada obteve coeficiente angular igual a 0.65 com, metade da progênie está acima da reta e outra metade abaixo. E então, Pearson interpretou que caso nenhuma seleção fosse aplicada a média e a variância de uma população continuará a mesma de uma geração para outra. E caso haja alguma pressão de seleção a média terá uma tendência para onde há a seleção e uma nova média irá compor a nova geração. Galton não percebeu que a seleção começa em uma nova média e é pra ela que a próxima geração regressa._
+
+
+# Aula 02 - Revisão de Conceitos Estatísticos
+## Distribuição de Probabilidades
+É um modelo matemático que gera uma curva cuja área é igual a 1. 
+
+$$\int_{-\infty}^{\infty}p(z)dz = 1$$
+
+$$P(z_1 \le z \le z_2) = \int_{z_1}^{z_2}p(z)dz$$
+
+## Distribuição Normal
+
+$$f(z) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{\frac{-(z-\mu)^2}{2\sigma^2}}$$
+$\sigma^2$ é a variância
+
+- A maioria dos valores estão concentrados em torno da média;
+
+- Quando os dados acima e abaixo da média são simétricos;
+
+- Os valores extremos são raros;
+
+## Caracteres Quantitativos
+Quanto eu tenho um evento que é a soma de evento de menores, independente da distribuição dos eventos menores a distribuição do evento final tende a ser uma distribuição normal.
+
+Trazendo para a genética quantitativa: o efeito de um caracter quantitativo é a soma do efeito de diversos pequenos genes. E quando eu somo tudo é razoável pensar que a distribuição do efeito final é uma normal.
+
+## Esperança
+
+$$E(z) = \mu = \int_{-\infty}^{\infty}z \ p(z) \ dz$$
+
+**Propriedades**
+
+- $E(x + y) = E(x) + E(y)$
+
+- $E(cx) = cE(x)$
+
+## Variância
+
+$$\sigma^2 = \int_{-\infty}^{\infty}(z-\mu)^2p(z)dz \\
+= E[(z-\mu)^2] \\ \\
+\therefore \sigma^2 = E(z^2) - [E(z)]^2$$
+
+
+## Distribuição Bivariada
+
+## Covariância
+
+Medida de covariação entre duas medidas, uma medida de varaição conjunta.
+
+### Capítulo 02
+### Capítulo 03
