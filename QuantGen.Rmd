@@ -639,7 +639,7 @@ A distribuição normal tem papel central por duas razões:
 
 O motivo porquê tantas características são distribuídas normalmente é dado pelo _teorema central do limite_, que diz que a soma de um número aleatório de variáveis independentes se aproximam da normalidade a medida que o número de variáveis aumenta.
 
-## Capítulo 03
+### Capítulo 03
 **Propriedades de Loco Único**
 
 O fato da maioria dos princípios de genética quantitativa poder serem expressos sem se referir a um gene específico é precisamente o porquê análises de genética quantitatia é tão popular no estudo de caracters complexos.
@@ -729,7 +729,7 @@ Sob cruzamento aleatório $\alpha$ é conhecido como valor médio da substituiç
 
 Essa distinção é útil pois cruzamento aleatório na natureza em espécies diplóides, cada parental doa apenas um alelo por loco para cada progênie. O alelo transmitido exibe seu efeito aditivo quando combinado com um gene do outro pai. Os desvio de dominância de um parental é elimindo quando os gametas são produzidos. Portanto pode-se pensar que $\hat{G}$ e $\delta$ são componentes herdáveis e não herdáveis de um indivíduo.
 
-## Minhas respostas
+### Minha resposta
 - Dê exemplos numéricos das identidades úteis
 [Exemplo Numérico](Numeric_Exemples.pdf)
 
@@ -892,7 +892,9 @@ Nota-se que a variância de $\sigma_A^2$ está relacionada com o efeito de subst
 ## Tarefa
 - Leia o capítulo 04 - Lynch & Walsh (1998) e apresente um overview
 
-- Faça um vídeo explicando os slides 3, 5, 11 e 14. ![Vídeo](https://www.youtube.com/watch?v=pI2o08MiDCo&t=1s)
+- Faça um vídeo explicando os slides 3, 5, 11 e 14.
+
+Link Vídeo: <https://www.youtube.com/watch?v=pI2o08MiDCo&t=1s>
 
 ### Minha resposta
 
