@@ -914,6 +914,8 @@ Para finalizar, o meu destaque para esse capítulo vai para o exemplo 3, pois at
 ## Revisão de alguns conceitos da aula 03
 Considere uma escala métrica representando uma determinada característica:
 
+![Escala](img11.png)
+
 Para essa característica estamos usando uma representação simbólica que apresenta uma escala de variação. Essa característica pode variar para uma determinada espécie. Essa escala métrica pode ser dividída em duas partes que explica a variação do caráter. Uma parte da variação é devido à fatores genéticos e outra parte é devido à fatores ambientais.
 
 Na parte ambiental (E), temos:
@@ -924,15 +926,185 @@ Na parte ambiental (E), temos:
 
 3. Efeitos aleatórios, aquilo que não conseguimos controlar.
 
+Na parte genética (G) vamos considerar que essas características é governada por três genes (A, B, e C):
+
+![G](img12.png)
+
+O quanto esse loco A pode contribuir para o caráter? Considerando uma espécie diplóide e 2 alelos (A e a), podemos ter os seguintes genótipos para o loco A: AA, Aa e aa.
+
+![](img7.png)
+
+Se o genótipo é AA a planta terá o total da escala, ou seja, o efeito máximo que essa escala permite (2a). Se o genótipo é aa a planta terá o tamanho mínimo da escala, ou seja, o alelo a não tem efeito sobre essa característica. Quando representamos o efeito de uma determinada característica em uma escala devemos levar em consideração o _valor basal_ também conhecido como _fator de escala_. O alor basal é, se desconsiderarmos efeitos drásticos, é o mínimo que a planta produz quando todos efeitos do ambiente não acrescentam em nada pra o valor máximo e quando todos os alelos que poderiam aumentar a planta estão no valor mínimo da escala. Mesmo quando isso acontece essa planta vai rpoduzir alguma coisa.
+
+É um erro comum acharmos que conseguimos encontrar o valor de a e de k apenas medindo os genótipos. O a e k estão relacionados com a bioquímica do funcionamneto do gene e não conseguir medir esses valores (não temos acesso à isso). Não conseguimos acessar na escala onde estão os valores de a e k, assim como fazemos com os genótipos (o que estamos observando).
+
+Só conseguimos acessar o a e o k a partir de uma regressão. Ou seja, iremos fazer uma regressão entre o ângulo que observamos, que o número de cópias de um determinado alelo e o que gostaríamos de inferir diretamente, que são os valores a e k. A partir dessa regressão conseguimos estimas o $\alpha$ e o $\delta$, que são medidas indiretas de a e k.
+
+$\alpha$ é função de a e do k, e então fazemos capturar o efeito do a, que é o tamanho da escala N. Conseguimos medir diretamente o tamanho da esala, eu consigo fazer uma regressão que será função do tamanho da escala. Em alguns cenários eu consigo medir, mas em outros não porque depende do a e do k. O $\alpha$ é o efeito médio de substituição alélica, é a inclinação da reta e o 'a' é inerente ao gene.
+
+A escala é uma representação imperfeita porque ela não considera uqe temos diferentes proporções em cada categoria e que cada população é diferente. O efeito de substituição alélica depende da população que estamos estudando.
 
 $$\text{Modelo de Regressão}: G_{ij} = \iota + \alpha N_2 + \delta_{ij}$$
 $$\text{Modelo Gamético}: G_{ij} = \mu_G + \alpha_i + \alpha_j + \delta_{ij}$$
 
 ## Efeitos Aditivos e Breeding Value
+Em cruzamentos aleatórios, cada parental doa apenas um alelo por loco para sua progênie. Pela Primeira Lei de Mendel, os genótipos são desconstruídos para formar a próxima geração, e quem captura isso são os efeitos dos alelos (efeito aditivo). Cada alelo tem um efeito aditivo, que é o tipo de alelo que ele é.
 
+A dominância depede do genótipo, da interação entre os alelos parentais. Assim, a dominância não é transmitida de uma geração à outra, porque os gametas levam só um alelo. Ou seja, quando consideramos o que vai ser passado de uma geração para outra podemos considerar uma parte herdável, que é o $\hat{G}$  uma não herdável, que são os desvios, parte herdável e não do genótipo. O que está na reta é o que passa de uma geração para outra, os desvios são o que não passa.
 
 **Efeitos Aditivos**
+Os efeitos aditivos $\alpha_i$ são definidos como sendo os coeficientes da regressão de quadrados mínimos dos valores genotípicos no conteúdo gênico. O $\alpha$ é o slope da regressão.
 
 $$\alpha_2 = p_1 \alpha = p_1\alpha[1+k(p_1 - p_2)]$$
 
 $$\alpha_1 = -p_2 \alpha = - p_2\alpha[1+k(p_1 - p_2)]$$
+
+Ou seja, $\alpha_1$ e $\alpha_2$ estão relacionados. Eu posso expressar o efeito aditivo em função do efeito médio de substituição alélica, ou seja, $\alpha$, ou posso expressar em função dos alelos 1 ou 2, ou seja $\alpha_1$ e $\alpha_2$.
+
+$\alpha_1$ e $\alpha_2$ são equivalentes ao que é referido como _excesso médio_ em populações em cruzamento aleatório. É a _"diferença entre a média do valor genotípico de indivíduos carregando pelo menos 1 cópia do alelo e a média do valor genotípico da população inteira."_
+
+Não confundir $\alpha_i$ (efeito aditivo) com a. O $\alpha$ tenta capturar o efeito do a em função de k e das frequências.
+
+## Exemplo gene Booroola
+![](img13.png)
+
+Um mesmo gene permite que as populações tenham médias genotípicas diferentes, pois a média populacional depende de quantos indivíduos tem o alelo ou não.
+
+Assim, conseguimos calcular o efeito de cada alelo em determinada população. No exemplo na primeira população o alelo B tem aumento de 0.295 na população e o b de diminuir -0.295. Já na segunda população o alelo B aumenta 0.603 na população e o b diminui -0.067. Ou seja, o efeito aditivo depende da população analisada.
+
+## Breeding Value
+
+É a soma dos efeitos aditivos que um indivíduo possui. O valor  de
+
+- $B_1B_1$ é $2 \alpha_1$
+
+- $B_1B_2$ é $\alpha_1 + \alpha_2$
+
+- $B_2B_2$ é $2 \alpha_2$
+
+O breeding value mede o valor de um indivíduo em termos dos alelos que ele deixa para a descendência. Tem a ver com os alelos que o indivíduo tem e se esses alelos são favoráveis ou não. _No gráfico_, os breeding values são os pontos emcima da reta.
+
+Um indivíduo bom não necessariamente é o melhor para aumentar o valor da progênie. Por isso olhamos o breeding value, que indica os indivíduos com maior valor reprodutivo. O efeitos aditivo dos alelos que estão nos gametas.
+
+O valor que vai ser transmitido para próxima população depende da população em que se está. Se for deito o cruzamento de um indivíduo dado um breeding value, é possível estimar a média do valor genotípico da progênie. Subtraindo a média populacional, temos metade do breeding value dado os desvios. Os desvios são metade do bredding value. O breeding value de uma progênie é a média dos breeding values dos parentais.
+
+Nós podemos estimar o breeding value através do cruzamento de indivíduos aleatórios, pegando a média da progênie subtraindo a média da população e multiplicando por 2.
+
+$$\mu_G = 2 p_2 \alpha (1+p_1 k)$$
+
+A variância aditiva é equivalente a variância dos valores de bredding values dos indivíduos de uma população.
+
+Breeding Value
+$$G_{ij} = \mu_G + A_{ij} + \delta_{ij}$$
+
+$$\sigma_G^2 = \sigma^2(\alpha_i + \alpha_j) + \sigma^2(\delta_{ij})$$
+
+$$\sigma_G^2 = \sigma_A^2 + \sigma_D^2$$
+
+### Extensão para múltiplos alelos:
+Generalizações:
+$$G = \mu_G + \sum_{i=1}^{n} \alpha_i N_i +\delta$$
+
+$$\alpha_i = \sum_{j=1}^{n} p_j G_{ij} - \mu_G$$
+
+$$\sigma_A^2 = 2 \sum_{i=1}^{n} p_i \alpha_i^2$$
+
+## Tarefa 
+
+- Leia os capítulos 07 e 08 - Falconer & Mackay (1996)
+
+- Mostre a e quivalência entre a regressão e  modelo gamético para a decomposição genotípica de loco único
+
+- Apresente em suas próprias palavras a definição dos termos: 
+
+1) Efeitos aditivos $\alpha_i$;
+
+2) Breeding Value;
+
+3) Variância Aditiva;
+
+4) Variância de Dominância e
+
+5) Variância Genética.
+
+## Minha Resposta
+### Capítulo 07
+Propriedades genéticas de uma população são expressas em termos de frequência dos genes e genotípica. Para deduzir a relação entre essas frequências é preciso do conceito de _valor_ que é expresso nas unidades métricas do caráter. O valor quando medido em um indivíduo é o _valor fenotípico_ do indivíduo. Em ordem de avaliar as propriedades genéticas de uma população, é necessário dividir o valor fenotípico em partes atribuídas à dieferentes causas.
+
+A primeira divisão do valor fenotípico é atribuida a influência do genótipo e do ambiante. O genótipo é uma configuração particular de genes que um indivíduo em particular possui, e o ambiente é todo componente não-genético que influencia no valor genotípico. Simbolicamente temos:
+
+$$P = G + E$$
+
+A média do desvio ambiental na população como um todo é dada por zero, então a média
+
+### Mostre a e quivalência entre a regressão e  modelo gamético para a decomposição genotípica de loco único
+
+[Resposta](Equivalência.pdf)
+
+### Apresente em suas próprias palavras a definição dos termos:
+
+**1) Efeito aditivo -** o efeito aditivo é o quanto de mudança eu terei caso eu troque um alelo por outro, esse pode ser expressos pelos seus alelos ou em função do efeito médio de substituição alélica. O efeito aditivo também pode ser a inclinação da reta de regressão entre o conteúdo gênico e o número de alelos e nesse caso alfa está tentando capturar o efeito do a. 
+
+**2) Breeding value -** o breeding value é uma medida de capacidade do quanto um parental é capaz de passar para sua progênie em termos do alelo que aumenta a característica de interesse. Matematicamente ele é função da frequência dos alelos em uma população, o que é lógico uma vez que em uma população com grande número de alelos que aumentam a característica o parental carregar mais um é insignificante a nível populacional. Agora se o número é baixo inserir o alelo bom irá ter um maior impacto. Também pode ser visto como a soma dos efeitos aditivos, uma vez que o efeito aditivo é o quanto um alelo acrescenta ou diminui na característica, se o parental possui tal alelo a chance de sua progênie possuir tal efeito é alta.
+
+**3) Variância aditiva -** variância aditiva é o quanto dos valores genéticos são explicados por desvios causados pelos efeitos de aditividade, ou seja qual variação o efeito de um alelo causa.
+
+**4) Variância de dominância -** variância aditiva é o quanto os efeitos de dominância conseguem explicar os desvios da variância genética, ou seja qual a consequência da interação entre os alelos.
+
+**5) Variância genética -** variância é uma medida de dispersão, portanto variância genética é o quanto os valores de um genótipo diferem aquilo que é esperado.
+    
+# Aula 05 - Herdabilidade, Ganho de Seleção e Mapeamento QTL
+
+## Importante
+$$\text{Modelo de Regressão}: G_{ij} = \iota + \alpha N_2 + \delta_{ij}$$
+
+$$\text{Modelo Gamético}: G_{ij} = \mu_G + \alpha_i + \alpha_j + \delta_{ij}$$
+
+$$\text{Breeding Value}: \mu_{G} + A_{ij} + \delta_{ij}$$
+
+A variância dos efeitos genotípicos podem ser decompostos em variância aditiva e variância de dominância:
+
+$$\sigma_G^2 = \sigma^2(\alpha_i + \alpha_j) + \sigma^2(\delta_{ij}) \\
+\sigma_G^2 = \sigma_A^2 + \sigma_D^2$$
+
+A variância aditiva é equivalente a variância dos breeding values de uma população.
+
+## Herdabilidade - Revisitando os dados de Galton
+Como sbemos, existe uma tendência de pais mais altos terem filhos mais altos. No entnato, essa tendência não é absoluta e isso fica muito evidente quando selecionamos apenas os pais mais altos. Com isso, concluímos que existe uma tendência de heriditariedade nessa característica, já que existe uma tendência de pais mais altos darem filhos mais altos, apesar de não ser uma _correspondência absoluta_. 
+
+Vamos pensar em princípios que podem ser aplicados em vários cenários. Por exemplo, uma espécie que permite a clonagem de indivíduos de uma geração para a próxima. Aqui, o eixo x e y serão os mesmo indivíduos em gerações diferentes. Isso pode ser representado pelo seguinte modelo de regressão:
+
+$y = \alpha + \beta_x + e$ e $b = \frac{cov(x,y)}{var(x)}$
+
+Pela fórmula, nota-se que precisamos estimar a covariância entre os eixos x e y. E para fazer isso primeiramente consideramos que:
+
+$Z_x = G_x + E_x$ e $Z_y = G_y + E_y$
+
+$\therefore = \sigma(Z_x, Z_y) = \sigma(G_x,G_y) + \sigma(G_x + E_y) + \sigma(E_x + G_x) + \sigma(E_x, E_y) = \sigma_G^2$
+
+e
+
+$\sigma_x^2 = \sigma_{Z_x}^2$
+
+Portanto, 
+
+$$b = \frac{\sigma_G^2}{\sigma_z^2} = H^2 \ \text{(Herdabilidade no sentido amplo)}$$
+
+Quando fazemos uma regressão de clones para tentar predizer o que vai acontecer com o clone no ano seguinte teremos o coeficiente angular da reta. O coeficiente angular é o que vai me dizer o sucesso dessa predição e ele é o coeficiente de herdabilidade no sentido amplo. Nesse caso, toda a variância genica é transmitida de uma geração para outra já que estamos trabalhando com clones.
+
+A herdabilidade no sentido amplo mede o quanto da variância fenotípica é devido à causas genéticas totais (A, D, E). Graficamente:
+
+O ganho vai depender da inclinação da reta que em casos de clones é a herdabilidade no sentido amplo. Se não for a herdabilidade direta como no caso dos clones, será função disso. Como o coeficiente de herdabilidade é igual ao coeficiente angular da reta e esse é a tangente do ângulo, temos que:
+
+$$tg \beta = \frac{CO}{CA} = H^2 = \frac{\Delta \mu}{S} \\
+\therefore \Delta \mu =  H^2 S$$
+
+A equação do melhorista fala o quanto 
+
+## Regressão dos filhos no fenótipo parental médio
+
+## Herdabilidade e Equação do Melhorista
+
+## Melhoramento de Plantas vs. Animais
+
+## Como aumentar o R?
