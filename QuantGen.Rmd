@@ -72,7 +72,7 @@ A genética quantitativa começou com esse paper do Fisher, mas a discussão a r
 ## Galton's Data
 Galton tinha a altura média dos pais e a altura média dos filos. Ele obteve um gráfico mais ou menos assim:
 
-![Galton's Data](img1.png)
+![Galton's Data](../Genetica_Quantitativa/imagens/img1.png)
 
 Em uma primeira visualização podemos observar que pais mais altos tendem a ter filhos mais altos e, pais mais baixos tendem a ter filhos mais baixos. Existe, portanto, uma tendência, mas que não é _absoluta_. Observa-se também uma concentração de pontos em torno da media, ou seja, indivíduos medianos tem filhos com alturas medianas.
 
@@ -111,7 +111,7 @@ A herdabilidade está _relacionada com a covariância_ entre os eixos, porque o 
 
 Galton estava errado em dizer que haveria uma regressão em torno da média. Na verdade, se não fizermos nada a média e a variância continuarão sendo as mesmas. Se selecionarmos os pais com as maiores alturas termos a média dos indivíduos selecionados e alteraremos a média da geração seguinte:
 
-![Equação do melhorista](img2.png)
+![Equação do melhorista](../Genetica_Quantitativa/imagens/img2.png)
 
 Quando selecionamos a geração atual (ms) temos uma média igual a m1 da geração seguinte. Essa diferença entre a média da população e a média dos selecionado é o **diferencial de seleção**. Que pode ser exemplificado da seguinte maneira:
 
@@ -195,7 +195,7 @@ Os princípios Mendelianos nos quais as teorias da genética quantitativa são f
 
 A genética quantitativa desenvolvida nesse século em resposta à uma controvérsia que ainda há remanescentes. A redescoderta da genética Mendeliana focou na herança de caracteres discretos, enquanto que Galton se concentrou em caracteres contínuos. A maior discussão era se caracteres possuíam as mesmas propriedades de hereditariedade e evolução que os caracteres contínuos. Os Mendelianos acreditavam que a variação nos caracteres discretos levavam a evolução ao surgimento de novas macromutações, enquanto que os biometricos viam a evolução como resultado da seleção natural agindo em caracteres distribuídos continuamente.
 
-Darwin assumiuque características contínuas exibiam herança misturada. O problema desse pensamento já foi apontado por Jenkin (1867), que metade da variação existente é removida a cada geração com herança misturada.
+Darwin assumiu que características contínuas exibiam herança misturada. O problema desse pensamento já foi apontado por Jenkin (1867), que metade da variação existente é removida a cada geração com herança misturada.
 
 Galton apontou outro problema. Quando ele plotou a altura média de filhos contra altura média dos pais. No entnato, a inclinação da reta indicava que a progênie era, em média, menos exepcional que seus pais. Pais cuja média eram baixa tendiam a ter progênie mais alta, mas ainda abaixo da média. Galton chamou essa tendência de regressão para a mediocridade e, argumentou que isso iria erosar qualquer progresso seletivo. Ele concluiu que a evolução deve ser baseada em mutações de grandes efeitos ao invés de selecionar variações contínuas.
 
@@ -211,7 +211,7 @@ _Após a redescoberta das leis de Mendel surgiu a questão se era possível expl
 ## Distribuição de Probabilidades
 É um modelo matemático que gera uma curva cuja área é igual a 1. 
 
-![Distribuição de Probabilidades](img3.png)
+![Distribuição de Probabilidades](../Genetica_Quantitativa/imagens/img3.png)
 
 A curva $y=f(x)$ nesse exemplo é chamda de densidade de probabilidade de uma variável aleatória continua x. Cada variável contínua tem sua própria funça densidade. A probabilidade $Pr(a \leq x \leq b)$ é a área abaixo da curva entre x-valores a e b.
 
@@ -255,7 +255,7 @@ Onde:
 
 Para fazer a curva de densidade de probabilidade precisamos de $\mu$, $z$ e $\sigma^2$. O $\mu$ interfere no desenho da cursa e dizemos que ele é uma medida de posição. Para diferentes valores de $\mu$ e $\sigma^2$, teremos curvas de densidade de probabilidade. Graficamente temos:
 
-![Distribuição de Probabilidades](img4.png)
+![Distribuição de Probabilidades](../Genetica_Quantitativa/imagens/img4.png)
 
 É muito comum fazermos transformações e padronizar essa distribuição. A transformação é feita para cada valor da seguinte maneira:
 
@@ -290,7 +290,7 @@ $$\mbox{valores genotípicos estabelecidos} \left \{ \begin{matrix} 1 = aa \\ 2 
 
 O número de indivíduos que temos em cada categoria depende da população que estamos trabalhando. Se fizermos a frequência alélica e a população estiver em equilíbrio de Hardy-Weinberg teremos $p^2$, $2pq$ e $q^2$ genótipos. Se cada alelo for 0.5, temos:
 
-![](img5.png)
+![](../Genetica_Quantitativa/imagens/img5.png)
 
 Nota-se que pelo gráfico não temos a distribuição normal, pois temos apenas 3 categorias (AA, Aa e aa) e a distribuição não temos apenas 3 categorias. Já quando há 2 genes controlando uma determinada característica, temos:
 
@@ -415,7 +415,7 @@ Será que quando os valores de x estão acima da média existe alguma relação 
 
 Se fizermos o produto de desvios positivos de x com desvios positivos de y teremos uma covariância positiva. E se fizermos o produto dos desvios negativos de x com os desvios negativos de y também termos uma covariância positiva. Ou seja, se tivermos produto de indivíduos com o mesmo sinal, a covariância deve ser positiva. Graficamente pode ser ilustrado da seguinte maneira:
 
-![Covariância](img6.png)
+![Covariância](../Genetica_Quantitativa/imagens/img6.png)
 
 A partir do gráfico, podemos perceber que existe um predomínio de pontos no quadrante positivo/positivo e no negati/negativo. Ou seja, a tendência é que essa covariância seja positiva. Se os pontos estiverem igualmente distribuídos ao longo dos quatro quadrantes, os efeitos irão se cancelar e a covariância será igual a zero. E se tivermos mais pontos nos quadrantes em que os indivíduos tem sinais diferentes teríamos covariâncias negativa.
 
@@ -668,7 +668,7 @@ E as frequências genotípicas da próxima geração será encontrada pelas freq
 
 - $2p_1p_2$
 
--$p_2^2$
+- $p_2^2$
 
 Tais proporções são conhecidas como frequências de Hardy-Weinberg. Essas proporções podem ser expandidas para qualquer número de alelos:
 
@@ -691,7 +691,7 @@ onde G é o fenótipo esperado, dado um genótipom resultando de uma expressão 
 
 Começando com um exemplo contendo apenas 2 alelos. Os três valore genotípicos podem ser representados pela escala:
 
-![](img7.png)
+![](../Genetica_Quantitativa/imagens/img7.png)
 
 onde 2a representa a diferença entre os fenótipos médios $B_2B_2$ e $B_1B_1$, e k dá uma medida de dominância. Os alelos $B_2$ e $B_1$ se comportam de maneira completamente aditiva quando k = 0, onde k = 1 implica em uma dominância completa do alelo $B_1$, e k = -1 um dominância completa do $B_2$. Se k > 1, a expressão fenotípica do heterozigoto excede ambos homozigostos e, o loco exibe _sobredominância_ no contrátio k < -1 implica _subdominância_.
 
@@ -721,7 +721,7 @@ $$G_{ij} =  \mu_G + \alpha_1(2 - N_2) + \alpha_2N_2 + \delta_{ij} \\
 onde $\iota = \mu_G + 2\alpha_1$ é o intercepto. E a inclinação é dada por: $alpha = alpha_2 - alpha_1$
 
 Os valores preditos pela regressão são:
-![](img8.png)
+![](../Genetica_Quantitativa/imagens/img8.png)
 
 Sob cruzamento aleatório $\alpha$ é conhecido como valor médio da substituição alélica. Ele representa a mudança no valor genotípico resultado da mudança do alelo $B_1$ para $B_2$. Para um caso puramente aditivo $\alpha = a$. No entanto, para outros casos $\alpha$ também é função de k e das frequências alélicas. Isso é, resultdado porque com a dominância o efeito da substituição de um gene no fenótipo depende do statu do alelo não substituido.
 
@@ -769,7 +769,7 @@ em que G é a soma de todos os locos que controlam a caracerística. É também 
 
 Para representação de G por meio de uma escala, iremos considerar um único loco com dois alelos ($B_1$ e $B_2$) e três genótipos possíveis $B_1B_1$, $B_1B_2$ e $B_2B_2$.
 
-![Escala](img7.png)
+![Escala](../Genetica_Quantitativa/imagens/img7.png)
 
 A parte de baixo da escala mede o valor genotípico, ou seja, o quanto o gene B influencia na característica. Já a parte de cima da escala representa os gentótipos possíveis em uma população. Um indivíduo pode ocupar toda a escala ou apenas uma parte dela, isso dependerá do seu genótipo.
 
@@ -797,13 +797,13 @@ Na escala:
 
 O número de cópias de um alelo particular é referido como _conteúdo gênico_. E a menos que o alelo interaja aditivamente com todos os outros alelos, haverá uma relação não linear entre o conteúdo gênico e o valor genotípico (G). No entanto, é útil considerar a melhor aproximação linear para essa realção. Em 1918, Fisher estabeleceu uma relação entre o conteúdo gênico ($N_2$) e o valor genotípico (G). Graficamente temos:
 
-![](img9.png)
+![](../Genetica_Quantitativa/imagens/img9.png)
 
 Em função disso, ele fez a partição dos valores genéticos em função dos seus valores esperados. Uma parte ele chamou de aditividade e os desvios que ele conseguiu predizer chamou de dominância.
 
 Mesmo quando têm-se dominância é útil considerar que eles têm uma relação linear, pois isso leva a uma partição de valores esperados com base na aditividade ($\hat{G}$) e nos desvios das expectativas ($\delta$)
 
-![](img10.png)
+![](../Genetica_Quantitativa/imagens/img10.png)
 
 Nota-se que cada genótipo apresenta um desvio. Os pontos podem ser formalizados por regressão de quadrados mínimos dos valores genotípicos no número de alelos $B_1$ e $B_2$ no genótipo ($N_1$ e $N_1$):
 
@@ -880,7 +880,7 @@ Estatisticamente, o $\sigma_A^2$ representa a quantidade da variação que é ex
 
 ## Variância Genética
 
-Usando $E(\hat{G^2})$, $E(\hat{G})$, $E(\delta^2)$ e $E(\delta)$, nós podemos obter:
+Usando $E(\hat{G}^2)$, $E(\hat{G})$, $E(\delta^2)$ e $E(\delta)$, nós podemos obter:
 
 $$\sigma_A^2 = E(\hat{G})^2 - [E(\hat{G})]^2 = 2p_1p_2\alpha$$
 e 
@@ -914,7 +914,7 @@ Para finalizar, o meu destaque para esse capítulo vai para o exemplo 3, pois at
 ## Revisão de alguns conceitos da aula 03
 Considere uma escala métrica representando uma determinada característica:
 
-![Escala](img11.png)
+![Escala](../Genetica_Quantitativa/imagens/img11.png)
 
 Para essa característica estamos usando uma representação simbólica que apresenta uma escala de variação. Essa característica pode variar para uma determinada espécie. Essa escala métrica pode ser dividída em duas partes que explica a variação do caráter. Uma parte da variação é devido à fatores genéticos e outra parte é devido à fatores ambientais.
 
@@ -928,11 +928,11 @@ Na parte ambiental (E), temos:
 
 Na parte genética (G) vamos considerar que essas características é governada por três genes (A, B, e C):
 
-![G](img12.png)
+![G](../Genetica_Quantitativa/imagens/img12.png)
 
 O quanto esse loco A pode contribuir para o caráter? Considerando uma espécie diplóide e 2 alelos (A e a), podemos ter os seguintes genótipos para o loco A: AA, Aa e aa.
 
-![](img7.png)
+![](../Genetica_Quantitativa/imagens/img7.png)
 
 Se o genótipo é AA a planta terá o total da escala, ou seja, o efeito máximo que essa escala permite (2a). Se o genótipo é aa a planta terá o tamanho mínimo da escala, ou seja, o alelo a não tem efeito sobre essa característica. Quando representamos o efeito de uma determinada característica em uma escala devemos levar em consideração o _valor basal_ também conhecido como _fator de escala_. O alor basal é, se desconsiderarmos efeitos drásticos, é o mínimo que a planta produz quando todos efeitos do ambiente não acrescentam em nada pra o valor máximo e quando todos os alelos que poderiam aumentar a planta estão no valor mínimo da escala. Mesmo quando isso acontece essa planta vai rpoduzir alguma coisa.
 
@@ -966,7 +966,7 @@ $\alpha_1$ e $\alpha_2$ são equivalentes ao que é referido como _excesso médi
 Não confundir $\alpha_i$ (efeito aditivo) com a. O $\alpha$ tenta capturar o efeito do a em função de k e das frequências.
 
 ## Exemplo gene Booroola
-![](img13.png)
+![](../Genetica_Quantitativa/imagens/img13.png)
 
 Um mesmo gene permite que as populações tenham médias genotípicas diferentes, pois a média populacional depende de quantos indivíduos tem o alelo ou não.
 
@@ -1027,7 +1027,6 @@ $$\sigma_A^2 = 2 \sum_{i=1}^{n} p_i \alpha_i^2$$
 
 5) Variância Genética.
 
-## Minha Resposta
 ### Capítulo 07
 Propriedades genéticas de uma população são expressas em termos de frequência dos genes e genotípica. Para deduzir a relação entre essas frequências é preciso do conceito de _valor_ que é expresso nas unidades métricas do caráter. O valor quando medido em um indivíduo é o _valor fenotípico_ do indivíduo. Em ordem de avaliar as propriedades genéticas de uma população, é necessário dividir o valor fenotípico em partes atribuídas à dieferentes causas.
 
@@ -1035,8 +1034,65 @@ A primeira divisão do valor fenotípico é atribuida a influência do genótipo
 
 $$P = G + E$$
 
-A média do desvio ambiental na população como um todo é dada por zero, então a média
+A média do desvio ambiental na população como um todo é dada por zero, então a média do valor genotípico é igual a média do valor fenotípico. Ao lidar com sucessivas gerações nós assumimos que o ambiente permanece igual, constante. Se oudessemos replicar um genótipo em particular em um número de indivíduos e medir sob condições normais para a população, sua média de desvios ambientais seria 0, e média do valor genotípico seria igual ao fenotípico.
 
+A média de um valor genotípico de um indivíduo não é mensurável na prática, exceto quando nos concentramos em um único loco onde os genótipos são fistintos fenotipicamente.
+
+Para razões de dução nós devemos atribuir valores arbitrários para os genótipos. Isso é feito da seguinte maneira: considere um único loco com 2 alelos. $A_1$ e $A_2$, nós chamamos o valor genotípico de um homozigoto _a_ e do outro _-a_ e do heterozigoto de _d_. Portanto, temos uma escala dos valores genotípicos, e do valor do heterozigoto depende do grau de dominância. Se não há dominância d = 0; se $A_1$ é dominante sobre $A_2$, d é positivo e se $A_2$ é dominante sobre $A_1$, d é negativo. Se a dominância for completa d é igual a +a ou -a e se há sobredominância d é maior que +a ou menor que -a.
+
+**Population Mean**
+Nós podemos ver como a frequência de um gene influencia na média de um caráter em uma população inteira. Defina as frequências dos genes $A_1$ e $A_2$ ser p e q, respectivamente. Assim temos:
+
+| **Genótipo** | **Frequência** | **Valor** | **Frequência x Valor** |
+|:------------:|:--------------:|-----------|------------------------|
+|  $A_1$$A_1$  |      $p^2$     | +a        | $p^2 a$                |
+| $A_1$$A_1$   | 2pq            | d         | 2pqd                   |
+| $A_1$$A_1$   | $q^2$          | -a        | $-q^2 a$               |
+|              |                |           | = a (p-q) + 2pdq       |
+
+Os valores genotípicos a e d são desvios do valor médio dos 2 homozigotos.
+
+Colocando junto as contribuições de genes de diversos locos encontramos o efeito conjunto na média. Isso introduz a questão de como os genes em locos diferentes se combinam para produzir um efeito conjunto no caractere. No momento iremos supor que a combinação se dá por adição, assim temos que a média da população é:
+
+$$M = \sum a (p-1) + 2 \sum dpq$$
+
+**Efeito Médio**
+Para deduzir as propriedades de uma população, nós precisamos lidar com a tranmissão de cada pai para a progênei e não pode ser feito somente pela média dos valores genotípicos, pois pais transmitem seus genes e não seus genótipos para a próxima geração, com novos genótipos sendo criados a cada geração. Um valor então deve ser atribuído para se referir aos genes, o que nos permitirá acessar um "breeding value" para indivíduos, um valor associado com os genes carregados pelo indivíduo e transmitido para sua progênie. O valor associado aos genes distintos do genótipo é conhecido como _efeito médio_. O efeito médio depende dos valores genotípicos,a e d nas frequências gênicas. Portanto, o efeito médio é propriedade de populações.
+
+O efeito médio de um gene em particular é o desvio médio da média de uma população de undivíduos que recebeu esse gene de um parental. Considerado o alelo $A_1$ e seu efeito médio $\alpha_1$, o valor genotípico dos indivíduos que possuem o gene $A_1$ ($A_1A_1$ e $A_1A_2$) pode ser dito como: $pa + qd$. Esse valor menos a média populacional é o efeito médio do gene $A_1$, ou seja:
+
+$$\alpha_1 = pq + qd - [a(p-1) 2pdq)\\ = q[a +d(q-p)]$$
+Similarmente, o efeito do gene $A_2$ é:
+
+$$\alpha_2 = - p [a+d(q-p)]$$
+
+Quando consideramos apenas 2 genes é mais conveniente expressar seus efeitos médios em termos e _efeito médio de substituição gênica_, que é simplismente a diferença do efeito médio dos 2 alelos:
+
+$$\alpha = \alpha_1 - \alpha_2$$
+
+**Breeding Value** 
+O valor de um indivíduo julgado pelo valor médio da sua progênie é chamado de breeding value. Diferente do efeito médio, o breeding value pode ser medido. Se um indivíduo é cruzado com um número de indivíduos tomados aleatóriamente de uma população, seu breeding value é duas vezes o desvio médio entre a progênie e a média da população. Em termos de efeito médio, o breeding value de um indivíduo é igual a soma dos efeitos médios que o gene carrega.
+
+**Desvio de Dominância**
+Quando consideramos um loco único, a diferença entre o valor genotípico e o breeding value E de um genótipo particular é conhcido como desvio de dominância. Desvios de dominância surge da propriedade de dominância entre alelos no loco, e do ponto estatístico os desvio de dominância são interações entre alelos. Eles representam o efeito de colocar genes em para para formar o genótipo. Os desvio de dominância também depende da frequência gênica.
+
+### Capítulo 08 - Variância
+A genética de um carater métrico se centra no estudo de sua variação. A ideia básica no estudo de variância é particiona-la em componentes atribuídos a diferentes causas, A magnitude relativa desses componentes determina propriedades genéticas da população.
+
+**Componentes de Variâcia**
+A quantidade de variação é medida e expressa como variância: quando valores são expressos como desvios da média da população a variância é simplismente a média dos valores ao quadrado. A variância genotípica é a variância dos valores genotípicos e a variância ambiental é a variância dos desvios ambientais. A variância total é então, a soma dos componentes:
+
+$$V_P = V_G + V_E$$
+
+Particionar a variância em componentes permite estimar a importância relativa de vários determinantes do fenótipo, em particular o papel de hereditariedade versus ambiente.
+
+A importância relativa da hereditariedade em determinado valor fenotípico é chamado de _herdabilidade_. A razão $V_G/V_P$ expressa a extensão no qual o fenótipo dos indivíduos é determinado pelos genótipos. É chamada de _herdabilidade no sentido amplo_. A razão $V_A/V_P$ expressão a extensão na qual o fenótipo são determinados pelos genes transmistidos pelos pais. É chamdo de _herdabilidade no sentido restrito_, ou simplismente herdabilidade. Determina o grau de proximidade entre parentes.
+
+**Estimação do grau de determinação $V_G/V_P$**
+Estimação da variação genotípica é simples na teoria, porém não tão simples na prática. Nem a Vg nem a Ve podem ser estimadas experimentalmente. Eliminar a Vg pode ser alcançada experimentalmente. Individuos com genótipos idênticos podem ser obtidos a partir de uma linha altamente cosanguínes, ou do cruzamento dessas linhas, ou por clones propagados. Se esses idivíduos forem desenvolvidos sob condições normais, a Vp dá uma estimação da Ve. Subtraida de uma população geneticamente mista encontramos a estimação da Vg. Porém essa forma assume que as Ve é a mesma em todos genótipos, o que não é verdade.
+
+
+### Minha Resposta
 ### Mostre a e quivalência entre a regressão e  modelo gamético para a decomposição genotípica de loco único
 
 [Resposta](Equivalência.pdf)
@@ -1054,7 +1110,6 @@ A média do desvio ambiental na população como um todo é dada por zero, entã
 **5) Variância genética -** variância é uma medida de dispersão, portanto variância genética é o quanto os valores de um genótipo diferem aquilo que é esperado.
     
 # Aula 05 - Herdabilidade, Ganho de Seleção e Mapeamento QTL
-
 ## Importante
 $$\text{Modelo de Regressão}: G_{ij} = \iota + \alpha N_2 + \delta_{ij}$$
 
@@ -1070,7 +1125,7 @@ $$\sigma_G^2 = \sigma^2(\alpha_i + \alpha_j) + \sigma^2(\delta_{ij}) \\
 A variância aditiva é equivalente a variância dos breeding values de uma população.
 
 ## Herdabilidade - Revisitando os dados de Galton
-Como sbemos, existe uma tendência de pais mais altos terem filhos mais altos. No entnato, essa tendência não é absoluta e isso fica muito evidente quando selecionamos apenas os pais mais altos. Com isso, concluímos que existe uma tendência de heriditariedade nessa característica, já que existe uma tendência de pais mais altos darem filhos mais altos, apesar de não ser uma _correspondência absoluta_. 
+Como sabemos, existe uma tendência de pais mais altos terem filhos mais altos. No entnato, essa tendência não é absoluta e isso fica muito evidente quando selecionamos apenas os pais mais altos. Com isso, concluímos que existe uma tendência de heriditariedade nessa característica, já que existe uma tendência de pais mais altos darem filhos mais altos, apesar de não ser uma _correspondência absoluta_. 
 
 Vamos pensar em princípios que podem ser aplicados em vários cenários. Por exemplo, uma espécie que permite a clonagem de indivíduos de uma geração para a próxima. Aqui, o eixo x e y serão os mesmo indivíduos em gerações diferentes. Isso pode ser representado pelo seguinte modelo de regressão:
 
@@ -1080,7 +1135,7 @@ Pela fórmula, nota-se que precisamos estimar a covariância entre os eixos x e 
 
 $Z_x = G_x + E_x$ e $Z_y = G_y + E_y$
 
-$\therefore = \sigma(Z_x, Z_y) = \sigma(G_x,G_y) + \sigma(G_x + E_y) + \sigma(E_x + G_x) + \sigma(E_x, E_y) = \sigma_G^2$
+$\therefore \ \sigma(Z_x, Z_y) = \sigma(G_x,G_y) + \sigma(G_x + E_y) + \sigma(E_x + G_x) + \sigma(E_x, E_y) = \sigma_G^2$
 
 e
 
@@ -1099,12 +1154,433 @@ O ganho vai depender da inclinação da reta que em casos de clones é a herdabi
 $$tg \beta = \frac{CO}{CA} = H^2 = \frac{\Delta \mu}{S} \\
 \therefore \Delta \mu =  H^2 S$$
 
-A equação do melhorista fala o quanto 
+A equação do melhorista fala o quanto a gente ganha ao implementar um método de seleção, ou seja, ela permite prever o ganho. A herdabilidade é quadrado da correlação entre os valores genotípicos e os valores fenotípicos que também é igual ao coeficiente de determinação.
 
 ## Regressão dos filhos no fenótipo parental médio
 
+O fenótipo médio dos pais pode ser dado pela seguinte fórmula em que:
+
+$$Z_{mp} = \frac{Z_m + Z_f}{2}$$
+
+Sabemos que o modelo gamético é dado por: $ G_{ij} = \mu_G + \alpha_i + \alpha_j + \delta_{ij}$. No entanto, aqui viemos desconsiderar a $\mu_G$ porque a covariância do intercepto é igual a zero e iremos desconsiderar a dominância porque ela não é herdável. Portanto,
+
+$$Z_m = g_m + g_{m'} + E_m$$
+
+$$Z_f = g_f + g_{f'} + E_f$$
+
+$$Z_0 = g_m + g_{f} + E_0$$
+
+Qual é a **covariância** entre o fenótipo da média dos pais e o fenótipo da progênie? Para isso, temos que:
+
+
+$$\sigma(Z_{mp}, Z_0) = \frac{\sigma^2(g_m) + \sigma^2(g_f)}{2}$$
+$\sigma^2(g_m) + \sigma^2(g_f)$ é a variânci total e nesse caso é a variância genética aditiva.
+
+$$\therefore \ \sigma(Z_{mp}, Z_0) = \frac{\sigma_A^2}{2}$$
+Qual é a **variância** do fenótipo? (x)
+
+$$\sigma^2(Z_{mp}) = \sigma^2 \left(\frac{Z_m + Z_f}{2} \right) \\
+=\frac{\sigma^2(Z_m) + \sigma^2(Z_f)}{4}$$
+
+Assumindo $\sigma^2(Z_m) = \sigma^2(Z_f) = \sigma_z^2$
+
+$$\therefore \ \sigma^2(Z_{mp}) = \frac{\sigma_z^2}{2}$$
+
+Portanto, ao fazermos a divisão dos termos, temos:
+
+$$\frac{\sigma(Z_{mp}, Z_0)}{\sigma^2(Z_p)} = \frac{\sigma_A^2}{\sigma_z^2} = h^2 \ \text{(herdabilidade no sentido restrito)}$$
+$\therefore \Delta\mu = h^2.S$ dessa variação fenotípica que eu estou veno é devido ao breeding value? Os efeitos aditivos, que é a parte que vai passar de uma geração com a outra.
+Temos que saber qual situação eu tenho (clonal ou reprodução) para saber qual herdabilidade eu vol utilizar no sentido amplo ou restrito e, então conseguir prever meu ganho.
+
 ## Herdabilidade e Equação do Melhorista
 
+- Lush(1943):
+
+$$R = \frac{\sigma_g \ . i \ . r}{L}$$
+Onde:
+
+- R é a mudança na característica por unidade de tempo (Resposta à seleção);
+
+- $\sigma_g$ é a variância genética;
+
+- i é a intensidade de seleção;
+
+- r é a acurácia de seleção (raiz quadrada da herdabilidade, correlação entre a média da progênie e o critério na qual a seleção foi feita);
+
+- L é o intervalo entre ciclos de seleção.
+
+Essa fórmula inclui o tempo, pois eu posso ter um método de seleção com um ganho alto, mas o tempo de seleção também é grande, o que pode não ser vantajoso. Ela é a mesma da herdabilidade no sentido restrito reescrita com o tempo:
+
+- $R = h^2.S$
+
+- $i = \frac{S}{\sigma_z}$ (Padronização do diferencial de seleção)
+
+$$\therefore R = \frac{\sigma_g^2 \ . i \ . \sigma_z}{\sigma_z^2} \\ 
+= \sigma_g \ . i \ . \frac{\sigma_g}{\sigma_z} \\
+= \sigma_g \ . i \ . r$$
+
+Essa equação mostra os parâmetors que eu posso alterar para obter a máxima resposta de seleção;
+
+- $\sigma_g$ a característica tem que ter variabilidade suficiente para ter ganho;
+
+- i o quanto eu vou selecionar, quantos desvios padrão da média eu vou selecionar (sob controle do melhorista);
+
+- r também está sob controle do melhorista através do delinamento da experimentação;
+
+- L maneiras de reduzir o tempo.
+
+
 ## Melhoramento de Plantas vs. Animais
+**Em plantas:**
+
+- é possível ter linhagens endogâmicas, homozigotas
+
+- é possível a produção de híbridos $F_1$;
+
+- é possível realizar a propagação vegetativa, clones (segregação transgressiva);
+
+**Em animais:**
+
+- Temos rebanhos de animais e o foco é aumentar a frequência dos alelos favoráveis.
+
 
 ## Como aumentar o R?
+**Em plantas:**
+Eu consigo manipular o L: se eu diminuir o ciclo eu aumento o R. Por exemplo, eu consigo fazer viveiros em diferentes estações. Posso fazer o shuttle breeding onde as estações possuem 2 localidades diferentes. E há também o spreed breeding onde as condições de luz na casa de vegetação são controladas.
+
+- Eu tenho maior controle sobre repetições, genótipos individuais podem ser replicados
+
+- Eu consigo fazer teste em múltiplos amientes e múltiplos anos. Aumentar o tamanho da parcela.
+
+- Melhoristas de plantas conseguem controlar melhor o cenário e assim controlar a herdabilidade.
+
+**Em animais:**
+Não há muita possibilidade de manipular L, uma alternativa é a seleção genômica. Em animais uma alternativa é utilizar indivíduos aparentados.
+
+## Herdabilidade de um genótipo replicado
+**Experimento em blocos:**
+
+$$H^2 = \frac{\sigma_g^2}{\sigma_g^2 + \frac{\sigma_e^2}{n}}$$
+
+em vez de eu usar 10 plantas eu posso fazer 1o repetições de cada planta, tirar a média e calcular a variância à nível de médias, que é:
+
+$$\sigma_p^2 = \sigma_g^2 + \frac{\sigma_e^2}{n}$$
+
+Ou seja, só de fazer repetições eu já tenho um controle sob a herdabilidade, pois eu divido a variância ambiental por n, aumentando a herdabilidade. Quando eu tiro a média eu calculo em BLUE (Best Linear Inbised Estimation).
+
+**Com múltiplos ambientes:**
+$$\sigma_p^2 = \sigma_g^2 + \frac{\sigma_{gy}^2}{y} + \frac{\sigma_{gl}^2}{l} + \frac{\sigma_{gyl}^2}{yl} + \frac{\sigma_e^2}{yln}$$
+
+A herdabilidade pode ser usada como uma medida de acurácia da equaçao do melhorista e do experimento.
+
+*Porém...* essa equação de R e herdabilidade são baseadas em pressupostos simplificados:
+
+- que o delineamente tem número de repetições iguais para cada genótipo;
+
+- os dados são balanceados;
+
+- delineamento: completamente ao acoso ou blocos ao acaso;
+
+- Valores genoípicos idênticos e distribuídos independentemente, observações não correlacionadas(sem indivíduos aparenteados);
+
+- uma única característica observada;
+
+- todos experimentos tem o mesmo erro (homogeneidade);
+
+- em muitos casos a seleção será baseada em BLUPs ao invés de BLUEs dos breeding values ou valores genotípicos.
+
+## Definições Generalizadas
+- Holland, Nyquist e Cervantes-Martinez (2003): herdabilidade apenas tem significado em unidades de seleção e resposta definidas:
+
+$$\bar{H}^2 = \frac{\sigma_g^2}{\sigma_g^2 + \frac{\bar{v}}{2}}$$
+
+$\bar{v}$ é a variância média da diferença de 2 tratamentos ajustados (BLUE)
+
+- Cullis, Smith e Coombes (2006): similar, porém com BLUP:
+
+$$\bar{H}^2 = 1 - \frac{\bar{v}BLUP}{2 \sigma_g^2}$$
+
+${\bar{v}BLUP}$ é a variância média da diferença de 2 BLUP.
+
+## Tarefa
+- Read Doerge (2002);
+
+- Read up to section 17.2 of Mackay et al. (2019). Write a short comment about it (5 lines);
+
+- Make a Youtube video (10-15 minutes) explaining heritability and the breeder’s equation. Audience: graduated students seeing the subject for the first time.
+
+### Doerge (2002) - Mapping and Analysis of QTL in Experimental Populations
+
+### Minha resposta
+
+- Read up to section 17.2 of Mackay et al. (2019). Write a short comment about it (5 lines)
+
+Na seção do capítulo é discutido como apesar de possuírem abordagens diferentes o melhoramento de plantas e animais são ligados pela equação do melhorista. E é discutido como no melhoramento de plantas há maior possibilidade de influenciar essa equação, seja pela possibilidade de mais ciclos por tempo ou de testar o mesmo genótipo em vários ambientes. E então, ter-se acesso à herdabilidade como medida de acurácia de seleção. No entanto, quanto mais parâmetro mais causa de variações surgem e pressupostos devem ser cumpridos, o que na maioria das vezes ocorre. Por fim, a maioria dos casos de seleção são baseados em BULP.
+
+
+- Make a Youtube video (10-15 minutes) explaining heritability and the breeder’s equation. Audience: graduated students seeing the subject for the first time.
+
+Vídeo: <https://youtu.be/Zj6FPBWl_BA>
+
+
+
+# Aula 06 - Modelos Multilocos
+## Interações
+Considere que tenho plantas de agrião em que a altura das plantas são medidas em diferentes condições (Com 9 repetições): 
+
+- Temperatura alta e baixa;
+
+- Diferentes horas de luz (8, 12, 16).
+
+![Interação](../Genetica_Quantitativa/imagens/img14.png)
+
+Pelo gráfico podemos notar que há interação entre os efeitos.
+
+Vamos começar com o modelo mais simples:
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+df <- read.csv("Ex_MultiLoco.csv")
+```
+
+- aov_full_1: $y_{ij} = \mu + a_i + b_j + ab_{ij} + \epsilon_{ij}$
+
+> df$Hours_Light_F <- factor(df$Hours_Light) # Definindo as horas de luz como fator 
+
+> aov_full_1 <- aov(Size ~ Night_Temp + Hours_Light_F + Night_Temp:Hours_Light_F) # Tamanho em função da temperatura horas de luz e da interação entre elas.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+df$Hours_Light_F <- factor(df$Hours_Light)
+aov_full_1 <- aov(Size ~ Night_Temp + Hours_Light_F + Night_Temp:Hours_Light_F, data = df)
+summary(aov_full_1)
+```
+
+Esse não é a melhor abordagem porque horas de luz é uma variável quantitativa, não um fator. Então vamos partir para um modelo mais completo, considerando as horas de luz como variável quantitativa:
+
+- aov_full_2: $y_{ij}= \mu + a_i + \beta_{bj} + a\beta_{ij} + \epsilon_{ij}$
+
+> aov_full_2 <- aov(Size ~ Night_Temp + Hours_Light + Night_Temp:Hours_Light)
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+aov_full_2 <- aov(Size ~ Night_Temp + Hours_Light + Night_Temp:Hours_Light, data = df)
+summary(aov_full_2)
+```
+
+Agora, ajustando a reta, a parábola e a interação:
+
+- aov_full_3: $y_{ij}= \mu + a_i + \beta_1 b_j + \beta_2 b_j^2 + (a \beta_1)_{ij} + (a \beta_2)_{ij} + \epsilon_{ij}$
+
+
+> aov_full_3 <- aov(Size ~ Night_Temp + Hours_Light + I(Hours_Light^2) +
+Night_Temp:Hours_Light + Night_Temp:I(Hours_Light^2))
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+aov_full_3 <- aov(Size ~ Night_Temp + Hours_Light + I(Hours_Light^2) +
+Night_Temp:Hours_Light + Night_Temp:I(Hours_Light^2), data = df)
+summary(aov_full_3)
+```
+
+Para o modelo de regressão, vamos considerar adicionando um termo de interação ($\beta_3$). O modelo é:
+
+$$y = \beta_0 + \beta_1x_1 + \beta_2x_2 + \beta_3x_1x_2 + \epsilon$$
+
+Por que um termo de multiplicação para medir a interação?
+
+$$y = \beta_0 + (\beta_1 + \beta_3x_2)x_1 + \beta_2x_2 + \epsilon \\
+= \beta_0 + \tilde{\beta}x_1 + \beta_2x_2 + \epsilon$$
+
+onde: $\tilde{\beta} = \beta_1 + \beta_3x_2$ 
+
+$\beta_3$ é o termo que mede a interação, e $\tilde{\beta}$ mede o impacto do $x_1$ no y, que será igual a $\beta_1$, apenas se $\beta_3$ for igual à zero. Nesse modelo eu meço a interação, pois o efeito da variável que depende da variável $x_2$, quando $\beta_3$ é diferente de zero que é quando há interação. Quando eu tenho interação e eu euso um modelo que há interação vai existir um viés.
+
+**Princípio Hierárquico:** se há um termo de interação em um modelo, ele deve ser incluso nos efeitos principais, mesmo que eles não sejam significativos.
+
+## Epistasia
+Estudar caracteres quantitativos para apenas um loco é bem simplificado. O mesmo é válido ao se assumir ausência de recombinação e intereção entre locus. Ao considerar mais de um loco mais informções eu tenho que levar em conta. Epistasia descreve o efeito não aditivo entre locus. 
+
+Vamos expandir o modelo:
+
+- 2 loco A e B;
+
+- Cada um com 2 alelos ($A_i$, $A_j$; $B_k$,$B_l$)
+
+$$G_{ijkl}= \mu_G + (\alpha_i + \alpha_j + \delta_{ij}) + (\alpha_k + \alpha_l + \delta_{kl}) + \epsilon_{ijkl}$$
+
+- $\epsilon_{ijkl}$ é para intereções entre loco.
+
+que é a decomposição de Fisher expandida.
+
+$\therefore z = G_B + G_C + G_{BC} + G + E$
+
+_Fenótipo = Gene(B) + Gene(C) + Interação(BxC) + Todos outros genes + Ambiente_
+
+Com apenas dois loco há 3 possibilidades de interações entre os efeitos:
+
+- aditiva x aditiva ($\alpha \alpha$)
+
+- aditiva x dominância ($\alpha \delta$)
+
+- dominância x dominância ($\delta\delta$)
+
+## Modelo de Quadrados Mínimos
+### Para o efeito aditivo
+Lembre-se que o efeito aditivo de um alelo é igual ao desvio dos membros da população com o alelo da média populacional. Portanto, para o alelo $A_i$:
+
+$$\alpha_i = G_{i...} - \mu_G$$
+
+- $G_{i...}$ é a média dos indivíduos com alelo i (independente dos outros). O mesmo vale para j,k,l.
+
+- Para cada loco, a média ponderada (pelas frequências) dos efeitos é _zero_.
+
+### Para o efeito de dominância
+Interação entre alelos do mesmo loco, posso modelar como desvios:
+
+$$\delta_{ij} = G_{ij..} - \mu_G - \alpha_i - \alpha_j$$
+
+$$\delta_{ij} = G_{..kl} - \mu_G - \alpha_k - \alpha_l$$
+
+Dominância é interação _interalélica_. É tudo aquilo que eu não consigo explicar somente com os efeitos aditivos.
+
+## Epistasia (do ponto de vista estatístico)
+Vamos tentar explicar com os efeitos principais e quando eu não consigo explicar apenas com eles, há interação, que chamamos de epistasia.
+
+### Interação Aditiva x Aditiva
+Eu tenho efeito aditivo num dado loco ($\alpha_i$) e do outro loco ($\alpha_k$).Interação entre locos diferentes. Se eu não consigo explicar apenas pelos efeitos aditivos de um loco é porque tem uma interação entre os efeitos aditivos de outro loco, eu não consigo explicar somente pelos efeitos marginais. O efeito aditivo de um loco interage com o efeito aditivo de outro loco.
+
+$$(\alpha\alpha)_{ik} = G_{i.k.} - \mu_G - \alpha_i - \alpha_k$$
+
+quando eles estão juntos (i e k) surge um desvio.
+
+### Epistasia Aditiva x Dominante
+Para um dos locos considero alelo e para outro considero genótipo. A interação do efeito aditivo do loco A com efeitos de dominância do B.
+
+$$(\alpha\delta)_{i.kl} = \mu_G - \alpha_i \alpha_k - \alpha_l - \delta_{kl} - (\alpha\alpha)_{ik} - (\alpha\alpha)_{il}$$
+
+Efeitos que surgem da interação dos efeitos principais. Ajustesequencial pelo princípio hierárquico.
+
+### Epistasia Dominância x Dominância
+Genótipo do loco A interagindo com genótipo do loco B.
+
+$$(δδ)_{ijkl} = G_{ijkl} − \mu_G − α_i − α_j − α_k − α_l − δ_{ij} − δ_{kl} − (αα)_{ik} − (αα)_{il} − (αα)_{jk} − (αα)_{jl} − (αδ)_{ikl} − (αδ)_{jkl} − (αδ)_{ijk} − (αδ)_{ijl}$$
+
+## Variância para Epistasia
+Sob cruzamento aleatório, a decomposição pode ser feita da seguinte maneira:
+
+$$σ^2_G = σ^2_A + σ^2_D + σ^2_{AA} + σ^2_{AD} + σ^2_{DD}+...$$
+com maior número de locus, temos uma ordem maior de interações. Interações epistáticas podem inflar os componentes aditivos/dominância da variância genética.
+
+## Introdução à Mapeamento QTL (Conjunto de dados de milho)
+Considere uma população $F_2$. Produtividade de grãos (Gy) e 12 marcadores. 0, 1 e 2 é uma codificação interessante para $F_2$. A ideia é que com 3 classes (n de genótipos) é possível tentar ajustar um modelo com grau 2.
+
+Aqui tentamos explicar o fenótipo (n de grãos) através do n de cópias do alelo no marcador M1 (0, 1 e 2). No mundo real eu não tenho o valor genotípico. Eu tento passar um modelo de Regressão Linear, que tenta capturar o efeito aditivo.
+
+![Modelo de Regressão](../Genetica_Quantitativa/imagens/img15.png)
+
+Se eu fizer uma regressão e descobrir o $\beta$ eu estimo o efeito aditivo.
+
+> # Ajuste o modelo em uma reta em função de M1 + efeitos quadráticos, que captura os efeitos de dominância (parábola), os desvio em relação à reta é uma parábola.
+
+> model <- lm(GY ~ M1 + I(M1^2)) 
+
+Estou fazendo uma análise marginal, olhando o efeito apenas do M1, ignorando o efeitos dos outros marcadores.
+
+$$y = ax + bx^2$$
+
+Analisando apenas o marcador 1 e seus efeitos:
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+milho <- read.csv("Ex_Milho.csv")
+model <- lm(GY ~ M1 + I(M1^2), data = milho)
+summary(model)
+```
+
+Analisando a epistasia do marcador 1 com o 12:
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+model2 <- lm(formula = GY ~ M1 + I(M1^2) + M12 + I(M12^2) + M1:M12 + M1:I(M12^2) + I(M1^2):M12 + I(M1^2):I(M12^2), data = milho)
+summary(model2)
+```
+
+## Tarefa
+- Read chapter 5 of Lynch & Walsh (1998);
+
+- Post what you understand about epistasis, explaining what are interactions additive by additive, additive by dominance, and so on (25 lines);
+
+- Cite one article (without Brazilian authors) estimating epistasis for a plant or animal species, highlighting the most relevant conclusions. Attach the pdf if the paper is open access.
+
+
+# Aula 07 
+## Desequilíbrio de Ligação
+As vezes, em uma população os alelos não se distribuem de maneira independente, eles têm uma associação, ou seja, uma covariância. 
+
+![Desequilíbrio de Ligação](../Genetica_Quantitativa/imagens/img16.png)
+
+- Em equilíbrio: não existe uma associação preferencial;
+
+- Em desequilíbrio: existe uma associação preferencial.
+
+Se os alelos estão ligados é fácil explicar essa associação preferencial, mas pode ser o caso também de haver uma vantagem adaptativa e a população foi selecionada. Essa medida de associação pode ser medida por covariância e correlação. Quando dois loco estiverem ligados, estes terão valores maiores de covariÂncia que 2 locos não ligados.
+
+Primeiro medimos associação entre alelos do mesmo loco:
+
+|                      |    AA    |    Aa    |    aa    |
+|:--------------------:|:--------:|:--------:|:--------:|
+| **Freq. Genotípica** | $p_{AA}$ | $p_{Aa}$ | $p_{aa}$ |
+|      **Gametas**     |     A    |   A, a   |     a    |
+
+Frequências:
+
+$$\begin{matrix} p_A = P_{AA} + \frac{1}{2} P_{Aa} \\ p_a = P_{aa} + \frac{1}{2} P_{Aa} \end{matrix} \left \{ \begin{matrix} P_{AA} = pA^2 \\ P_{Aa} = 2p_Ap_a \\ P_{aa} = p_a^2 \end{matrix} \right.$$
+
+Medir o desequilíbrio é também uma forma de avaliar o sistema de reprodução e o nível de endogamia.
+
+**Variável Aleatória**
+
+|       | Alelo | X | Frequência |
+|:-----:|:-----:|:-:|:----------:|
+| j = 1 |   A   | 1 |   $p_{A}$  |
+| j = 2 |   a   | 0 |   $p_{a}$  |
+
+_Variância:_
+
+$$E(x) = \sum p_jx_j = p_{A}.1 + p_a.0 = p_A$$
+$$E(x^2) = \sum p_jx_j^2 = p_{A}.(1)^2 + p_a.(0)^2 = p_A$$
+$$V(x) = E(x^2) - [E(x)]^2 = p_A - p_A^2 \\ = p_A(1 - p_A)$$
+
+Agora para dois alelos:
+
+|                      | $x_ix_j$ | Frequência |
+|:--------------------:|:--------:|:----------:|
+| $x_1$ = A, $x_2$ = A |   1 x 1  |  $p_{AA}$  |
+| $x_1$ = A, $x_2$ = a |   1 x 0  |  $p_{Aa}$  |
+| $x_1$ = a, $x_2$ = A |   0 x 1  |  $p_{aA}$  |
+| $x_1$ = a, $x_2$ = a |   0 x 0  |  $p_{aa}$  |
+
+_Covariância:_
+$$cov(x_1,x_2) = E(x_1,x_2) − E(x_1)E(x_2) \\= P_{AA} − p_{A}.p_{A} \\ = P_{AA} − p{A}^2$$
+
+_Correlação:_
+
+$$Cov(x_1,x_2) = Cov(A,a) = P_{AA} − p_{A}^2 \\ 
+= r(A,a) = \frac{Cov(A,a)}{V(x)} \\ 
+= \frac{P_{AA} − p_A^2}{p_A(1 − p_A)}$$
+
+$\therefore$ se não há associação preferencial, não há correlação e os alelos são associados ao acaso. Testar para o Equilíbrio HW é o mesmo que testar se há correlação entre os alelos do mesmo loco.
+
+_Correlação de alelos no mesmo loco $F_{IS}$:_
+Endogamia relativa à uma subpopulação. $r(A,a)$: Também conhecido como $F_{IS}$, ou $f_A$
+
+$$f_A = \frac{P_{AA} − p_A^2}{p_A(1 − p_A)} \\
+P_{AA} = P_A^2 + f_Ap_Ap_a$$
+
+Desequilíbrio: 
+
+- $P_{AA} + P_A^2 + D_{AA}$
+
+- $D_{AA} = f_Ap_Ap_a$
+
+Podemos definir:
+
+- $P_{aa} = p_a^2 + D_{aa}$
+
+- $P_{Aa} = 2P_Ap_a + 2D_{Aa}$
+
