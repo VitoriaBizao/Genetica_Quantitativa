@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Aula 01 - Introdução à Genética Quantitativa
-##  Características Quantitativas
+## Características Quantitativas
 
 **Características quantitativas** são de natureza métricas, ou seja, temos que avalia-las usando alguma escala de medida. Por terem natureza métrica são controladas por _muitos genes_. Elas foram descobertas por Fisher (1918), onde muitos conceitos foram consolidados neste paper. Na época:
 
@@ -72,7 +72,8 @@ A genética quantitativa começou com esse paper do Fisher, mas a discussão a r
 ## Galton's Data
 Galton tinha a altura média dos pais e a altura média dos filos. Ele obteve um gráfico mais ou menos assim:
 
-![Galton's Data](../Genetica_Quantitativa/imagens/img1.png)
+![Galton's Data](../Genetica_Quantitativa/imagens/img1.png){height="450px" width="500px"}
+
 
 Em uma primeira visualização podemos observar que pais mais altos tendem a ter filhos mais altos e, pais mais baixos tendem a ter filhos mais baixos. Existe, portanto, uma tendência, mas que não é _absoluta_. Observa-se também uma concentração de pontos em torno da media, ou seja, indivíduos medianos tem filhos com alturas medianas.
 
@@ -111,7 +112,7 @@ A herdabilidade está _relacionada com a covariância_ entre os eixos, porque o 
 
 Galton estava errado em dizer que haveria uma regressão em torno da média. Na verdade, se não fizermos nada a média e a variância continuarão sendo as mesmas. Se selecionarmos os pais com as maiores alturas termos a média dos indivíduos selecionados e alteraremos a média da geração seguinte:
 
-![Equação do melhorista](../Genetica_Quantitativa/imagens/img2.png)
+![Equação do melhorista](../Genetica_Quantitativa/imagens/img2.png){height="500px" width="400px"}
 
 Quando selecionamos a geração atual (ms) temos uma média igual a m1 da geração seguinte. Essa diferença entre a média da população e a média dos selecionado é o **diferencial de seleção**. Que pode ser exemplificado da seguinte maneira:
 
@@ -211,7 +212,7 @@ _Após a redescoberta das leis de Mendel surgiu a questão se era possível expl
 ## Distribuição de Probabilidades
 É um modelo matemático que gera uma curva cuja área é igual a 1. 
 
-![Distribuição de Probabilidades](../Genetica_Quantitativa/imagens/img3.png)
+![Distribuição de Probabilidades](../Genetica_Quantitativa/imagens/img3.png){height="450px" width="400px"}
 
 A curva $y=f(x)$ nesse exemplo é chamda de densidade de probabilidade de uma variável aleatória continua x. Cada variável contínua tem sua própria funça densidade. A probabilidade $Pr(a \leq x \leq b)$ é a área abaixo da curva entre x-valores a e b.
 
@@ -290,7 +291,7 @@ $$\mbox{valores genotípicos estabelecidos} \left \{ \begin{matrix} 1 = aa \\ 2 
 
 O número de indivíduos que temos em cada categoria depende da população que estamos trabalhando. Se fizermos a frequência alélica e a população estiver em equilíbrio de Hardy-Weinberg teremos $p^2$, $2pq$ e $q^2$ genótipos. Se cada alelo for 0.5, temos:
 
-![](../Genetica_Quantitativa/imagens/img5.png)
+![](../Genetica_Quantitativa/imagens/img5.png){height="400px" width="350px"}
 
 Nota-se que pelo gráfico não temos a distribuição normal, pois temos apenas 3 categorias (AA, Aa e aa) e a distribuição não temos apenas 3 categorias. Já quando há 2 genes controlando uma determinada característica, temos:
 
@@ -415,7 +416,7 @@ Será que quando os valores de x estão acima da média existe alguma relação 
 
 Se fizermos o produto de desvios positivos de x com desvios positivos de y teremos uma covariância positiva. E se fizermos o produto dos desvios negativos de x com os desvios negativos de y também termos uma covariância positiva. Ou seja, se tivermos produto de indivíduos com o mesmo sinal, a covariância deve ser positiva. Graficamente pode ser ilustrado da seguinte maneira:
 
-![Covariância](../Genetica_Quantitativa/imagens/img6.png)
+![Covariância](../Genetica_Quantitativa/imagens/img6.png){height="400px" width="350px"}
 
 A partir do gráfico, podemos perceber que existe um predomínio de pontos no quadrante positivo/positivo e no negati/negativo. Ou seja, a tendência é que essa covariância seja positiva. Se os pontos estiverem igualmente distribuídos ao longo dos quatro quadrantes, os efeitos irão se cancelar e a covariância será igual a zero. E se tivermos mais pontos nos quadrantes em que os indivíduos tem sinais diferentes teríamos covariâncias negativa.
 
@@ -646,7 +647,8 @@ O fato da maioria dos princípios de genética quantitativa poder serem expresso
 
 É sabido que a informação genética codificada para caracteres residem em longas cadeias de DNA chamadas de _cromossomos_. Sequências de DNA que codificam produtos em particular são chamados de _genes_ e, sua localização cromossomal é chamda de loco. A maioria dos organismos são diplóides, ou seja, tem 2 cópias de cada cromosssomo, Uma vez que a replicação do DNA é um processo imperfeito, surgem _mutações_ e como consequência as duas cópias de cada gene carregados por indivíduos diplóides não são necessariamente iguais. Essas várias formas de um gene são chamadas de _alelos_. Locos que possuem genes com mais de um alelo são chamdos de polimórficos.
 
-### Frequências alélicas e genotípicas
+**Frequências alélicas e genotípicas**
+
 Ao denotar o genótipo em um único loco, nós referimos ao para de alelos que um indivíduo carrega no loco. Indivíduos com dois alelos identicos são chamados de homozigotos e quando são diferentes são heterozigotos. Por exemplo, um loco dialélico pode ter os alelos $B_1$ e $B_2$ e seu genótipo possível: $B_1B_1$ e $B_2B_2$ são homozigotos e $B_1B_2$ heterozigoto.
 
 Frequências alélicas são definidas pelas frequências genotípicas. Suponha que $P_{11}$, $P_{12}$ e $P_{22}$ sejam frequências de $B_1B_1$, $B_2B_2$ e $B_1B_2$ na população. Como há um total de @N genes na população para cada loco autossômico, então, a freuncia do alelo $B_1$ é:
@@ -655,7 +657,8 @@ $$p_1 = \frac{2P_{11}N + 2P_{12}N}{2N} = P_{11} + \frac{1}{2}P_{12}$$
 
 Para características complexas influenciada por multiplos fatores ambientais e genéticos, é usualmente impossível de se ter certeza sobre o estado genotípico de um loco em particular. Em alguns casos, no entanto, a maioria da viarção genética de um carater depende em um único loco com grandes efeitos no qual, suas frequências podem ser estimadas diretamente.
 
-### Transmissão de informações genéticas - Princípio de Hardy-Weinberg
+**Transmissão de informações genéticas - Princípio de Hardy-Weinberg**
+
 Do ponto de vista de análise evolucional é crucial entender como as frequências alelicas e genotípicas muda de geração para geração. Tais mudanças podem ocorrer devido à: seleção natural, mutação, migração, cruzamento endogâmico e deriva genética dada amostragem de populações finitas. Esses efeitos podem ser minimizados ao se assumir uma população de tamanho infinito e cruzamento aleatório.
 
 Em populações sexuais, indivíduos não necessariamente produzem progênie cujo genótipo se iguala com o seu. Antes da reprodução, indivíduos produzem gametas haplóides através da meiose. Então. no loco, o heterozigoto $B_1B_2$ produz dois tipos de gametas $B_1$ e $B_2$, podendo produzir 3 tipos de progênie  $B_1B_1$, $B_1B_2$ e $B_2B_2$. Sob cruzamento aleatório, as frequências genotípicas esperadas na próxima geração é obtida do produto das frequências dos gametas masculinos ($p_{1m}$ e $p_{2m}$) e os gametas femininos ($p_{1f}$ e $p_{2f}$). Assim, a frequência do alelo $B_1$ na próxima geração é:
@@ -682,7 +685,8 @@ Caso as condições do princípios sejam cumpridas, o que se tem é que:
 
 - Apenas uma geração adicional é necessária para estabilizar as frequências genotípicas para as proporções preditas pelo EHW.
 
-### Caracterizando a influência de um loco no fenótipo
+**Caracterizando a influência de um loco no fenótipo**
+
 O fenótipo de um indivíduo pode ser particionado em:
 
 $$z = G + E$$
@@ -691,11 +695,12 @@ onde G é o fenótipo esperado, dado um genótipom resultando de uma expressão 
 
 Começando com um exemplo contendo apenas 2 alelos. Os três valore genotípicos podem ser representados pela escala:
 
-![](../Genetica_Quantitativa/imagens/img7.png)
+![](../Genetica_Quantitativa/imagens/img7.png){height="100px" width="500px"}
 
 onde 2a representa a diferença entre os fenótipos médios $B_2B_2$ e $B_1B_1$, e k dá uma medida de dominância. Os alelos $B_2$ e $B_1$ se comportam de maneira completamente aditiva quando k = 0, onde k = 1 implica em uma dominância completa do alelo $B_1$, e k = -1 um dominância completa do $B_2$. Se k > 1, a expressão fenotípica do heterozigoto excede ambos homozigostos e, o loco exibe _sobredominância_ no contrátio k < -1 implica _subdominância_.
 
-### A Base da Dominância
+**A Base da Dominância**
+
 Infelizmente a presença da dominância não pode ser ignorada na genética quantitativa pois há complicações em diversas fórmulas.
 Inicialmente em estudos, genes submetidos à análises eram apenas aqueles que possuiam grandes efeitos fenotípicos. Locos envolvendo tais genes geralmente são caracterizados por impressionanetes níveis de dominância. Por exemplo, a maioria dos genes com grande efeito deletério na adaptabilidade são recessivos. Isso indica que novas mutações são inerentemente recessivas? Fisher argumentou que uma vez que alelos raros são encontrados quase que exclusivamente no estado heterozigoto, seleção deveria favorecer aqueles alelos que modificam locos que causam o heterozigoto portador do alelo deletério se parecer com o homozigoto normal. Ou seja, a selação deveria favorecer os heterozigotos parecidos com o homozigoto, mesmo que ele seja portados do alelo deletério também. No entanto, esse argumento implica que o heterozigoto codifique um fenótipo intermediário. Utilizando argumentos fisiológicos Wright discordou fortemente de Fisher. Ele apontou que apesar das relações de dominância serem sujeitas à mudanças, a intensidade da seleção operando no loco modificador é improvável ser forte o suficiente para ser uma força evolucionária.
 
@@ -707,7 +712,8 @@ Muito depois, Kaser e Burns desencolveram uma explicação geral para a dominân
 
 3. Quanto menor o efeito da mutação, menos pronunciado será o nível de dominância. Tal resultado é esperado simplismente porque a relação entre BB, Bb e bb tende a linearidade enquanto os desvios entre suas atividades enzimáticas são reduzidas. Em princípio, a dominância é muito mais favorável a ser um fator de complicação para caracteres cuja variação é influenciada por um ou dois genes de grande efeito do que caracteres quantitativos codificados por vários locos cujo efeitos individuais são indetectáveis.
 
-### Decomposição de Fisher do Valor Genotípico
+**Decomposição de Fisher do Valor Genotípico**
+
 O número de cópias de um alelo em um genótipo ($N_2$ = 0, 1 ou 2) é dito como conteúdo gênico. A não ser que esse alelo interaja aditivamente com outros alelos, haverá uma relação não-linear entre o conteúdo gênico e seu valor genotípico. No entanto, é útil considerar a melhor aproximação linear para essa relação, pois isso leva à partição dos valores genotípicos em seus valores esperados com base na aditividade($\hat{G}$) e desvios dessas expectativas resultado da dominância ($\delta$).
 Isso pode ser formalizado por regressão de quadrados mínimos dos valores genotípicos no número de alelos $B_1$ e $B_2$ no genótipo ($N_1$ e $N_2$):
 
@@ -721,7 +727,7 @@ $$G_{ij} =  \mu_G + \alpha_1(2 - N_2) + \alpha_2N_2 + \delta_{ij} \\
 onde $\iota = \mu_G + 2\alpha_1$ é o intercepto. E a inclinação é dada por: $alpha = alpha_2 - alpha_1$
 
 Os valores preditos pela regressão são:
-![](../Genetica_Quantitativa/imagens/img8.png)
+![](../Genetica_Quantitativa/imagens/img8.png){height="100px" width="400px"}
 
 Sob cruzamento aleatório $\alpha$ é conhecido como valor médio da substituição alélica. Ele representa a mudança no valor genotípico resultado da mudança do alelo $B_1$ para $B_2$. Para um caso puramente aditivo $\alpha = a$. No entanto, para outros casos $\alpha$ também é função de k e das frequências alélicas. Isso é, resultdado porque com a dominância o efeito da substituição de um gene no fenótipo depende do statu do alelo não substituido.
 
@@ -731,16 +737,16 @@ Essa distinção é útil pois cruzamento aleatório na natureza em espécies di
 
 ### Minha resposta
 - Dê exemplos numéricos das identidades úteis
-[Exemplo Numérico](Numeric_Exemples.pdf)
+[Exemplo Numérico](./tarefas/Numeric_Exemples.pdf)
 
 - Prove que $b(x,y) = r \sqrt{\frac{var(y)}{var(x)}}$
-[Prova](Prova.pdf)
+[Prova](./tarefas/Prova.pdf)
 
 - Find a paper (review, article, website…) about the controversy between the mendelians and the biometrists. Present an overview about it.
 
-Segundo Darwin os organismos possuem variações nas características que ao longo do tempo e mudanças ambientais os poderiam oferecer vantagens que serão passadas aos seus descendentes. Mas a questão não respondida por ele era: como essas características são passadas? Em um grupo, os Biometristas, havia a tentativa de corroborar as teorias de Darwin por meio da avaliação de características contínuas. Esse grupo era representado por Pearson e Weldon. E então, em 1900, as leis de Mendel foram redescobertas. Seus dados sugerem a herança como sendo uma combinação de eventos discretos que levam a variações discretas nas características. Essa descoberta levou ao surgimento de um outro grupo, os Mendelianos. As leis de Mendel foram apresentadas por William Baterson na Royal Horticultural Society como uma forma de aplicar casos em que envolviam relação de dominância e as teorias de Galton que não se encaixavam. Bateson, que era um forte naturalista, porém um fraco matemático, teve um embate com Pearson que era seu oposto, um forte matemático, porém um pobre naturalista. Porém Pearson contava com a ajuda de Weldon para entender a parte biológica do problema. Weldon revistou as leis de Mendel e constatou que elas não eram universais para qualquer cruzamento e concluiu que Mendel errou ao negligenciar a ancestralidade. Wendel acabou falecendo em 1906 e Pearson utilizou suas anotações para determinar se poderia conciliar Mendelismo a uma regra estatística. Ele mostrou que as frequências em locos diferentes era estatisticamente independentes uma das outras nas gerações subsequentes. Esse conflito foi posto fim por Fisher que reconheceu a variabilidade contínua como sendo consequência do efeito cumulativo de muitos fatores mendelianos herdados de forma discreta, ou seja, agindo de maneira aditiva.
+_Segundo Darwin os organismos possuem variações nas características que ao longo do tempo e mudanças ambientais os poderiam oferecer vantagens que serão passadas aos seus descendentes. Mas a questão não respondida por ele era: como essas características são passadas? Em um grupo, os Biometristas, havia a tentativa de corroborar as teorias de Darwin por meio da avaliação de características contínuas. Esse grupo era representado por Pearson e Weldon. E então, em 1900, as leis de Mendel foram redescobertas. Seus dados sugerem a herança como sendo uma combinação de eventos discretos que levam a variações discretas nas características. Essa descoberta levou ao surgimento de um outro grupo, os Mendelianos. As leis de Mendel foram apresentadas por William Baterson na Royal Horticultural Society como uma forma de aplicar casos em que envolviam relação de dominância e as teorias de Galton que não se encaixavam. Bateson, que era um forte naturalista, porém um fraco matemático, teve um embate com Pearson que era seu oposto, um forte matemático, porém um pobre naturalista. Porém Pearson contava com a ajuda de Weldon para entender a parte biológica do problema. Weldon revistou as leis de Mendel e constatou que elas não eram universais para qualquer cruzamento e concluiu que Mendel errou ao negligenciar a ancestralidade. Wendel acabou falecendo em 1906 e Pearson utilizou suas anotações para determinar se poderia conciliar Mendelismo a uma regra estatística. Ele mostrou que as frequências em locos diferentes era estatisticamente independentes uma das outras nas gerações subsequentes. Esse conflito foi posto fim por Fisher que reconheceu a variabilidade contínua como sendo consequência do efeito cumulativo de muitos fatores mendelianos herdados de forma discreta, ou seja, agindo de maneira aditiva._ 
 
-Ps.: fica como recomendação esse vídeo (Vídeo: https://youtu.be/QmiwQ0Kosa8), que começa pelo problema de Darwin não conseguir explicar como as heranças são passadas, passa por Mendel e porquê suas ideias não foram tão divulgadas na época de publicação até chegar McClintock e os genes de transposição. Mas é bem superficial. O canal todo também é bem legal e didático.
+_Ps.: fica como recomendação esse vídeo (Vídeo: https://youtu.be/QmiwQ0Kosa8), que começa pelo problema de Darwin não conseguir explicar como as heranças são passadas, passa por Mendel e porquê suas ideias não foram tão divulgadas na época de publicação até chegar McClintock e os genes de transposição. Mas é bem superficial. O canal todo também é bem legal e didático._
 
 **Material base:**
 
@@ -769,7 +775,7 @@ em que G é a soma de todos os locos que controlam a caracerística. É também 
 
 Para representação de G por meio de uma escala, iremos considerar um único loco com dois alelos ($B_1$ e $B_2$) e três genótipos possíveis $B_1B_1$, $B_1B_2$ e $B_2B_2$.
 
-![Escala](../Genetica_Quantitativa/imagens/img7.png)
+![Escala](../Genetica_Quantitativa/imagens/img7.png){height="100px" width="400px"}
 
 A parte de baixo da escala mede o valor genotípico, ou seja, o quanto o gene B influencia na característica. Já a parte de cima da escala representa os gentótipos possíveis em uma população. Um indivíduo pode ocupar toda a escala ou apenas uma parte dela, isso dependerá do seu genótipo.
 
@@ -797,13 +803,13 @@ Na escala:
 
 O número de cópias de um alelo particular é referido como _conteúdo gênico_. E a menos que o alelo interaja aditivamente com todos os outros alelos, haverá uma relação não linear entre o conteúdo gênico e o valor genotípico (G). No entanto, é útil considerar a melhor aproximação linear para essa realção. Em 1918, Fisher estabeleceu uma relação entre o conteúdo gênico ($N_2$) e o valor genotípico (G). Graficamente temos:
 
-![](../Genetica_Quantitativa/imagens/img9.png)
+![](../Genetica_Quantitativa/imagens/img9.png){height="300px" width="300px"}
 
 Em função disso, ele fez a partição dos valores genéticos em função dos seus valores esperados. Uma parte ele chamou de aditividade e os desvios que ele conseguiu predizer chamou de dominância.
 
 Mesmo quando têm-se dominância é útil considerar que eles têm uma relação linear, pois isso leva a uma partição de valores esperados com base na aditividade ($\hat{G}$) e nos desvios das expectativas ($\delta$)
 
-![](../Genetica_Quantitativa/imagens/img10.png)
+![](../Genetica_Quantitativa/imagens/img10.png){height="300px" width="300px"}
 
 Nota-se que cada genótipo apresenta um desvio. Os pontos podem ser formalizados por regressão de quadrados mínimos dos valores genotípicos no número de alelos $B_1$ e $B_2$ no genótipo ($N_1$ e $N_1$):
 
@@ -900,21 +906,21 @@ Link Vídeo: <https://www.youtube.com/watch?v=pI2o08MiDCo&t=1s>
 
 **Capítulo 04 - Propriedades de loco único**
 
-A relevância da genética quantitativa está na possibilidade de extrapolar seus princípios à diversos genes e, o capítulo 04 trata das propriedades de loco único. O capítulo então se inicia pelas definições do que é um loco (localização cromossomal) e um alelo (formas de um gene). Em seguida é mostrado que a partir de uma população podemos calcular suas frequências genotípicas e alélicas, e que caso não haja influência de fatores externos (seleção, mutação, deriva, migração, cruzamento endogâmico), pelo cruzamento aleatório essas frequências tendem a ser estáveis ao longo das gerações (Equilíbrio de Hardy-Weinberg). E casos específicos como genes ligados ao sexo, poliploidia e estrutura etária possuem dinâmicas próprias para essas frequências.
+_A relevância da genética quantitativa está na possibilidade de extrapolar seus princípios à diversos genes e, o capítulo 04 trata das propriedades de loco único. O capítulo então se inicia pelas definições do que é um loco (localização cromossomal) e um alelo (formas de um gene). Em seguida é mostrado que a partir de uma população podemos calcular suas frequências genotípicas e alélicas, e que caso não haja influência de fatores externos (seleção, mutação, deriva, migração, cruzamento endogâmico), pelo cruzamento aleatório essas frequências tendem a ser estáveis ao longo das gerações (Equilíbrio de Hardy-Weinberg). E casos específicos como genes ligados ao sexo, poliploidia e estrutura etária possuem dinâmicas próprias para essas frequências._
 
-Além de entender a dinâmica dos locos através das gerações também é importante compreender a sua influência sobre o fenótipo, que sabemos ser resultado do genótipo. No capítulo Lynch & Wash dispõem os três valores genotípicos (B1B1, B1B2, B2B2), que são resultantes da combinação de 2 alelos (B1 e B2), em uma escala. Na qual o B2B2 tem valor genotípico igual a 2a, o B1B1 igual a zero e o heterozigoto (1+k)a, onde k é uma medida de dominância. O princípio da dominância foi explicado por Kaser e Burns por meio de princípios bioquímicos.
+_Além de entender a dinâmica dos locos através das gerações também é importante compreender a sua influência sobre o fenótipo, que sabemos ser resultado do genótipo. No capítulo Lynch & Wash dispõem os três valores genotípicos (B1B1, B1B2, B2B2), que são resultantes da combinação de 2 alelos (B1 e B2), em uma escala. Na qual o B2B2 tem valor genotípico igual a 2a, o B1B1 igual a zero e o heterozigoto (1+k)a, onde k é uma medida de dominância. O princípio da dominância foi explicado por Kaser e Burns por meio de princípios bioquímicos._
 
-Então o capítulo apresenta a decomposição do valor genotípico feito por Fisher, que relacionou o conteúdo gênico (no de cópias de um alelo) com o seu valor genotípico, através de uma aproximação linear por meio da regressão de quadrados mínimos. Essa aproximação particiona os valores genotípicos em valores esperados e seus desvios (dominância). E após diversas reduções e substituições da regressão temos que: α = a [1+k(p1+p2)]. E como α também é um função da covariância entre os valores genotípicos (G) e o número de alelos (N2) se, a covariância for zero, ou seja, se não houver associação entre G e N2, α também será zero. O que faz sentido, pois se não há associação entre os valores genotípicos e conteúdo gênico, o aumento ou diminuição do conteúdo gênico não irá refletir nos valores genotípicos e então o efeito médio de substituição alélica (α) será nulo. 
+_Então o capítulo apresenta a decomposição do valor genotípico feito por Fisher, que relacionou o conteúdo gênico (no de cópias de um alelo) com o seu valor genotípico, através de uma aproximação linear por meio da regressão de quadrados mínimos. Essa aproximação particiona os valores genotípicos em valores esperados e seus desvios (dominância). E após diversas reduções e substituições da regressão temos que: α = a [1+k(p1+p2)]. E como α também é um função da covariância entre os valores genotípicos (G) e o número de alelos (N2) se, a covariância for zero, ou seja, se não houver associação entre G e N2, α também será zero. O que faz sentido, pois se não há associação entre os valores genotípicos e conteúdo gênico, o aumento ou diminuição do conteúdo gênico não irá refletir nos valores genotípicos e então o efeito médio de substituição alélica (α) será nulo._ 
 
-E por último, o capítulo apresenta a partição da variância genética, pois se eu posso decompor o valor genotípico eu posso decompor suas variáveis, da seguinte forma: σG2 = σ2(Ĝ+δ) = σ2(Ĝ) + σ2(δ) + 2σ(Ĝ,δ), e como os desvios não são correlacionados com Ĝ, a sua covariância é zero, portanto temos a variância genética como a soma da variância aditiva com a variância de dominância. 
+_E por último, o capítulo apresenta a partição da variância genética, pois se eu posso decompor o valor genotípico eu posso decompor suas variáveis, da seguinte forma: σG2 = σ2(Ĝ+δ) = σ2(Ĝ) + σ2(δ) + 2σ(Ĝ,δ), e como os desvios não são correlacionados com Ĝ, a sua covariância é zero, portanto temos a variância genética como a soma da variância aditiva com a variância de dominância._
 
-Para finalizar, o meu destaque para esse capítulo vai para o exemplo 3, pois através dele foi possível visualizar melhor o que seria e quais as consequências de se alterar o “a” e o “k” na escala dos valores genotípicos. O exemplo apresenta o gene Booroola (B) que influencia na fertilidade de ovelhas. E seus valores genotípicos médios de bb, Bb e BB são, respectivamente, 1.48, 2.17 e 2.66. Se a se encontra na metade da escala seu valor será a diferença dos valores extremos (GBB - Gbb) dividido por dois, ou seja a =  (GBB - Gbb)/2 = (2.66-1.48)/2 = 0.59. Caso não houver dominância, a diferença nos valores genotípicos será puramente aditivo. E então, como encontramos o valor aditivo a = 0.59, a substituição do alelo b no homozigoto bb para o alelo B no heterozigoto deveria resultar em um acréscimo de 0.59 no seu valor genotípico, ou seja, 1.48+0.59(1+0) = 2.07. No entanto, o valor genotípico que vemos no heterozigoto é de 2.17, portanto pode ser que exista a influência de outro fator, que pode ser um erro ou o efeito de dominância. Como a posição do heterozigoto na escala é a(1+k) = GBb - Gbb, podemos encontrar k, que será igual a 0.17.
+_Para finalizar, o meu destaque para esse capítulo vai para o exemplo 3, pois através dele foi possível visualizar melhor o que seria e quais as consequências de se alterar o “a” e o “k” na escala dos valores genotípicos. O exemplo apresenta o gene Booroola (B) que influencia na fertilidade de ovelhas. E seus valores genotípicos médios de bb, Bb e BB são, respectivamente, 1.48, 2.17 e 2.66. Se a se encontra na metade da escala seu valor será a diferença dos valores extremos (GBB - Gbb) dividido por dois, ou seja a =  (GBB - Gbb)/2 = (2.66-1.48)/2 = 0.59. Caso não houver dominância, a diferença nos valores genotípicos será puramente aditivo. E então, como encontramos o valor aditivo a = 0.59, a substituição do alelo b no homozigoto bb para o alelo B no heterozigoto deveria resultar em um acréscimo de 0.59 no seu valor genotípico, ou seja, 1.48+0.59(1+0) = 2.07. No entanto, o valor genotípico que vemos no heterozigoto é de 2.17, portanto pode ser que exista a influência de outro fator, que pode ser um erro ou o efeito de dominância. Como a posição do heterozigoto na escala é a(1+k) = GBb - Gbb, podemos encontrar k, que será igual a 0.17._
 
 # Aula 04 - Breeding Values, Herdability e QTL
 ## Revisão de alguns conceitos da aula 03
 Considere uma escala métrica representando uma determinada característica:
 
-![Escala](../Genetica_Quantitativa/imagens/img11.png)
+![Escala](../Genetica_Quantitativa/imagens/img11.png){height="300px" width="100px"}
 
 Para essa característica estamos usando uma representação simbólica que apresenta uma escala de variação. Essa característica pode variar para uma determinada espécie. Essa escala métrica pode ser dividída em duas partes que explica a variação do caráter. Uma parte da variação é devido à fatores genéticos e outra parte é devido à fatores ambientais.
 
@@ -928,11 +934,11 @@ Na parte ambiental (E), temos:
 
 Na parte genética (G) vamos considerar que essas características é governada por três genes (A, B, e C):
 
-![G](../Genetica_Quantitativa/imagens/img12.png)
+![G](../Genetica_Quantitativa/imagens/img12.png){height="300px" width="150px"}
 
 O quanto esse loco A pode contribuir para o caráter? Considerando uma espécie diplóide e 2 alelos (A e a), podemos ter os seguintes genótipos para o loco A: AA, Aa e aa.
 
-![](../Genetica_Quantitativa/imagens/img7.png)
+![](../Genetica_Quantitativa/imagens/img7.png){height="100px" width="400px"}
 
 Se o genótipo é AA a planta terá o total da escala, ou seja, o efeito máximo que essa escala permite (2a). Se o genótipo é aa a planta terá o tamanho mínimo da escala, ou seja, o alelo a não tem efeito sobre essa característica. Quando representamos o efeito de uma determinada característica em uma escala devemos levar em consideração o _valor basal_ também conhecido como _fator de escala_. O alor basal é, se desconsiderarmos efeitos drásticos, é o mínimo que a planta produz quando todos efeitos do ambiente não acrescentam em nada pra o valor máximo e quando todos os alelos que poderiam aumentar a planta estão no valor mínimo da escala. Mesmo quando isso acontece essa planta vai rpoduzir alguma coisa.
 
@@ -1093,11 +1099,11 @@ Estimação da variação genotípica é simples na teoria, porém não tão sim
 
 
 ### Minha Resposta
-### Mostre a e quivalência entre a regressão e  modelo gamético para a decomposição genotípica de loco único
 
-[Resposta](Equivalência.pdf)
+- Mostre a e quivalência entre a regressão e  modelo gamético para a decomposição genotípica de loco único [Resposta](./tarefas/Equivalência.pdf)
 
-### Apresente em suas próprias palavras a definição dos termos:
+
+- Apresente em suas próprias palavras a definição dos termos:
 
 **1) Efeito aditivo -** o efeito aditivo é o quanto de mudança eu terei caso eu troque um alelo por outro, esse pode ser expressos pelos seus alelos ou em função do efeito médio de substituição alélica. O efeito aditivo também pode ser a inclinação da reta de regressão entre o conteúdo gênico e o número de alelos e nesse caso alfa está tentando capturar o efeito do a. 
 
@@ -1310,12 +1316,70 @@ ${\bar{v}BLUP}$ é a variância média da diferença de 2 BLUP.
 - Make a Youtube video (10-15 minutes) explaining heritability and the breeder’s equation. Audience: graduated students seeing the subject for the first time.
 
 ### Doerge (2002) - Mapping and Analysis of QTL in Experimental Populations
+As ideias avançasdas de Fisher e melecular de Sanger tornaram possível que a biologia passasse de uma ciência observacional para um onde é possível fazer predições, uma vez que a conexão entre genótipo e fenótipo é melhor compreendida. Caracteres complexos são desafiadores, pois é impossível seguir todas as regiões responsáveis pela variação do caráter sem saber como essas regiões segregam.
+
+Uma ferramenta desenvolvida para analisar grandes coleções de marcadores que eram utilizados para construção de maparas genéticos. Esses mapas forneceram os fundamentos para metodologias modernas de mapeamento de QTL. Essas tecnologias incluem: 
+
+- Mapeamento de marcador único;
+
+- Mapeamento de intervalo e;
+
+- Mapeamento multitrait
+
+que permitem análises estatísticas de associação entre fenótipo e genótipo para entender as regiões do genoma que afetam caracteres complexos. Uma limitação dessa tecnologia é o custo. Além disso, o conjunto de genes que se pensa contrinuir na variação geralmente fornece uma porcentagem limitada da variação total.
+
+A genômica trouxe uma nova perspectiva na resolução de caracteres complexos, pois sequências genômicas tem potencial de fornecer uma lista de gene de um organismo. Genomica funcional pode informar sobre: função gênica, interação entre genes e ambientes. Atualmente a tecnologia array é a que fornece maiores informações obre variação e função gênica, mas aesar de ser válida essa tecnologia, os dados nçao sçao conclusivos. A tradução de genes é outro passo na ação dos genes.
+
+**Mapeamento de QTL**
+
+Um QTL é uma região do genoma que é responsável pela variação em caracteres quantitativos. O objetivo de identificar tais regiões é difícil devido ao npumero de QTL e possíveis epistasias e interações entre o QTL e fontes adicionais de variação. Para combater isso delineamentos de QTL tentam minimizar as fontes de variação. E a partir de uma população encontra-se recombinantes. Com essa informação detecta-se e localiza-se QTL e faz-se associações entre caracteres quantitativos e marcadores genéticos.
+
+O primeiro passo de um mapeamento QTL é construir populações que se originam de homozigotos, ou seja, a F1 tende a ser toda heterozigota. A partir da F1 são feitos cruzamentos e a segregação dos marcadores é modelada. Se assume que a segregaçaão é aleatória, apesar dos marcadores estarem sujeitos à distorções. Uma vez que os dados foram coletados associações estatísticas entre os marcadores e os QTL são feitas, que podem ser uma simples ANOVA ou modelos que incluem multiplos marcadores.
+
+**Simple-marker tests**
+
+Single-marker tests indicam a segregação de um fenótipo dado um marcador, indica quais marcadores estão associados com a característica de interesse e, portanto indicam a existência de um possível QTL. Tipicamente, ahipótese nula testada é que a média da característica é independente do genótipo para um marcador específico. Quando rejeitada a hipótese nula implica que um QTL está associado com o marcador sob investigação. No entanto, o teste de ANOVA falha em fornecer uma aproximação da localização do QTL, ou a frequência de recombinação entre o marcador e o QTL. Isso porque o efeito QTL e a localização são confundidos ou não podem ser estimados separadamente. A confusão pode ser tratada ou se fixar a localização do QTL e estimar seu efeito entre intervalos (mapeamento de intervalo).
+
+Detectar marcadores através de testes single-marker é um procedimento simples, porém 2 problemas deverm ser considerados: 
+
+1. Tamanho da amostra, no n de indivíduos fornece a observação de eventos de recombinação e estimar parâmetros com maior acurácia;
+
+2. teste multiplos junto com o nível de significância que pode gerar falsos-positivos.
+
+Teste single-markers são úteis para detetar marcadores que segregam com uma característica, tipicamente a análise se foca na localização denômica.
+
+**Genetic Maps**
+
+Análises single-marker investiga marcadores individuais sem refrências à sua posição ou ordem. Quando marcadores são postos em ordem em um mapa genétipo, as relações entre os marcadores são entendidas e a informação adicional fornece a localização entre o QTL e seu efeito. Mapa genético também 
+fornece uma representação genética do cromossomo no qual os marcadores residem.
+
+Recombinação é a primeira estimativa para os marcadores que estão segregando segundo o esperado, e então qualquer marcador que seja linkada à qualquer outro grupo é colocado no mesmo grupo de ligação. O mapa genético estimado auxilia na estimação de informações de marcadores faltantes utilizando marcadores ao redor.
+
+É importante diferenciar eventos de recombinação e distância genética. A principal é que a distância é aditiva, enquanto que as unidades de recombinação não são, elas são probabilidades e por causa da interferênci genética. O valor prático do mapeamento é que um QTL pode ser mapeado mais facilmente. E a distância genética estimada entre eles é uma função do número médio de recombinações observadas. A unidade expressa a distância genética entre marcadores em um cromossomo é Morgan, e é definido como a distância na qual um evento de recombinação é esperado ocorrer por gameta por geração.
+
+A acurácia da localização de um QTL é limitada pela informação em um número particular de recombinações que é obtido após observar o estado genotípico de marcadores. Os recombinantes podem ser limitados tanto pelo número limitado da amostra e dos dados faltantes.
+
+**Mapeamento de Intervalo**
+
+O mapeamneto de intervalo foi popularizado por Eric Lander e David Botstein que usa um mapa genético estimado como base da localização do QTL. Os intervalos são definidos por pares ordenados de marcadores são procurados em quantidades e métodos estatísticos são utilizados para testar a probabilidades de haver ou não um QTL no intervalo. Os resultados são expressos em LOD scores (logaritmo das probabilidades), no qual compara a probabilidade sobre a hipótese nula com a alternativa (há QTL) para localizar o provável QTL.
+
+Mapeamento de intervalo busca pelos marcadores ordenados testanto a mesma hipótese nula linearmente e usando a mesma probabilidade em cada intervalo. Apesar do mapeamento de intervalo ser mais poderoso do que a abordagem de single-marker, é limitado pelo modelo que define e pela busca unidimensional que não permite interações entre múltiplos QTL.
+
+**Múltiplos QTL**
+
+Abordagens estatísticas para localizar múltiplos QTL são mais poderosos do que QTL únicos porque é possível diferenciar entre QTL ligados e que se interagem. Quando alelos de 2 ou mais QTL interagem há grande potencial de alternar a característica quantitativa de modo que é dificil predizer. QTL que interagem são interessantes por indicar regiões no genoma que podem estar associadas com a característica.
+
+Uma maneira geurística é primeiro localizar todos os QTL únicos e depois construir um modelo estatistico com esses QTL e suas interações e então buscar interações significantes. Essa abordagem tem muito potencial em diversas situações, mas são limitados ao pool de QTL que resulta da primeira análilse e, na esperanla do estabelecimento de efeitos epistáticos são verdadeiros.
+
+**Significância Estatística**
+
+Independentemente do modelo utilizado para estimar e localizar QTL, uma vezm que os testes estatísticos são calculados a probabilidade do evento é avaliada. A base estatística dessas comparações se baseiam em presunções do modelo e uma delas é que os valores das características quantitativas podem ser distribuidas normalmente, caso não obedeça essa pressuposição o procedimento torna-se impreciso. Uma forma de se obter a normalidade é usar dados simulados para testar e então o nível de significância e o threshold é estabelecido.
 
 ### Minha resposta
 
 - Read up to section 17.2 of Mackay et al. (2019). Write a short comment about it (5 lines)
 
-Na seção do capítulo é discutido como apesar de possuírem abordagens diferentes o melhoramento de plantas e animais são ligados pela equação do melhorista. E é discutido como no melhoramento de plantas há maior possibilidade de influenciar essa equação, seja pela possibilidade de mais ciclos por tempo ou de testar o mesmo genótipo em vários ambientes. E então, ter-se acesso à herdabilidade como medida de acurácia de seleção. No entanto, quanto mais parâmetro mais causa de variações surgem e pressupostos devem ser cumpridos, o que na maioria das vezes ocorre. Por fim, a maioria dos casos de seleção são baseados em BULP.
+_Na seção do capítulo é discutido como apesar de possuírem abordagens diferentes o melhoramento de plantas e animais são ligados pela equação do melhorista. E é discutido como no melhoramento de plantas há maior possibilidade de influenciar essa equação, seja pela possibilidade de mais ciclos por tempo ou de testar o mesmo genótipo em vários ambientes. E então, ter-se acesso à herdabilidade como medida de acurácia de seleção. No entanto, quanto mais parâmetro mais causa de variações surgem e pressupostos devem ser cumpridos, o que na maioria das vezes ocorre. Por fim, a maioria dos casos de seleção são baseados em BULP._
 
 
 - Make a Youtube video (10-15 minutes) explaining heritability and the breeder’s equation. Audience: graduated students seeing the subject for the first time.
@@ -1332,7 +1396,7 @@ Considere que tenho plantas de agrião em que a altura das plantas são medidas 
 
 - Diferentes horas de luz (8, 12, 16).
 
-![Interação](../Genetica_Quantitativa/imagens/img14.png)
+![Interação](../Genetica_Quantitativa/imagens/img14.png){height="400px" width="350px"}
 
 Pelo gráfico podemos notar que há interação entre os efeitos.
 
@@ -1469,15 +1533,16 @@ $$σ^2_G = σ^2_A + σ^2_D + σ^2_{AA} + σ^2_{AD} + σ^2_{DD}+...$$
 com maior número de locus, temos uma ordem maior de interações. Interações epistáticas podem inflar os componentes aditivos/dominância da variância genética.
 
 ## Introdução à Mapeamento QTL (Conjunto de dados de milho)
+
 Considere uma população $F_2$. Produtividade de grãos (Gy) e 12 marcadores. 0, 1 e 2 é uma codificação interessante para $F_2$. A ideia é que com 3 classes (n de genótipos) é possível tentar ajustar um modelo com grau 2.
 
 Aqui tentamos explicar o fenótipo (n de grãos) através do n de cópias do alelo no marcador M1 (0, 1 e 2). No mundo real eu não tenho o valor genotípico. Eu tento passar um modelo de Regressão Linear, que tenta capturar o efeito aditivo.
 
-![Modelo de Regressão](../Genetica_Quantitativa/imagens/img15.png)
+![Modelo de Regressão](../Genetica_Quantitativa/imagens/img15.png){height="550px" width="500px"}
 
 Se eu fizer uma regressão e descobrir o $\beta$ eu estimo o efeito aditivo.
 
-> # Ajuste o modelo em uma reta em função de M1 + efeitos quadráticos, que captura os efeitos de dominância (parábola), os desvio em relação à reta é uma parábola.
+_Ajuste o modelo em uma reta em função de M1 + efeitos quadráticos, que captura os efeitos de dominância (parábola), os desvio em relação à reta é uma parábola._
 
 > model <- lm(GY ~ M1 + I(M1^2)) 
 
@@ -1507,12 +1572,116 @@ summary(model2)
 
 - Cite one article (without Brazilian authors) estimating epistasis for a plant or animal species, highlighting the most relevant conclusions. Attach the pdf if the paper is open access.
 
+### Capítulo 5 - Sources of Genetic Variation for Multilocus Traits
+Quando procedemos de um gene de loco único para caracteres quantitativos é necessário introduzir novos conceitos. Primeiro, nós precisamos considerar se os valores genotípicos que são para um loco podem ser combinados aditivamente para explicar a variação fenotípica associada à genótipos multilocos ou se existem interações não lineares importantes. Segundo, precisamos considerar se a herança e distribuição de genes de um loco é independente de outros locos. Terceiro, diversas fontes de variação ambiental influencia na expressão de características poligênicas, e isso levanta a questão se a expressão do gene varia com o contexto ambiental ou se genótipos específicos são associados com ambientes particulares.
 
-# Aula 07 
+A ocorrência conjunta dessas fontes de variação dificulta identificar de forma precisa o breeding value de qualquer indivíduo. No entanto, é possível caracterizar populações a respeito das magnitudes relativas de diferentes fontes de variação fenotípica. A resposta a seleçãi de uma população depende primariamente do nível de dominância.
+
+**Epistasia**
+
+O efeito de dominância em um loco foi definido como os desvios do valor genotípico observado do esperado baseado nos efeitos aditivos. Dessa maneira, dominância é uma medida não aditiva dos efeitos alélicos dentro de um loco. Já a epistasia descreve o efeito não aditivo entre locos. 
+
+Um exemplo de epistasia responsável por um polimorfismo em flores é a morfologia das hastes. Morfologia longa possuem estames curtos e médios; intermediário tem estames curtos e longos; e pequenos possuem entames médios e longos. Cada morfologia é incompatível consigo mesma, mas pode cruzar com outros tipos. O polimorfismo eé determinado por dois locos dialélicos: curto e médio. A presença do alelo S no primeiro loco resulta em plantas de estilo curto independente do tipo do segundo alelo, assim, indivíduos carregando ss são de estilo médio se carregam um alelo M e de estilo longo se carregam um mm. Portanto, M é dominante em relação ao m, mas a interação epistática com o alelo S anula essa relação.
+
+Para ter um descrição mais quantitativa, considere um indivíduos com alelos $A_i$ e $A_j$ em um loco e, $B_i$ e $B_j$ em outro, o valor genotípico pode ser escrito como a soma dos efeitos dentro dos locos e um desvio dada interação entre locos:
+
+$$G_{ijkl} = \mu_G + (\alpha_i + \alpha_j + \delta_{ij}) + (\alpha_k + \alpha_l + \delta_{kl}) + \epsilon_{ijkl}$$
+
+Com apenas 2 locos espera-se que 3 interações podem surgir entre locos $\alpha \alpha$, $\alpha \delta$ e $\delta \delta$. Com 4 tipos adicionais são esperados, e quanto mais se aumentam os locos as interações aumentam.
+
+**Modelo Geral de Mínimos Quadrados para Efeitos Genéticos**
+
+Agora considere um procedimento estatístico para definição de efeitos de epistasia, que é uma extensão do modelo linear de 1 loco. 
+Considere 2 loco e cruzamento aleatório. O efeito aditivo de um alelo foi mostrado como os desvios dos membros da população com o alelo da média da população, sendo $G_i$ a média fenotípica dos indivíduos com alelo i, então:
+
+$$\alpha_i = G_{i...} - \mu_G$$
+
+isso segue analogamente para os outros 3 efeitos aditivos. Dentro de cada loco o valor médios dos efeitos é igual a zero.
+
+Os efeitos de dominância são definidos considerando $G_{ij..}$ a média dos indivíduos com alelos i e j no primeiro loco independente do segundo é:
+
+$$\delta_{ij} = G_{ij..} - \mu_G -\alpha_i - \alpha_j$$
+
+$$\delta_{kl} = G_{..kl} - \mu_G -\alpha_k - \alpha_l$$
+
+aqui os efeitos aditivos foram subtraídos deixando apenas para efeito de dominância, a parte não explicada da média.
+
+A definição dos efeitos epistáticos segue de maneira parecida, sendo $G_{i.k.}$ o fenótipo de indivíduos com gene i no loco 1 e k no loco 2, desconsiderando os outros genes o efeito aditivo x aditivo:
+
+$$(\alpha\alpha)_{ik} = G_{i.k.} - \mu_G - \alpha_i - \alpha_k$$
+
+O efeito aditivo x dominância mede a interação entre o alelo de um loco com um genótipo particular de outro loco:
+
+$$(\alpha\delta)_{i.kl} = \mu_G - \alpha_i \alpha_k - \alpha_l - \delta_{kl} - (\alpha\alpha)_{ik} - (\alpha\alpha)_{il}$$
+
+E o efeito de dominância x dominância:
+
+$$(δδ)_{ijkl} = G_{ijkl} − \mu_G − α_i − α_j − α_k − α_l − δ_{ij} − δ_{kl} − (αα)_{ik} − (αα)_{il} − (αα)_{jk} − (αα)_{jl} − (αδ)_{ikl} − (αδ)_{jkl} − (αδ)_{ijk} − (αδ)_{ijl}$$
+
+O particionamento do valor genotípico se inicia no efeito de menor ordem, e então progressivamente definimos efeitos de maiores ordens, cada vez contanto mais as variação residual possível. Os parâmetros nesse modelo dependem muito nas frequências genotípicas da população e podem mudar com a mudança da frequência alélica.
+
+Quando o cruzamento é aleatório e a segregação do loco é independente, não há relações estatísticas entre os genes dentro e entre loco. Portanto, a variância genética total é simplismente a soma da variância dos efeitos individuais.
+
+Devido ao fato dos efeitos serem definidos de forma hierárquica, pode-se esperar que a magnitude dos componentes de variância se tornam progressivamente menores em estágios mais altos da hierargquia. De fato, é comum se ignorar a epistasia. No entanto, dependendo da frequência dos genes envolvidos, interações de epistasia podem inflar os componentes aditivos e de dominância da variância genética. Mesmo que um efeito individual seja pequeno se as somas podem ser grandes.
+
+**Extensão para Haplóides e Poliplóides**
+
+Uma fração de organismos 'inferiores' como fungos e bactérias possuem ciclos de vida predominantemente haplóides e oferecem possibilidades de estudo interessante em variação genética. Uma vez que organismos haplóides possuem apenas um alelo para cada loco, a dominância não contrinui para a variação genética, então toda variação é resultado da ação não aditiva que envolve epistasia entre os efeitos aditivos.
+
+Quase todos os haplóides podem ser propagados vegetativamente, e é relativamente simples testar se a variação genética pode ser explicada por um modelo aditivo. Quando são tomadas medidas em um grande número de réplicas de um mesmo genótipo, a média das medidas serão um bom estimador do valor genotípico. Senão há ação gênica epistática, a média fenotípica da progênie produzida sexualmente não deve ser significamente diferente da média dos pais.
+
+O particionamento da variância genética é muito mais complicada em poliplóides, pois efeitos gênicos adicionais precisam ser levados em consideração. Em caso de tretaplóides há seis interações dialélicas potenciais por loco 4 de 3 alelos e uma de 4 alelos. Portanto, na ausência de interações entre locus, a variação genética total é 
+
+$$\sigma_G^2 = \sigma_A^2 + \sigma_B^2 + \sigma_T^2 + \sigma_Q^2$$
+
+onde $\sigma_B^2$, $\sigma_T^2$ e $\sigma_Q^2$ são as variâncias envolvendo interações bi, tri e quadra alélicas. Com epistasia essa expressão se torna muito mais complicada.
+
+**Ligação**
+
+Até agora temos tratado a transmissão de genes em locus diferentes como eventos independentes. O que geralmente é verdadeiro para genes que estão em cromossomos diferentes, mas quando estão ligados fisicamente no mesmo cromossomo, pode existir uma dependência estatística entre os genes que é incorporado nos gametas.
+
+Genes que se encontram no mesmo cromossomo tendem a ser herdados como um grupo, e essa tendência diminui conforme a distância aumenta. O Crossing-over é responsável por essa diminuição. 
+
+Frequências gaméticas são uma unidade fundamental em todas considerações de relações de ligação. Considere 2 locus dialélicos A e B, e as frequências dos gametas: $P_{A_1B_1}$, $P_{A_1B_2}$, $P_{A_2B_1}$, $P_{A_2B_2}$ e as frequências dos alelos $p_{A_1}$, $p_{A_2}$, $p_{B_1}$ e $p_{B_2}$. Se o estado alélico no loco A é completamente independente do B, então espera-se que $P_{A_1B_1} = p_{A_1}p_{B_1}$, $P_{A_1B_2} = p_{A_1} p_{B_2}$... Mo entanto, diversos fatores como seleção natural, efeito fundador, migração, cruzamento preferencial podem causar diferenças nas frequências gaméticas daquelas esperadas baseadas nas frequências alélias. Uma meidad do desvio é:
+
+$$D_{A_iB_j} = P_{A_iB_j} - p_{A_i}p_{B_j}$$
+
+Note que $D_{A_iB_j}$ pode ser negativo ou positivo, dependendo se $A_i$ e $B_j$ estão em união ou repulsão. D também é chamado de coeficiente de desequilíbrio de ligação. Mesmo na ausência de forças que causam o desequilíbrio, uma vez presente, pde persistir por várias gerações.
+
+A dinâmica esperada da fase gamética de desequilíbrio depende na fração de recombinação entre locus, c. Essa variável recebe valor mínimo de zero quado 2 genes estão tão ligados que eles segregam como um super gene.
+
+*Efeito do Desequilíbrio na Variância Genética* 
+
+Eventos que causam desequilíbrio de fase gamética são mais prováveis de ter efeitos quer persistem em pares bem ligados do que fracamente ligados ou locus não ligados. Se genes com influência positiva em um carater tende a ser associado em algum cromossomo, e aqueles com influência negativa em outros, a variação genética observada será inflada em relação a expectativa sobre cruzamento aleatório.
+
+
+### Minha Resposta  
+
+- Post what you understand about epistasis, explaining what are interactions additive by additive, additive by dominance, and so on (25 lines);
+
+_No meu entendimento epistasia é um efeito que devemos levar em consideração quando estamos querendo entender a parte genotípica de uma característica poligênica. Primeiro tentamos compreender a nível de um apenas um loco, os seus efeitos aditivo e de dominância. Mas como o próprio nome diz, a característica poligênica é controlada por diversos genes, e a epistasia mede justamente isso, a interação entre os genes de locus diferentes. E então, considerando 2 locus sob cruzamento aleatório essa interação pode ocorrer de 3 maneiras diferentes:_
+
+_- **Efeito aditivo x aditivo:** em que o efeito aditivo de um alelo interage com o efeito aditivo de outro alelo;_
+
+_- **Efeito aditivo x dominante:** em que o efeito aditivo de um alelo interage com o genótipo de outro loco;_
+
+_- **Efeito dominante x dominante:** em que a interação é entre 2 genótipos de 2 locus diferentes._
+
+_Dessa forma, quanto mais genes controlam a características pode haver mais interações e o nível de complexidade aumenta._
+
+
+
+- Cite one article (without Brazilian authors) estimating epistasis for a plant or animal species, highlighting the most relevant conclusions. Attach the pdf if the paper is open access.
+
+_No artigo escolhido a espécie em estudo é o arroz, que no Japão, é consumido tanto como alimento, quanto para produção de bebidas fermentadas. E para a produção de bebida há um cultivar específico, com tamanho maior e menores quantidades de proteínas e gorduras nas camadas superiores do grão. Portanto, para produção de bebidas é desejável o melhoramento das características formato e a granulação do grão. Em estudos anteriores, já haviam sido encontrados QTLs para o formato e peso do grão. Então nesse estudo o objetivo foi entender efeitos genéticos e epistáticos dos três QTLs, qGL4-2, qGWh5 e qGWh10, para a forma do grão e na granulação e qual a extensão da influência dos QTLs sobre os índices de rendimento do arroz. Para obter os marcadores as plantas foram genotipadas por 335 SNPs. Como resultado obtiveram que todos os alelos demonstram dominância incompleta, a ANOVA indicou um efeito de epistasia entre qGL4-2 e qGWh5 para largura e comprimento do grão, porém foram menor do que o previsto. Foi encontrado tbm efeitos epistáticos a forma do grão entre qGL4-2 e qGWh5 para largura (GWh) e espessura do grão (GT) e,  entre qGL4-2 e qGWh10 para comprimento do grão (GL). E como foi utilizado apenas homozigotos foi possível identificar a epistasia como aditiva-aditiva._
+
+Artigo - Okada, S., Iijima, K., Hori, K. et al. Genetic and epistatic effects for grain quality and yield of three grain-size QTLs identified in brewing rice (Oryza sativa L.).. Mol Breeding 40, 88 (2020). https://doi.org/10.1007/s11032-020-01166-0
+
+# Aula 07 - Modelo F∞-metric
 ## Desequilíbrio de Ligação
 As vezes, em uma população os alelos não se distribuem de maneira independente, eles têm uma associação, ou seja, uma covariância. 
 
-![Desequilíbrio de Ligação](../Genetica_Quantitativa/imagens/img16.png)
+![Desequilíbrio de Ligação](../Genetica_Quantitativa/imagens/img16.png){height="300px" width="450px"}
 
 - Em equilíbrio: não existe uma associação preferencial;
 
@@ -1566,7 +1735,7 @@ $$Cov(x_1,x_2) = Cov(A,a) = P_{AA} − p_{A}^2 \\
 
 $\therefore$ se não há associação preferencial, não há correlação e os alelos são associados ao acaso. Testar para o Equilíbrio HW é o mesmo que testar se há correlação entre os alelos do mesmo loco.
 
-_Correlação de alelos no mesmo loco $F_{IS}$:_
+_Correlação de alelos no mesmo loco $F_{IS}/F_A$:_
 Endogamia relativa à uma subpopulação. $r(A,a)$: Também conhecido como $F_{IS}$, ou $f_A$
 
 $$f_A = \frac{P_{AA} − p_A^2}{p_A(1 − p_A)} \\
@@ -1574,7 +1743,7 @@ P_{AA} = P_A^2 + f_Ap_Ap_a$$
 
 Desequilíbrio: 
 
-- $P_{AA} + P_A^2 + D_{AA}$
+- $P_{AA} + p_A^2 + D_{AA}$
 
 - $D_{AA} = f_Ap_Ap_a$
 
@@ -1582,5 +1751,552 @@ Podemos definir:
 
 - $P_{aa} = p_a^2 + D_{aa}$
 
-- $P_{Aa} = 2P_Ap_a + 2D_{Aa}$
+- $P_{Aa} = 2P_Ap_a - 2D_{Aa}$
 
+**Equilíbrio de Wright**
+
+$$P_{AA} + p_A^2 + D_{AA} = p_A^2 + f_Ap_Ap_a$$
+
+$$P_{Aa} = 2p_Ap_a - 2D_{Aa} \\
+= 2p_Ap_a - 2f_Ap_Ap_a \\
+= 2p_Ap_a(1 - f_A)$$
+
+$$P_{aa} + p_a^2 + D_{AA} = p_a^2 + f_Ap_Ap_a$$
+
+**Desequilíbrio de ligação de 2 locos**
+
+|   Gametas   |    AB    |    Ab    |    aB    |    ab    |
+|:-----------:|:--------:|:--------:|:--------:|:--------:|
+| Frequências | $P_{AB}$ | $P_{Ab}$ | $P_{aB}$ | $P_{ab}$ |
+
+Com associação aleatória:
+
+|       |   $P_B$  |   $P_b$  |
+|:-----:|:--------:|:--------:|
+| $P_A$ | $P_AP_B$ | $P_AP_b$ |
+| $P_a$ | $P_aP_B$ | $P_aP_b$ |
+
+Já vimos que:
+
+$$E(X) = p_A \\
+E(X^2) = p_A \\
+V(X) = p_A(1-p_A)$$
+
+$$E(Y) = p_B \\
+E(Y^2) = p_B \\
+V(Y) = p_B(1-p_B)$$
+
+**Covariância**
+
+Agora vamos calcular E(XY):
+
+![](../Genetica_Quantitativa/imagens/img17.png){height="150px" width="500px"}
+
+$$Cov(X,Y)=E(XY)−E(X)E(Y) \\
+= P_{AB} − p_{A}p_{B} \\ 
+= D_{AB}$$
+
+$$P_{AB} = p_Ap_B + D_{AB}$$
+
+Note a similaridade com $P_{AA} = p_A^2 + D_{AB}$
+
+- $P_{AB} = p_A p_B + D_{AB}$
+
+- $P_{Ab} = p_A p_b + D_{Ab}$
+
+- $P_{aB} = p_a p_B + D_{aB}$
+
+- $P_{ab} = p_a p_b + D_{ab}$
+
+**Correlação**
+
+Podemos usar D para calcular a correlação
+
+$$r_{AB} = \frac{Cov(X,Y)}{\sqrt{V(X)V(Y)}} \\
+= \frac{D_{AB}}{\sqrt{p_A(1-p_A)p_B(1 - p_B)}} \\
+= \frac{D_{AB}}{\sqrt{p_Ap_Bp_ap_b}}$$
+
+## Consequência para os compenentes de variância
+Para n locus:
+
+$$\sigma_A^2 = 2 \sum_{i=1}^{n} \alpha_i^2 p_i q_i + 2 \sum_{i=1}^{n} \sum_{j \neq 1}^{n} \alpha_i \alpha_j D_{ij}$$
+
+$$\sigma_D^2 = 4 \sum_{i=1}^{n} (\alpha_i k_i p_i q_i) + 4 \sum_{i=1}^{n} \sum_{j \neq 1}^{n} \alpha_i \alpha_j k_i k_j D_{ij}^2$$
+
+## Fatores, Contrastes e Reressão
+_Exemplo:_ Uma variável com 3 tratamentos - DIC
+
+Matricialmente:
+
+$$SS_{parâmetros} = \hat{\theta}^{T} . X^T . y$$
+
+No R:
+
+> model1 <- aov(y ~ trat)
+
+considera tratementos como fator com 3 níveis
+
+> model2 <- lm(y ~ trat) 
+
+Considera variável qunatitativa e irá ajusta uma regressão linear:
+
+$$y = \mu + \beta_2X_2 + \beta_3X_3 + \epsilon$$
+
+Quando eu estou fazendo análise de variância eu testo que pelo menos 1 dos contrastes é significativo.
+
+## Modelo $F_\infty$-métrico
+$F_\infty$ atribui uma população vinda de indivíduos $F_2$ autofecundados por t gerações:
+
+$$\left \{ \begin{matrix} G_0 = \mu - a \\ G_1 = \mu + d \\ G_2 = \mu + a \end{matrix} \right.$$
+
+Modelo:
+
+$$G = X \beta$$
+
+$$\begin{bmatrix} 
+  G_0  \\ 
+  G_1 \\ 
+  G_2 \\
+  \end{bmatrix} = 
+\begin{bmatrix} 
+  1 & -1 & 0 \\ 
+  1 & 0 & 1 \\ 
+  1 & 1 & 0 \\
+  \end{bmatrix} = 
+\begin{bmatrix} 
+  \mu \\ 
+  a \\ 
+  d \\
+  \end{bmatrix}$$
+
+**Resolução do sistema**
+
+$$\hat{\beta} = X^{-1} . G$$
+
+$$\begin{bmatrix} 
+  \mu \\ 
+  a \\ 
+  d \\
+  \end{bmatrix} =
+\begin{bmatrix} 
+  1/2 & 0 & 1/2 \\ 
+  -1/2 & 0 & 1/2 \\ 
+  -1/2 & 1 & -1/2 \\
+  \end{bmatrix} .
+\begin{bmatrix} 
+  G_0  \\ 
+  G_1 \\ 
+  G_2 \\
+  \end{bmatrix}$$
+
+- $\hat{\mu} = \frac{1}{2}G_0 + \frac{1}{2}G_2 = \frac{1}{2}(G_0 + G_2)$
+
+- $\hat{a} = -\frac{1}{2}G_0 + \frac{1}{2}G_2$
+
+- $\hat{d} = -\frac{1}{2}G_0 + G_1 - \frac{1}{2}G_2 = G_1 - \frac{1}{2}(G_0 + G_2)$
+
+Esse modelo apresenta 2 problemas:
+
+- Dificilmente eu sei os valores de $G_0$, $G_1$ e $G_2$;
+
+- Ele não leva em consideração a _estrutura populacoinal_.
+
+Consequentemente, se os desvios da vida real forem muito grandes daquilo que se assuma há problemas na interpretação e estimação.
+
+**Exemplo:**
+
+$$\begin{bmatrix} 
+  G_0  \\ 
+  G_1 \\ 
+  G_2 \\
+  \end{bmatrix} =
+\begin{bmatrix} 
+  117 \\ 
+  170 \\ 
+  227 \\
+  \end{bmatrix}$$
+
+## Contraste ou Regressão Linear?
+Alguns podem preferir a regressão, mas os resultados são os mesmos.
+
+$$g = \beta_0 + \beta_1x + \beta_2y$$
+
+_Matricialmente:_
+
+$$\begin{bmatrix} 
+  G_0  \\ 
+  G_1 \\ 
+  G_2 \\
+  \end{bmatrix} = 
+\beta_0
+\begin{bmatrix} 
+  1 \\ 
+  1 \\ 
+  1 \\
+  \end{bmatrix} +
+\beta_1 
+\begin{bmatrix} 
+  -1 \\ 
+  0 \\ 
+  1 \\
+  \end{bmatrix} +
+\beta_2
+\begin{bmatrix} 
+  0 \\ 
+  1 \\ 
+  0 \\
+  \end{bmatrix}$$
+
+no R:
+
+> m <- lm(G ~ X[,2] + X[,3])
+
+Esse modelo pode ser expandido diretamente para 2 ou mais locus:
+
+$$G_{ij} = \beta_0 + \sum_{t=1}^{8} \beta_t v_t$$ 
+
+$$v_1 = \left \{ \begin{matrix} 1 & \mbox{p/ AA} \\ 0 & \mbox{p/ Aa} \\ -1 & \mbox{p/ aa} \end{matrix} \right. \ \ \  v_2 = \left \{ \begin{matrix} 0 & \mbox{p/ AA} \\ 1 & \mbox{p/ Aa} \\ 0 & \mbox{p/ aa} \end{matrix} \right. \\ \ \\ \ \\
+v_3 = \left \{ \begin{matrix} 1 & \mbox{p/ BB} \\ 0 & \mbox{p/ Bb} \\ -1 & \mbox{p/ bb} \end{matrix} \right. \ \ \ v_4 = \left \{ \begin{matrix} 0 & \mbox{p/ BB} \\ 1 & \mbox{p/ Bb} \\ 0 & \mbox{p/ bb} \end{matrix} \right.$$
+
+**Alguns fatos:**
+
+- $\hat{\mu} = \frac{1}{4} (G_{22} + G_{20} + G_{02} + G_{00})$ média dos homozigotos (esse modelo assume que a população só tem homozigotos);
+
+- Pode ser visto como uma população de recombinantes (RIL);
+
+- Conhecido como modelo $F_\infty$ (infinitas gerações de autofecundação);
+
+- Nessa população é possível calcular os efeitos $\mu$, $a_1$, $a_2$ e $i_{aa}$;
+
+- Depois, considerando os heterozigotos os efeitos $d_1$, $d_2$, $i_{ad}$, $i_{da}$, $i_{dd}$ são adicionados;
+
+- O modelo não é baseado em uma população partcular;
+
+- Então $p =  \frac{1}{2}$ e a e $\alpha$ são iguais;
+
+- Não tem colinearidade, o modelo não é ortogonal.
+
+## Modelo $F_2$-Métrico
+- Fisher particionou a variância fenotípica em aditiva, dominante e epistasia. 
+
+- Cockerham propôs a subdivisão da variância epistática.
+
+Dada uma população:
+
+- Ele levou em consideração a frequência dos genótipos, e tenho a variância genética total;
+
+- É um fatorial 3x3;
+
+- 9 genótipos, 8 graus de lliberdade;
+
+- Na terminologia genética aditiva e dominância são usadas no lugar de _linear_ e _quadrática_;
+
+- Cockerham usou 8 escalas ortogonais, baseado no princípio de polinômios ortogonais.
+
+## Polinômios Ortogonais
+
+- Multicolinearidade é um problem conhecido em regressão;
+
+- A ideia para evitar esse problema é substituir as colunas da matriz X por coeficientes ortogonais. Transformação de tal forma que os polinômios sejam ortogonais entre si (Reescalonamento);
+
+- O R tem um algoritmo interno para esses ajustes.
+
+## Tarefa
+
+## Narula (1979) - Orthogonal Polynomial Regression
+
+# Aula 08 - Modelo $F_2$-Métrico
+## Polinômios Ortogonais - Narula (1979)
+No artigo o exemplo tenta explicar o custo de manutenção de tratores em função com a idade dos tratores (x). Quando eu faço um polinômio diretamente com os valores de X eu espero que haja uma colinearidade na matriz X, o que causa um problema numérico ao inverter a matriz. Então troca-se as colunas da matriz por coeficientes ortogonais (independentes).
+
+## Modelo $F_2$-Métrico (Cockerham, 1954)
+Fisher (1918) particionou a variância fenotípica em aditiva (resultado do efeito médio dos genes), dominante (interações alélicas) e epistática (interações não alélicas), só que na parte epistática não separou a epistática em aa, ad e dd. Cockerham propôs uma subdivisão da variação epistática.
+
+Dada uma população:
+
+- Na terminologia genética aditivo e dominância são usados no lugas que linear e quadrático, respectivamente;
+
+- Interações epistáticas: linear x linear, linear x quadrática, quadrática x quadrática;
+
+- Usando 8 escalas ortogonais baseadas nos princípios dos polinômios ortogonais.
+
+| Genótipo | $X_i$ | Frequência |
+|:--------:|:-----:|:----------:|
+|   $G_0$  |   0   |    $f_0$   |
+|   $G_1$  |   1   |    $f_1$   |
+|   $G_2$  |   2   |    $f_2$   |
+
+cor(x)
+
+|                  | AA                 | Aa               | aa                 |
+|------------------|--------------------|------------------|--------------------|
+| Valor Genotípico | $G_2$              | $G_1$            | $G_0$              |
+| Frequência       | $f_2$              | $f_1$            | $f_0$              |
+| $w_1$            | $2f_0 + f_1$       | $f_0 - f_2$      | $-(f_2 + f_1)$     |
+| $w_2$            | $- \frac{1}{8f_2}$ | $\frac{1}{4f_1}$ | $- \frac{1}{8f_0}$ |
+
+**Exemplo**
+
+|   X  |   0  |  1  |   2  |
+|:----:|:----:|:---:|:----:|
+| freq | 0.25 | 0.5 | 0.25 |
+
+$$\mbox{Linear} \left \{ \begin{matrix} w_1aa  = -(2f_2 + f_1) = -(2 \frac{1}{4} + 0.5) = -1 \\ 
+w_1Aa = f_0 - f_2 = 0.25 - 0.25 = 0 \\ 
+w_1AA = 2f_0 + f_1 = 2 \ . \ 0.25 + 0.5 = 1  \end{matrix} \right.$$
+
+$$\mbox{Quadrática} \left \{ \begin{matrix} w_2aa  = -\frac{1}{8f_2} = -\frac{1}{8 . \ 0.5} = -\frac{1}{2} \\ 
+w_1Aa = \frac{1}{4f_1} = \frac{1}{4 . \ 0.5}  = \frac{1}{2} \\ 
+w_1AA = - \frac{1}{8f_0} = - \frac{1}{8 . \ 0.25} = -\frac{1}{2} \end{matrix} \right.$$
+
+## Em uma população $F_2$ (Kao & Zeng, 2002)
+$F_2$ é usada como população de referência:
+
+$$G_{ij} = E_0 + \sum_{t=1}^{8} E_t W_{tij}$$
+
+$$W_1 = \left \{ \begin{matrix} 1 & \mbox{p/ AA} \\ 0 & \mbox{p/ Aa} \\ -1 & \mbox{p/ aa} \end{matrix} \right. \ \ \  W_2 = \left \{ \begin{matrix} - \frac{1}{2} & \mbox{p/ AA} \\ \frac{1}{2} & \mbox{p/ Aa} \\ - \frac{1}{2} & \mbox{p/ aa} \end{matrix} \right. \\ \ \\ \ \\
+W_3 = \left \{ \begin{matrix} 1 & \mbox{p/ BB} \\ 0 & \mbox{p/ Bb} \\ -1 & \mbox{p/ bb} \end{matrix} \right. \ \ \ W_4 = \left \{ \begin{matrix} - \frac{1}{2} & \mbox{p/ BB} \\ \frac{1}{2} & \mbox{p/ Bb} \\ - \frac{1}{2} & \mbox{p/ bb} \end{matrix} \right.$$
+
+- $W_5 = W_1.W_3$: linear x linear (aa);
+
+- $W_6 = W_1.W_4$: linear x quadrático (ad);
+
+- $W_7 = W_2.W_3$: quadrático x linear (da);
+
+- $W_8 = W_2.W_4$: quadrático x quadrático (dd).
+
+Esse modelo foi feito para ser ortogonal.
+
+**Variância do Contraste**
+$$\sigma_t^2 = \frac{(\sum_{ij} p_{ij} G_{ij} W_{tij})^2}{(\sum_{ij} p_{ij} G_{ij} W_{tij}{^2})}$$
+
+Se o determinante da matriz for diferente de zero siginifica que a matriz é ortogonal, está bem condicionada.
+
+$$E = X^{-1}G$$
+
+$$E_0 = \frac{G_{22}}{16} + \frac{G_{21}}{8} + \frac{G_{20}}{16} + \frac{G_{12}}{8} + \frac{G_{11}}{4} + \frac{G_{10}}{8} + \frac{G_{02}}{16} + \frac{G_{01}}{8} + \frac{G_{00}}{16}$$
+
+Diferente do $F_2$ o $F_\infty$ não considera a média da população inteira, apenas dos homozigotos.
+
+**Aditivo e Dominância**
+
+- No loco A:
+
+$$E_1 = \frac{G_{22}}{8} + \frac{G_{21}}{4} + \frac{G_{20}}{8} - \frac{G_{02}}{8} - \frac{G_{01}}{4} - \frac{G_{00}}{8}$$
+
+$$E_2 = \frac{G_{12}}{8} + \frac{G_{11}}{4} + \frac{G_{10}}{8} - \frac{G_{22}}{16} - \frac{G_{21}}{8} - \frac{G_{20}}{16} - \frac{G_{02}}{16} - \frac{G_{01}}{8} - \frac{G_{00}}{16}$$
+
+- No loco B:
+
+$$E_3 = \frac{G_{22}}{8} + \frac{G_{12}}{4} + \frac{G_{02}}{8} - \frac{G_{20}}{8} - \frac{G_{10}}{4} - \frac{G_{00}}{8}$$
+
+$$E_4 = \frac{G_{21}}{8} + \frac{G_{11}}{4} + \frac{G_{01}}{8} - \frac{G_{22}}{16} - \frac{G_{12}}{8} - \frac{G_{02}}{16} - \frac{G_{20}}{16} - \frac{G_{10}}{8} - \frac{G_{00}}{16}$$
+
+**Epistasia**
+
+- Aditiva x Aditiva:
+
+$$E_5 = \frac{(G_{22} - G_{02}) - (G_{20} - G_{00})}{4} = \frac{(G_{22} - G_{20}) - (G_{02} - G_{00})}{4}$$
+
+- Aditiva x Dominante:
+
+$$E_6 = \frac{(2G_{21} - G_{22} - G_{20}) - (2G_{01} - G_{02} - G_{00})}{4}$$
+
+- Dominante x Aditiva:
+
+$$E_7 = \frac{(2G_{12} - G_{22} - G_{02}) - (2G_{10} - G_{20} - G_{00})}{4}$$
+
+- Dominante x Dominante:
+
+$$E_8 = \frac{2(2G_{11} - G_{21} - G_{01}) - (2G_{12} - G_{22} - G_{02}) - (2G_{10} - G_{20} - G_{00})}{4} \\ 
+= \frac{2(2G_{11} - G_{12} - G_{10}) - (2G_{21} - G_{22} - G_{20}) - (2G_{01} - G_{02} - G_{00})}{4}$$
+
+## Variância Genética
+
+$$V_G = \frac{1}{2}a_1^2 + \frac{1}{4}d_1^2 + \frac{1}{2}a_2^2 + \frac{1}{4}d_2^2 + \frac{1}{4}i_{aa}^2 + \frac{1}{8}i_{ad}^2 + \frac{1}{8}i_{da}^2 + \frac{1}{16}i_{dd}^2$$
+
+Cada componente contribui para o parâmetro genético.
+
+**Comparação das médias marginais**
+
+|       Modelo      |               $\bar{G_2.}$(AA)               |               $\bar{G_1.}$(Aa)               |               $\bar{G_0.}$(aa)               |
+|:-----------------:|:--------------------------------------------:|:--------------------------------------------:|:--------------------------------------------:|
+|    $F_2$-metric   |          $\mu + a_1 +\frac{d_1}{2}$          |             $\mu + \frac{d_1}{2}$            |          $\mu - a_1 - \frac{d_1}{2}$         |
+| $F_\infty$-metric | $\mu + a_1 + \frac{d_2}{2} + \frac{i_{dd}}{2}$ | $\mu + d_1 +\frac{d_2}{2} + \frac{i_{dd}}{2}$ | $\mu - a_1 +\frac{d_2}{2} - \frac{i_{dd}}{2}$ |
+
+_Para o $F_\infty$-metric_:
+
+- A média marginal de um loco envolve o parâmetro genétco do outro loco e os parâmetros de epistasia;
+
+- A diferença entre os homozigotos não é igual ao parâmetro aditivo. 
+
+Por exemplo:
+
+$$\frac{\bar{G_{2.}} - \bar{G_{0.}}}{2} = a_1 + \frac{i_{ad}}{2} \ \ \ \mbox{(tem um viés)}$$
+
+mas para o $F_2$-metric:
+
+$$\frac{\bar{G_{2.}} - \bar{G_{0.}}}{2} = a_1$$
+
+**Podemos ignorar a epistasia?**
+
+Para o modelo de Cockerham, dada a ortogonalidade, os efeitos marginais dos QTL é assumido não enviesado se a epistasia. O que não é verdade no modelo $F_\infty$-metric, pois não é ortogonal e os efeitos aditivos e de dominância são confundidos com a epistasia. Por isso, a escolha do modelo deve ter importância.
+
+## Tarefa
+
+# Aula 09 - Semelhança Entre Parentes I: Coeficiente de Coancestria
+Assumindo ausência de GxE -> x e y são membros de uma relação particular (como meio-irmãos, irmãos-completo, etc). Os fenótipos:
+
+$$Z_x = G_x + E_x + \epsilon_x$$
+
+$$Z_y = G_y + E_y + \epsilon_y$$
+
+Qual seria a covariância fenotípica entre x e y (indivíduos aparentados)?
+
+$$\sigma^2(x,y) = \sigma[(G_x + E_x + \epsilon_x), (G_y + E_y + \epsilon_y)] \\
+= \sigma_G(x,y) + \sigma_{G,E}(x,y) + \sigma_{G,E}(y,x) + \sigma_E(x,y)$$
+
+Assumindo que não há covariância entre GxE:
+
+$$\sigma^2(x,y) = \sigma_G(x,y) + \sigma_E(x,y)$$
+
+- $\sigma_G(x,y)$ é uma consequência natural dos indivíduos herdarem cópias dos mesmos genes. Esse resultado pode ser usado para estimar variâncias genéticas em alguns cenários. Indivíduos aparentados, de alguma maneira compartilham genes e como calcular a covariância é importante e, indiretamente estimar fenótipos que não estão sendo observados.
+
+## Medias de associação/parentesco
+
+Relatedness/Grau de relacionamento é definido em termos (período de referência) de algum período de tempo específico, pois se voltar muito no tempo todos indivíduos possuem algum grau de parentesco, ancestral comum.
+
+Existem 3 medidas:
+
+- **Identidade por descendência (IBD):** genes IBD são descendentes diretos de um gene específico carregado por um ancestral. São cópias descendentes de um ancestral comum;
+
+- **Identidade em estado (IBS):** genes idênticos, mas que não vieram de um ancestral comum;
+
+- **Endogamia:** indivíduos que contém pares de alelos que são IBD.
+
+_Exemplo:_
+
+15 possibilidades de estados de identidade:
+
+- Dentro e entre indivíduos;
+
+- Conjunto de possibilidades dos diversos genótipos:
+
+- x e y são 2 indivíduos com algum relacionamento, com 4 alelos, há 6 possíveis relacionamento (2 a 2). Eles seguem a relação transitivo.
+
+
+
+- Ignorando a distinção entre genes maternais e paternais: 9 estados de identidade, cada um dos estados possui uma probabilidade ($\Delta_1$ à $\Delta_9$);
+
+- $\Delta_1$ à $\Delta_9$ fornecem uma descrição completa da distribuição de probabilidade de IBD entre locus em 2 indivíduos. O valor de $Delta$ depende na relação entre x e y.
+
+**Exemplo:**
+
+## Coeficiente de Coancestria 
+Coeficiente de cosanguinidade, parentesco. Dados genes de 2 indivíduos com algum relacionamento, pegando 1 gene ao acaso de cada indivíduo, a probabilidade desses genes seram IBD é o coeficiente de coancestria:
+
+$$\theta_{xy} = \Delta_1 + \frac{1}{2} (\Delta_3 + \Delta_5 + \Delta_7) + \frac{1}{4}\Delta_8$$
+
+quanto maior for essa probabilidade, mais aparentado eles são, ou seja, há uma covariância.
+
+# Aula 10 - Semelhança Entre Parentes II: Fraternidade entre Parentes
+## Coeficiente de Endogamia
+Considere um indivíduo z que é progênie de x e y. $\theta_{xy}$ é a probabilidade de 2 genes em um loco de z forem ibd. O coeficiente de endogamia é dado o indivíduo z ser progênie de x e y a probabilidade de 2 genes serem ibd, ou seja, mede o grau de parentesco entre x e y, pois eles serão iguais se os parentais tiverem algum grau de parentesco.
+
+$$f_z =  \theta_{xy}$$
+
+## Algumas derivações
+**Indivíduo com ele mesmo**
+
+- Sem endogamia ($A_1$, $A_2$):
+
+$$\theta_{xy} = \frac{1}{4} + \frac{1}{4} = \frac{1}{2}$$
+
+- Com endogamia ($A_1$, $A_2$):
+
+$$\theta_{xy} = \frac{1}{4} + \frac{1}{4}f_x + \frac{1}{4} + \frac{1}{4}f_x = \frac{1}{2}(1+f_x)$$
+
+**Pais e Filhos:**
+$$\theta_{po} = \frac{1}{4} (1 + f_p + 2f_o)$$
+
+**Irmãos Completos(m: mãe, p: pai):**
+$$\theta_{xy} = \frac{1}{8} (2 + f_m + f_f + 4\theta_{mf})$$
+
+Sem endogamia:
+
+$$\theta_{xy} = \frac{1}{4}$$
+
+## Cálculo (Falconer e Mackay, 1996)
+
+$$f_z = \sum \frac{1}{2}^n.(1+ f_{ancentral})$$
+
+n = número de indivíduos no caminho.
+
+## Coeficiente de fraternidade
+Probabilidade de genótipos de indivíduo sejam ibd:
+
+$$\Delta_{xy} = \theta_{m_xm_y}.\theta_{f_xf_y} + \theta_{m_xf_y}.\theta_{f_xm_y}$$
+
+ou
+
+$$\Delta_{xy} = \Delta_1 + \Delta_7$$
+
+_Sem endogamia:_$\Delta_{xy} = \Delta_7$
+
+## Covariância genética entre indivíduos aparentados
+**Pressupostos:**
+
+- Diplóide;
+
+- Cruzamento aleatório;
+
+- Sem desequilíbrio de ligação;
+
+- Sem GxE e covariância G,E.
+
+Pegamos 2 indivíduos de uma população onde todos os membros têm o mesmo relacionamento:
+
+$$\sigma_G(x,y) = \sigma_A(x,y) + \sigma_D(x,y) + \sigma_{AA}(x,y) + \sigma_{AD}(x,y) + \sigma_{DD}(x,y) \ ...$$
+## Covariância Genética Aditiva
+A covariância entre x e y causada pelos efeitos aditivos é:
+
+$$E[(\alpha_i^x + \alpha_j^x)(\alpha_i^y + \alpha_j^y)]$$
+
+A única forma da esperaça nãe ser 0 é se o alelo i for o mesmo nos indivíduos x e y, se isso ocorrer, então:
+
+$$E[(\alpha_i^x + \alpha_i^y) = E(\alpha_i^2)$$
+
+(metade da variância genética aditiva)
+
+E a probabilidade de i ser igal é $\theta_{xy}$, dessa forma temos a esperança como:
+
+$$4\theta_{xy}E(\alpha_i^2)$$
+
+_para todos os locus:_
+$$\sigma_A(x,y) = 2\theta_{xy}\sigma_A^2$$
+
+## Covariância Genética de Dominância
+
+$$E(\delta_{ij}^x\delta_{ij}^y)$$
+
+Os indivíduos precisam ter o mesmo genótipo. Se x e y são ibd para ambos os locus, então:
+
+$$E(\delta_{ij}^x\delta_{ij}^y) = E(\delta{ij}^2)$$
+
+Essa identidade tem uma probabilidade igual à $\Delta_{xy}$. Então:
+
+$$\sigma_D(x,y) = \Delta_{xy}\sigma_D^2$$
+
+## Covariância Epistática
+Precisa ter o mesmo alelo ibd:
+
+$$\sigma_{AA}(x,y) = (2\theta_{xy})^2 \sigma_{AA}^2$$
+
+$$\therefore \ \sigma_G(x,y) = 2\theta_{xy}\sigma_{A}^2 + \Delta_{xy} \sigma_{D}^2 + (2\theta_{xy})^2 \sigma_{AA}^2 + 2\theta_{xy} \Delta_{xy} \sigma_{AD}^2 + \Delta_{xy}^2 \sigma_{DD}^2$$
+
+## Componentes de Variância
+Essa covariâncias podem ser usadas para estimar os componentes de variância:
+
+_Casos particulares:_
+
+# Aula 11 - Estimação I: Efeitos Genéticos e Variâncias, Média e Análises One-Way
