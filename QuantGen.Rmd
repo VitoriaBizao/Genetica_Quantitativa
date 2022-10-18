@@ -737,9 +737,11 @@ Essa distinção é útil pois cruzamento aleatório na natureza em espécies di
 
 ### Minha resposta
 - Dê exemplos numéricos das identidades úteis
+
 [Exemplo Numérico](./tarefas/Numeric_Exemples.pdf)
 
 - Prove que $b(x,y) = r \sqrt{\frac{var(y)}{var(x)}}$
+
 [Prova](./tarefas/Prova.pdf)
 
 - Find a paper (review, article, website…) about the controversy between the mendelians and the biometrists. Present an overview about it.
@@ -748,11 +750,11 @@ _Segundo Darwin os organismos possuem variações nas características que ao lo
 
 _Ps.: fica como recomendação esse vídeo (Vídeo: https://youtu.be/QmiwQ0Kosa8), que começa pelo problema de Darwin não conseguir explicar como as heranças são passadas, passa por Mendel e porquê suas ideias não foram tão divulgadas na época de publicação até chegar McClintock e os genes de transposição. Mas é bem superficial. O canal todo também é bem legal e didático._
 
-**Material base:**
+_**Material base:**_
 
-Bulmer, Michael. The Ancestral Law and Mendelism. In: Bulmer, Michael. Francis Galton: Pioneer of Heredity and Biometry. Jhu Press, 2003. p. 255-264. 
+_Bulmer, Michael. The Ancestral Law and Mendelism. In: Bulmer, Michael. Francis Galton: Pioneer of Heredity and Biometry. Jhu Press, 2003. p. 255-264._
 
-Walter W. Piegorsch. Fisher's Contributions to Genetics and Heredity, with Special Emphasis on the Gregor Mendel Controversy. Biometrics, Dec., 1990, Vol. 46, No. 4 (Dec., 1990), pp. 915-924.
+_Walter W. Piegorsch. Fisher's Contributions to Genetics and Heredity, with Special Emphasis on the Gregor Mendel Controversy. Biometrics, Dec., 1990, Vol. 46, No. 4 (Dec., 1990), pp. 915-924._
 
 # Aula 03 - Decomposição do Valor Genotípico
 ## Frequências Alélicas e Genotípicas
@@ -900,7 +902,9 @@ Nota-se que a variância de $\sigma_A^2$ está relacionada com o efeito de subst
 
 - Faça um vídeo explicando os slides 3, 5, 11 e 14.
 
-Link Vídeo: <https://www.youtube.com/watch?v=pI2o08MiDCo&t=1s>
+Link Vídeo:
+
+<https://www.youtube.com/watch?v=pI2o08MiDCo&t=1s>
 
 ### Minha resposta
 
@@ -1105,15 +1109,15 @@ Estimação da variação genotípica é simples na teoria, porém não tão sim
 
 - Apresente em suas próprias palavras a definição dos termos:
 
-**1) Efeito aditivo -** o efeito aditivo é o quanto de mudança eu terei caso eu troque um alelo por outro, esse pode ser expressos pelos seus alelos ou em função do efeito médio de substituição alélica. O efeito aditivo também pode ser a inclinação da reta de regressão entre o conteúdo gênico e o número de alelos e nesse caso alfa está tentando capturar o efeito do a. 
+_**1) Efeito aditivo -** o efeito aditivo é o quanto de mudança eu terei caso eu troque um alelo por outro, esse pode ser expressos pelos seus alelos ou em função do efeito médio de substituição alélica. O efeito aditivo também pode ser a inclinação da reta de regressão entre o conteúdo gênico e o número de alelos e nesse caso alfa está tentando capturar o efeito do a._
 
-**2) Breeding value -** o breeding value é uma medida de capacidade do quanto um parental é capaz de passar para sua progênie em termos do alelo que aumenta a característica de interesse. Matematicamente ele é função da frequência dos alelos em uma população, o que é lógico uma vez que em uma população com grande número de alelos que aumentam a característica o parental carregar mais um é insignificante a nível populacional. Agora se o número é baixo inserir o alelo bom irá ter um maior impacto. Também pode ser visto como a soma dos efeitos aditivos, uma vez que o efeito aditivo é o quanto um alelo acrescenta ou diminui na característica, se o parental possui tal alelo a chance de sua progênie possuir tal efeito é alta.
+_**2) Breeding value -** o breeding value é uma medida de capacidade do quanto um parental é capaz de passar para sua progênie em termos do alelo que aumenta a característica de interesse. Matematicamente ele é função da frequência dos alelos em uma população, o que é lógico uma vez que em uma população com grande número de alelos que aumentam a característica o parental carregar mais um é insignificante a nível populacional. Agora se o número é baixo inserir o alelo bom irá ter um maior impacto. Também pode ser visto como a soma dos efeitos aditivos, uma vez que o efeito aditivo é o quanto um alelo acrescenta ou diminui na característica, se o parental possui tal alelo a chance de sua progênie possuir tal efeito é alta._
 
-**3) Variância aditiva -** variância aditiva é o quanto dos valores genéticos são explicados por desvios causados pelos efeitos de aditividade, ou seja qual variação o efeito de um alelo causa.
+_**3) Variância aditiva -** variância aditiva é o quanto dos valores genéticos são explicados por desvios causados pelos efeitos de aditividade, ou seja qual variação o efeito de um alelo causa._
 
-**4) Variância de dominância -** variância aditiva é o quanto os efeitos de dominância conseguem explicar os desvios da variância genética, ou seja qual a consequência da interação entre os alelos.
+_**4) Variância de dominância -** variância aditiva é o quanto os efeitos de dominância conseguem explicar os desvios da variância genética, ou seja qual a consequência da interação entre os alelos._
 
-**5) Variância genética -** variância é uma medida de dispersão, portanto variância genética é o quanto os valores de um genótipo diferem aquilo que é esperado.
+_**5) Variância genética -** variância é uma medida de dispersão, portanto variância genética é o quanto os valores de um genótipo diferem aquilo que é esperado._
     
 # Aula 05 - Herdabilidade, Ganho de Seleção e Mapeamento QTL
 ## Importante
@@ -1384,8 +1388,9 @@ _Na seção do capítulo é discutido como apesar de possuírem abordagens difer
 
 - Make a Youtube video (10-15 minutes) explaining heritability and the breeder’s equation. Audience: graduated students seeing the subject for the first time.
 
-Vídeo: <https://youtu.be/Zj6FPBWl_BA>
+Vídeo: 
 
+<https://youtu.be/Zj6FPBWl_BA>
 
 
 # Aula 06 - Modelos Multilocos
@@ -1616,7 +1621,7 @@ $$(\alpha\delta)_{i.kl} = \mu_G - \alpha_i \alpha_k - \alpha_l - \delta_{kl} - (
 
 E o efeito de dominância x dominância:
 
-$$(δδ)_{ijkl} = G_{ijkl} − \mu_G − α_i − α_j − α_k − α_l − δ_{ij} − δ_{kl} − (αα)_{ik} − (αα)_{il} − (αα)_{jk} − (αα)_{jl} − (αδ)_{ikl} − (αδ)_{jkl} − (αδ)_{ijk} − (αδ)_{ijl}$$
+$$(δδ)_{ijkl} = G_{ijkl} − \mu_G − α_i − α_j − α_k − α_l − δ_{ij} − δ_{kl} \\ − (αα)_{ik} − (αα)_{il} − (αα)_{jk} − (αα)_{jl} − (αδ)_{ikl} − (αδ)_{jkl} − (αδ)_{ijk} − (αδ)_{ijl}$$
 
 O particionamento do valor genotípico se inicia no efeito de menor ordem, e então progressivamente definimos efeitos de maiores ordens, cada vez contanto mais as variação residual possível. Os parâmetros nesse modelo dependem muito nas frequências genotípicas da população e podem mudar com a mudança da frequência alélica.
 
@@ -1670,12 +1675,11 @@ _- **Efeito dominante x dominante:** em que a interação é entre 2 genótipos 
 _Dessa forma, quanto mais genes controlam a características pode haver mais interações e o nível de complexidade aumenta._
 
 
-
 - Cite one article (without Brazilian authors) estimating epistasis for a plant or animal species, highlighting the most relevant conclusions. Attach the pdf if the paper is open access.
 
 _No artigo escolhido a espécie em estudo é o arroz, que no Japão, é consumido tanto como alimento, quanto para produção de bebidas fermentadas. E para a produção de bebida há um cultivar específico, com tamanho maior e menores quantidades de proteínas e gorduras nas camadas superiores do grão. Portanto, para produção de bebidas é desejável o melhoramento das características formato e a granulação do grão. Em estudos anteriores, já haviam sido encontrados QTLs para o formato e peso do grão. Então nesse estudo o objetivo foi entender efeitos genéticos e epistáticos dos três QTLs, qGL4-2, qGWh5 e qGWh10, para a forma do grão e na granulação e qual a extensão da influência dos QTLs sobre os índices de rendimento do arroz. Para obter os marcadores as plantas foram genotipadas por 335 SNPs. Como resultado obtiveram que todos os alelos demonstram dominância incompleta, a ANOVA indicou um efeito de epistasia entre qGL4-2 e qGWh5 para largura e comprimento do grão, porém foram menor do que o previsto. Foi encontrado tbm efeitos epistáticos a forma do grão entre qGL4-2 e qGWh5 para largura (GWh) e espessura do grão (GT) e,  entre qGL4-2 e qGWh10 para comprimento do grão (GL). E como foi utilizado apenas homozigotos foi possível identificar a epistasia como aditiva-aditiva._
 
-Artigo - Okada, S., Iijima, K., Hori, K. et al. Genetic and epistatic effects for grain quality and yield of three grain-size QTLs identified in brewing rice (Oryza sativa L.).. Mol Breeding 40, 88 (2020). https://doi.org/10.1007/s11032-020-01166-0
+_Artigo - Okada, S., Iijima, K., Hori, K. et al. Genetic and epistatic effects for grain quality and yield of three grain-size QTLs identified in brewing rice (Oryza sativa L.). **Mol Breeding** 40, 88 (2020)._ [(LINK)](https://doi.org/10.1007/s11032-020-01166-0)
 
 # Aula 07 - Modelo F∞-metric
 ## Desequilíbrio de Ligação
@@ -1826,6 +1830,19 @@ $$\sigma_D^2 = 4 \sum_{i=1}^{n} (\alpha_i k_i p_i q_i) + 4 \sum_{i=1}^{n} \sum_{
 ## Fatores, Contrastes e Reressão
 _Exemplo:_ Uma variável com 3 tratamentos - DIC
 
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+y <- c(1, 2, 3.5, 3, 5, 6)
+
+treat <- c("t1", "t1", "t2", "t2", "t3", "t3")
+
+data <- data.frame(y, treat)
+
+data
+
+str(data)
+```
+
+
 Matricialmente:
 
 $$SS_{parâmetros} = \hat{\theta}^{T} . X^T . y$$
@@ -1836,13 +1853,52 @@ No R:
 
 considera tratementos como fator com 3 níveis
 
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+model1 <- aov(y~treat, data = data)
+summary(model1)
+```
+
+Testa se se os tratamentos são diferentes entres si com 2 graus de liberdade, que na verdade são 2 contrastes.
+
 > model2 <- lm(y ~ trat) 
 
 Considera variável qunatitativa e irá ajusta uma regressão linear:
 
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+model2 <- lm(y~treat, data)
+summary(model2)
+```
+
 $$y = \mu + \beta_2X_2 + \beta_3X_3 + \epsilon$$
 
 Quando eu estou fazendo análise de variância eu testo que pelo menos 1 dos contrastes é significativo.
+
+Para descobrir com quais contrastes foram construídas as variáveis dummy:
+
+> contrasts(as.factor(treat))
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+contrasts(as.factor(treat))
+```
+
+Então, o trat2 para a inclinação da regressão as variáveis dummy 1 se t2 e 0 caso contrário, e o mesmo para t3.
+
+**Matricialmente**
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+X <- matrix(c(1,0,0,
+              1,0,0,
+              1,1,0,
+              1,1,0,
+              1,0,1,
+              1,0,1),byrow=T,ncol=3)
+X
+
+theta <- solve(t(X)%*%X, t(X)%*%y)
+theta
+```
+
+Note que os parâmetros em $\theta$ são os mesmo que os obtidos com o model2.
 
 ## Modelo $F_\infty$-métrico
 $F_\infty$ atribui uma população vinda de indivíduos $F_2$ autofecundados por t gerações:
@@ -1889,11 +1945,23 @@ $$\begin{bmatrix}
   G_2 \\
   \end{bmatrix}$$
 
-- $\hat{\mu} = \frac{1}{2}G_0 + \frac{1}{2}G_2 = \frac{1}{2}(G_0 + G_2)$
+*No R:*
 
-- $\hat{a} = -\frac{1}{2}G_0 + \frac{1}{2}G_2$
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+X <- matrix(c(1,-1,0,1,0,1,1,1,0),nrow=3,byrow=TRUE)
 
-- $\hat{d} = -\frac{1}{2}G_0 + G_1 - \frac{1}{2}G_2 = G_1 - \frac{1}{2}(G_0 + G_2)$
+X
+
+solve(X)
+```
+
+- $\hat{\mu} = \frac{1}{2}G_0 + \frac{1}{2}G_2 = \frac{1}{2}(G_0 + G_2)$ (uma critica é que eu uso apenas os homozigotos para encontrar a média geral do modelo, não uso todos indivíduos)
+
+- $\hat{a} = -\frac{1}{2}G_0 + \frac{1}{2}G_2$ (é um contraste entre a média dos homozigotos)
+
+- $\hat{d} = -\frac{1}{2}G_0 + G_1 - \frac{1}{2}G_2 = G_1 - \frac{1}{2}(G_0 + G_2)$ (é um constraste da média dos heterozigotos contra os homozigotos)
+
+- $\hat{a}$ e $\hat{d}$ são **contrastes**.
 
 Esse modelo apresenta 2 problemas:
 
@@ -1915,6 +1983,20 @@ $$\begin{bmatrix}
   170 \\ 
   227 \\
   \end{bmatrix}$$
+
+_Exemplo no R:_
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+G <- matrix(c(117,170,227))
+
+(beta <- solve(X,G))
+
+mean(G)
+
+(a <- (G[3]-G[1])/2)
+
+(d <- G[2]-mean(c(G[3],G[1])))
+```
 
 ## Contraste ou Regressão Linear?
 Alguns podem preferir a regressão, mas os resultados são os mesmos.
@@ -1951,6 +2033,11 @@ no R:
 
 > m <- lm(G ~ X[,2] + X[,3])
 
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+m <- lm(G ~ X[,2] + X[,3])
+summary(m)
+```
+
 Esse modelo pode ser expandido diretamente para 2 ou mais locus:
 
 $$G_{ij} = \beta_0 + \sum_{t=1}^{8} \beta_t v_t$$ 
@@ -1960,7 +2047,7 @@ v_3 = \left \{ \begin{matrix} 1 & \mbox{p/ BB} \\ 0 & \mbox{p/ Bb} \\ -1 & \mbox
 
 **Alguns fatos:**
 
-- $\hat{\mu} = \frac{1}{4} (G_{22} + G_{20} + G_{02} + G_{00})$ média dos homozigotos (esse modelo assume que a população só tem homozigotos);
+- $\hat{\mu} = \frac{1}{4} (G_{22} + G_{20} + G_{02} + G_{00})$ - média dos homozigotos (esse modelo assume que a população só tem homozigotos);
 
 - Pode ser visto como uma população de recombinantes (RIL);
 
@@ -1970,11 +2057,43 @@ v_3 = \left \{ \begin{matrix} 1 & \mbox{p/ BB} \\ 0 & \mbox{p/ Bb} \\ -1 & \mbox
 
 - Depois, considerando os heterozigotos os efeitos $d_1$, $d_2$, $i_{ad}$, $i_{da}$, $i_{dd}$ são adicionados;
 
-- O modelo não é baseado em uma população partcular;
+- O modelo não é baseado em uma população particular;
 
 - Então $p =  \frac{1}{2}$ e a e $\alpha$ são iguais;
 
 - Não tem colinearidade, o modelo não é ortogonal.
+
+
+**Exemplo:**
+$$G = X \beta$$
+![](imagens/img18.png)
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+X <- matrix(c(
+1,  1, 0,  1, 0,  1,  0,  0,  0,
+1,  1, 0,  0, 1,  0,  1,  0,  0,
+1,  1, 0, -1, 0, -1,  0,  0,  0,
+1,  0, 1,  1, 0,  0,  0,  1,  0,
+1,  0, 1,  0, 1,  0,  0,  0,  1,
+1,  0, 1, -1, 0,  0,  0, -1,  0,
+1, -1, 0,  1, 0, -1,  0,  0,  0,
+1, -1, 0,  0, 1,  0, -1,  0,  0,
+1, -1, 0, -1, 0,  1,  0,  0,  0),
+nrow=9,ncol=9,byrow=TRUE)
+
+X
+
+(solve(X))
+```
+
+Outro exemplo:
+![](imagens/img19.png)
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+G <- matrix(c(100,75,60, 81,48,52, 47,53,17))
+
+(beta <- solve(X,G))
+```
 
 ## Modelo $F_2$-Métrico
 - Fisher particionou a variância fenotípica em aditiva, dominante e epistasia. 
@@ -1989,21 +2108,104 @@ Dada uma população:
 
 - 9 genótipos, 8 graus de lliberdade;
 
-- Na terminologia genética aditiva e dominância são usadas no lugar de _linear_ e _quadrática_;
+- **Na terminologia genética aditiva e dominância são usadas no lugar de _linear_ e _quadrática_, respectivamente;**
 
 - Cockerham usou 8 escalas ortogonais, baseado no princípio de polinômios ortogonais.
 
+- Interações epistáticas: linear por linear, linear por quadrático, quadrático por linear e quadrático por quadrático.
+
+![](imagens/img20.png)
+
 ## Polinômios Ortogonais
 
-- Multicolinearidade é um problem conhecido em regressão;
+- Narula (1979) apresentou uma revisão sobre o assunto;
+
+- Multicolinearidade é um problema conhecido em regressão;
 
 - A ideia para evitar esse problema é substituir as colunas da matriz X por coeficientes ortogonais. Transformação de tal forma que os polinômios sejam ortogonais entre si (Reescalonamento);
 
 - O R tem um algoritmo interno para esses ajustes.
 
+_Exemplo:_ dados para 10 tratores, tentando explicar o custo de manutenção Y como função da idade X. Após reescalonar os dados seguem:
+
+![](imagens/img21.png)
+
+- O estimativas do modelo de regressão de: $(X^T X)^{-1}$
+
+No R:
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+X <- c(0,0,0,1,1,1,2,2,4,4)
+
+X
+
+(X_matrix <- cbind(X, X^2, X^3))
+
+(cor(X_matrix))
+```
+
+
 ## Tarefa
 
-## Narula (1979) - Orthogonal Polynomial Regression
+- Find an article (not including brazilian authors) that used the F∞-metric model to estimate genetic effects. Present a short overview about it (5 lines);
+
+- Provide a short explanation about what you understood regarding the F∞-metric model (20 lines);
+
+- Read Narula (1979) and briefly explain its major points (20 lines);
+
+- Find a tutorial, blog, review, etc, about multicollinearity and/or orthogonal polynomials. Read it and cite in the Forum, justifying your choice.
+
+### Narula (1979) - Orthogonal Polynomial Regression
+Regressão polinomial é utilizado para ajustar curvas. Geralmente, o investigador não sabe o grau do polinômio que descreve os dados adequadamente. Portanto, além de estimar os parâmetros desconhecidos do polinômio, o investigador tem que determinar o grau do polinômio, m. É necessário selecionar o m para que o modelo seja complexo o suficiente para descrever os dados e ao mesmo tempo simples o suficiente para se útil em uma situação aplicada. A medida que o grau do polinômio aumenta, melhor ele ajusta os dados. No entanto, o polinomial resultante não é muito útil para predição ou intra/extrapolação.
+
+No entanto, há duas abordagens para ajuste de dados: a abordagem polinomial original e a ortogonal. Estudos apontam que a ortogonal é mais eficiente.
+
+Diferenças:
+
+|                             |           **Ortogonal**          |           **Comum**          |
+|:---------------------------:|:--------------------------------:|:----------------------------:|
+|  **Teste de significância** |           independente           |          dependente          |
+| **Estimação de parâmetros** | não depende do grau do polinômio | depende do grau do polinômio |
+| **Erros de arredondamento** |           sem problemas          |     resultados imprecisos    |
+|   **Tempo computacional**   |               menor              |             maior            |
+
+Apesar da superioridade, o método ortogonal não é muito bem compreendido.
+
+### Minha Resposta
+- Find an article (not including brazilian authors) that used the F∞-metric model to estimate genetic effects. Present a short overview about it (5 lines);
+
+_O artigo que escolhi de Zhao, 2014 utilizou 1604 híbridos F1 e analisou os marcadores  Ppd-D1, Rht-B1 e Rht-D1 que sabia-se explicar até 40% da variação genética no peso de trigo. O modelo F∞-metric foi utilizado como regressão padrão para estimar seus efeitos no germoplasma, e para estimar as matrizes dos efeitos de dominância e aditivo. Como resultado o peso foi encontrado como altamente influenciado pelos locus Rht-B1 e Rht-D1. Além disso, o modelo mostrou interações epistáticas entre os efeitos aditivos e de dominância entre esses mesmos locus._
+
+_Zhao, Y., Mette, M., Gowda, M. et al. Bridging the gap between marker-assisted and genomic selection of heading time and plant height in hybrid wheat. **Heredity**. 112, 638–645 (2014)._ [(LINK)](https://doi.org/10.1038/hdy.2014.1)
+
+
+- Provide a short explanation about what you understood regarding the F∞-metric model (20 lines);
+
+_O modelo parte uma população de homozigotos em que os valores genotípicos de um gene dialélico (ex.: B1 e B2) podem ser representados em uma escala linear em que o homozigoto recessivo (B1B1) possui valor mínimo igual à -a, o dominante (B2B2) igual à +a, e o heterozigoto igual à d. Considerando que o alelo B2 é o gene que acrescenta na característica, o genótipo que apresenta zero cópias do alelos B2 (G0) terá valor genotípico igual à um parâmetro de escala menos o acréscimo (μ - a), o que possui uma cópia (G1) igual à μ + d, e o que possui duas cópias (G2) igual à μ+ a. Essas igualdades podem ser reescritas matricialmente e os parâmetros â, d^ e μ^ estimados pela forma: 𝛽^ = X^-1.G_
+
+_Em que â é um contraste entre G0 e G2, e d entre G1 e a média de G0 e G2, o que faz sentido pois o efeito de dominância são os desvios do valor do heterozigoto. O modelo também pode ser escrito na forma de regressão linear e então expandido para 2 ou mais locos._
+
+_No entanto, o modelo F∞-metric, desconsidera a estrutura populacional, no entanto, como vimos o efeito aditivo depende da população. Além disso, o modelo assume que a população possui apenas homozigotos, cada um com frequência 0.5, o que pode funcionar para uma população de RILs, mas não pode ser generalizada. Essas pressuposições do modelo que gera um problema de multicolinearidade._
+
+
+- Read Narula (1979) and briefly explain its major points (20 lines);
+
+_No artigo de Narula (1979), apresenta o problema de determinar polinômios ortogonais quando os valores são igualmente espaçados. Ao se ajustar dados para posteriormente fazer inferências sobre o mesmo, geralmente se utiliza um regressão polinomial, no entanto, muita das vezes o pesquisador não sabe qual o grau do polinômio que melhor explica seus dados. Então, pode-se utilizar duas abordagens no ajuste de dados através de polinômios: a comum e a ortogonal. Diversos estudos mostram que a ortogonal é mais eficaz, pois a estimação dos parâmetros não depende do grau do polinômio, o teste de significância é independente e o tempo computacional é menor, no entanto, muitas vezes há uma má compreensão. Dada essa incompreensão, o autor traz um exemplo de uma tabela para se obter grau do polinômio através de uma transformação. O grau (ξ1i) será definido pela variável independente (Xi) somada à uma outra variável desconhecida (a11). Então, multiplica-se ξ1i pelo número de observações de cada variável e uma propriedade é que o somatório dessas multiplicações tem que ser igual à zero. Ao se igualar o somatório por zero eu encontro a11 e com isso eu consigo estimar ξ1i. Por fim, o autor explica como expandir esse procedimento para regressão quadrática e cúbica._
+
+
+- Find a tutorial, blog, review, etc, about multicollinearity and/or orthogonal polynomials. Read it and cite in the Forum, justifying your choice.
+
+_Sobre a multicolinearidade encontrei um post do Songhao Wu no blog Towards Data Science, ele apresenta uma breve explicação do o que é, em seguida apresenta o porquê é um problema, dois exemplos de como detectar e três formas de como corrigir o problema. Escolhi esse porque achei a escrita fácil de entender e porque tem exemplos com códigos para reprodução da análise e, eu achei bem legal desse é que quase como uma rede social que discute problemas da ciência de dados, nele é possível acompanhar uma pessoa ou ler no “feed” o que diversas pessoas compartilham._
+
+_Outro blog que achei interessante é  Statistics Solutions, que na verdade presta um serviço de análise de dados, e tem seções para diversos tipos de análises que explica brevemente o que elas são e quais questões elas podem responder._
+
+_Também gostei bastante do Statistics by Jim, comentado pelos colegas anteriores._
+
+_**Links:**_
+
+_[Towards Data Science (Songhao Wu)](https://towardsdatascience.com/multi-collinearity-in-regression-fe7a2c1467ea)_ 
+
+_[Statistics Solutions](https://www.statisticssolutions.com/multicollinearity/)_
 
 # Aula 08 - Modelo $F_2$-Métrico
 ## Polinômios Ortogonais - Narula (1979)
@@ -2013,6 +2215,8 @@ No artigo o exemplo tenta explicar o custo de manutenção de tratores em funç�
 Fisher (1918) particionou a variância fenotípica em aditiva (resultado do efeito médio dos genes), dominante (interações alélicas) e epistática (interações não alélicas), só que na parte epistática não separou a epistática em aa, ad e dd. Cockerham propôs uma subdivisão da variação epistática.
 
 Dada uma população:
+
+![](imagens/img20.png)
 
 - Na terminologia genética aditivo e dominância são usados no lugas que linear e quadrático, respectivamente;
 
@@ -2143,6 +2347,9 @@ $$\frac{\bar{G_{2.}} - \bar{G_{0.}}}{2} = a_1$$
 Para o modelo de Cockerham, dada a ortogonalidade, os efeitos marginais dos QTL é assumido não enviesado se a epistasia. O que não é verdade no modelo $F_\infty$-metric, pois não é ortogonal e os efeitos aditivos e de dominância são confundidos com a epistasia. Por isso, a escolha do modelo deve ter importância.
 
 ## Tarefa
+- Show that w1 for Cockerham model can be obtained from a linear regression on allelic dosage after tranformation based on orthogonal polynomials. Use Narula (1979) algorithm.
+
+### Minha Resposta
 
 # Aula 09 - Semelhança Entre Parentes I: Coeficiente de Coancestria
 Assumindo ausência de GxE -> x e y são membros de uma relação particular (como meio-irmãos, irmãos-completo, etc). Os fenótipos:
@@ -2184,8 +2391,6 @@ _Exemplo:_
 
 - x e y são 2 indivíduos com algum relacionamento, com 4 alelos, há 6 possíveis relacionamento (2 a 2). Eles seguem a relação transitivo.
 
-
-
 - Ignorando a distinção entre genes maternais e paternais: 9 estados de identidade, cada um dos estados possui uma probabilidade ($\Delta_1$ à $\Delta_9$);
 
 - $\Delta_1$ à $\Delta_9$ fornecem uma descrição completa da distribuição de probabilidade de IBD entre locus em 2 indivíduos. O valor de $Delta$ depende na relação entre x e y.
@@ -2198,6 +2403,10 @@ Coeficiente de cosanguinidade, parentesco. Dados genes de 2 indivíduos com algu
 $$\theta_{xy} = \Delta_1 + \frac{1}{2} (\Delta_3 + \Delta_5 + \Delta_7) + \frac{1}{4}\Delta_8$$
 
 quanto maior for essa probabilidade, mais aparentado eles são, ou seja, há uma covariância.
+
+
+## Tarefa
+### Minha Resposta
 
 # Aula 10 - Semelhança Entre Parentes II: Fraternidade entre Parentes
 ## Coeficiente de Endogamia
@@ -2299,4 +2508,33 @@ Essa covariâncias podem ser usadas para estimar os componentes de variância:
 
 _Casos particulares:_
 
+## Tarefa
+### Minha Resposta
+
 # Aula 11 - Estimação I: Efeitos Genéticos e Variâncias, Média e Análises One-Way
+## Introdução
+## Expectativa para média de linhas de cruzamento
+## Definições
+## Efeito Composto
+## Efeitos Aditivos Compostos
+## Efeitos Aditivos e de Dominância Compostos
+## Heterose
+## Estimação dos Efeitos Compostos
+## Estimação dos Componentes de Variância
+## Princípios
+## ANOVA
+## Componentes de Variância
+## Tarefa
+### Minha Resposta
+
+# Aula 12 - Estimação II: Variancias Genéticas - Um fator, Desing I e II, Dialelo
+## Introdução
+## Pressupostos
+## Desing 1-factor
+### Meios-Irmãos
+### Tipos de Progênie
+## Delineamento Fatorial - North Carolina II
+## Delineamento I (Hierárquico)
+## Delineamento Dialelo
+
+# Aula 13 - Estimating Genetic Effects and Variances for Phenotype Data Desing III and Heterosis
