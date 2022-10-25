@@ -2209,7 +2209,34 @@ _[Statistics Solutions](https://www.statisticssolutions.com/multicollinearity/)_
 
 # Aula 08 - Modelo $F_2$-Métrico
 ## Polinômios Ortogonais - Narula (1979)
-No artigo o exemplo tenta explicar o custo de manutenção de tratores em função com a idade dos tratores (x). Quando eu faço um polinômio diretamente com os valores de X eu espero que haja uma colinearidade na matriz X, o que causa um problema numérico ao inverter a matriz. Então troca-se as colunas da matriz por coeficientes ortogonais (independentes).
+No artigo o exemplo tenta explicar o custo de manutenção de tratores em função com a idade dos tratores (x).
+
+![](imagens/img21.png)
+
+**Regressão Polinomial**
+
+```{r}
+X <- c(0,0,0,1,1,1,2,2,4,4)
+
+(X_matrix <- cbind(X, X^2, X^3))
+
+cor(X_matrix)
+```
+
+Quando eu faço um polinômio diretamente com os valores de X eu espero que haja uma multicolinearidade na matriz X, o que causa um problema numérico ao inverter a matriz. Então troca-se as colunas da matriz por coeficientes ortogonais (independentes).
+
+**Com coeficientes ortogonais**
+
+![](imagens/img22.png)
+
+```{r}
+X1 <- c(-3,-3,-3,-1,-1,-1,1,1,5,5)
+X2 <- c(178,178,178,-132,-132,-132,-237,-237,168,168)
+X3 <- c(-6,-6,-6,16,16,16,-18,-18,3,3)
+(X_matrix2 <- cbind(X1, X2, X3))
+
+cor(X_matrix2)
+```
 
 ## Modelo $F_2$-Métrico (Cockerham, 1954)
 Fisher (1918) particionou a variância fenotípica em aditiva (resultado do efeito médio dos genes), dominante (interações alélicas) e epistática (interações não alélicas), só que na parte epistática não separou a epistática em aa, ad e dd. Cockerham propôs uma subdivisão da variação epistática.
@@ -2230,7 +2257,12 @@ Dada uma população:
 |   $G_1$  |   1   |    $f_1$   |
 |   $G_2$  |   2   |    $f_2$   |
 
-cor(x)
+```{r}
+X <- c(0,0,1,1,1,1,2,2)
+X <- cbind(X, X^2)
+cor(X)
+```
+
 
 |                  | AA                 | Aa               | aa                 |
 |------------------|--------------------|------------------|--------------------|
@@ -2239,19 +2271,40 @@ cor(x)
 | $w_1$            | $2f_0 + f_1$       | $f_0 - f_2$      | $-(f_2 + f_1)$     |
 | $w_2$            | $- \frac{1}{8f_2}$ | $\frac{1}{4f_1}$ | $- \frac{1}{8f_0}$ |
 
+- $w_1$ e $w_2$ são contrastes ortogonais.
+
 **Exemplo**
 
 |   X  |   0  |  1  |   2  |
 |:----:|:----:|:---:|:----:|
 | freq | 0.25 | 0.5 | 0.25 |
 
-$$\mbox{Linear} \left \{ \begin{matrix} w_1aa  = -(2f_2 + f_1) = -(2 \frac{1}{4} + 0.5) = -1 \\ 
+$$\mbox{Linear} \left \{ \begin{matrix}
+w_1aa  = -(2f_2 + f_1) = -(2 \frac{1}{4} + 0.5) = -1 \\ 
 w_1Aa = f_0 - f_2 = 0.25 - 0.25 = 0 \\ 
-w_1AA = 2f_0 + f_1 = 2 \ . \ 0.25 + 0.5 = 1  \end{matrix} \right.$$
+w_1AA = 2f_0 + f_1 = 2 \ . \ 0.25 + 0.5 = 1 
+\end{matrix} \right.$$
 
 $$\mbox{Quadrática} \left \{ \begin{matrix} w_2aa  = -\frac{1}{8f_2} = -\frac{1}{8 . \ 0.5} = -\frac{1}{2} \\ 
 w_1Aa = \frac{1}{4f_1} = \frac{1}{4 . \ 0.5}  = \frac{1}{2} \\ 
 w_1AA = - \frac{1}{8f_0} = - \frac{1}{8 . \ 0.25} = -\frac{1}{2} \end{matrix} \right.$$
+
+_No R:_
+
+```{r}
+X <- c(0,0,1,1,1,1,2,2)
+(freq <- table(X)/length(X))
+
+w1_aa <- -1   ;   w1_Aa <-  0   ;   w1_AA <-  1
+w2_aa <- -1/2 ;   w2_Aa <-  1/2 ;  w2_AA <- -1/2
+
+X_add <- c(-1,-1,0,0,0,0,1,1)
+X_dom <- c(-1/2,-1/2,1/2,1/2,1/2,1/2,-1/2,-1/2)
+
+(X_F2 <- cbind(X_add,X_dom))
+
+cor(X_F2)
+```
 
 ## Em uma população $F_2$ (Kao & Zeng, 2002)
 $F_2$ é usada como população de referência:
@@ -2275,6 +2328,36 @@ Esse modelo foi feito para ser ortogonal.
 $$\sigma_t^2 = \frac{(\sum_{ij} p_{ij} G_{ij} W_{tij})^2}{(\sum_{ij} p_{ij} G_{ij} W_{tij}{^2})}$$
 
 Se o determinante da matriz for diferente de zero siginifica que a matriz é ortogonal, está bem condicionada.
+
+**Contrastes**
+
+![Contrastes](imagens/img23.png)
+_No R_
+
+```{r}
+X <- matrix(c(
+1,  1, -1/2,  1, -1/2,
+1,  1, -1/2,  0,  1/2,
+1,  1, -1/2, -1, -1/2,
+1,  0,  1/2,  1, -1/2,
+1,  0,  1/2,  0,  1/2,
+1,  0,  1/2, -1, -1/2,
+1, -1, -1/2,  1, -1/2,
+1, -1, -1/2,  0,  1/2,
+1, -1, -1/2, -1, -1/2),
+nrow=9,ncol=5,byrow=TRUE)
+
+X <- cbind(X,X[,2]*X[,4],X[,2]*X[,5],
+           X[,3]*X[,4],X[,3]*X[,5])
+X
+
+det(X)
+
+eigen(X)
+
+solve(X)
+```
+
 
 $$E = X^{-1}G$$
 
@@ -2302,18 +2385,26 @@ $$E_4 = \frac{G_{21}}{8} + \frac{G_{11}}{4} + \frac{G_{01}}{8} - \frac{G_{22}}{1
 
 $$E_5 = \frac{(G_{22} - G_{02}) - (G_{20} - G_{00})}{4} = \frac{(G_{22} - G_{20}) - (G_{02} - G_{00})}{4}$$
 
+![](imagens/img24.png)
+
 - Aditiva x Dominante:
 
 $$E_6 = \frac{(2G_{21} - G_{22} - G_{20}) - (2G_{01} - G_{02} - G_{00})}{4}$$
+
+![](imagens/img25.png)
 
 - Dominante x Aditiva:
 
 $$E_7 = \frac{(2G_{12} - G_{22} - G_{02}) - (2G_{10} - G_{20} - G_{00})}{4}$$
 
+![](imagens/img26.png)
+
 - Dominante x Dominante:
 
 $$E_8 = \frac{2(2G_{11} - G_{21} - G_{01}) - (2G_{12} - G_{22} - G_{02}) - (2G_{10} - G_{20} - G_{00})}{4} \\ 
 = \frac{2(2G_{11} - G_{12} - G_{10}) - (2G_{21} - G_{22} - G_{20}) - (2G_{01} - G_{02} - G_{00})}{4}$$
+
+![](imagens/img27.png)
 
 ## Variância Genética
 
@@ -2346,10 +2437,64 @@ $$\frac{\bar{G_{2.}} - \bar{G_{0.}}}{2} = a_1$$
 
 Para o modelo de Cockerham, dada a ortogonalidade, os efeitos marginais dos QTL é assumido não enviesado se a epistasia. O que não é verdade no modelo $F_\infty$-metric, pois não é ortogonal e os efeitos aditivos e de dominância são confundidos com a epistasia. Por isso, a escolha do modelo deve ter importância.
 
+_**De volta ao exemplo:**_
+
+![](imagens/img19.png)
+```{r}
+G <- matrix(c(100,75,60, 81,48,52, 47,53,17))
+```
+
+_Modelo $F_{\infty}$-metric:_
+
+```{r}
+X <- matrix(c(
+1,  1, 0,  1, 0,  1,  0,  0,  0,
+1,  1, 0,  0, 1,  0,  1,  0,  0,
+1,  1, 0, -1, 0, -1,  0,  0,  0,
+1,  0, 1,  1, 0,  0,  0,  1,  0,
+1,  0, 1,  0, 1,  0,  0,  0,  1,
+1,  0, 1, -1, 0,  0,  0, -1,  0,
+1, -1, 0,  1, 0, -1,  0,  0,  0,
+1, -1, 0,  0, 1,  0, -1,  0,  0,
+1, -1, 0, -1, 0,  1,  0,  0,  0),
+nrow=9,ncol=9,byrow=TRUE)
+```
+
+
+_Modelo $F_2$-metric:_
+
+```{r}
+X2 <- matrix(c(
+1,  1, -1/2,  1, -1/2,
+1,  1, -1/2,  0,  1/2,
+1,  1, -1/2, -1, -1/2,
+1,  0,  1/2,  1, -1/2,
+1,  0,  1/2,  0,  1/2,
+1,  0,  1/2, -1, -1/2,
+1, -1, -1/2,  1, -1/2,
+1, -1, -1/2,  0,  1/2,
+1, -1, -1/2, -1, -1/2),
+nrow=9,ncol=5,byrow=TRUE)
+X2 <- cbind(X2,X2[,2]*X2[,4],X2[,2]*X2[,5],X2[,3]*X2[,4],X2[,3]*X2[,5])
+```
+
+_Comparação:_
+
+```{r}
+beta <- solve(X,G)
+beta2 <- solve(X2,G)
+cbind(beta,beta2)
+```
+
+
 ## Tarefa
+- Read Cockerham (1954) (at least until page 865) and Kao & Zeng (2002). Present an overview about what you understand (30 lines).
+
 - Show that w1 for Cockerham model can be obtained from a linear regression on allelic dosage after tranformation based on orthogonal polynomials. Use Narula (1979) algorithm.
 
 ### Minha Resposta
+
+[Demostração Cockerham](Cockerham.pdf)
 
 # Aula 09 - Semelhança Entre Parentes I: Coeficiente de Coancestria
 Assumindo ausência de GxE -> x e y são membros de uma relação particular (como meio-irmãos, irmãos-completo, etc). Os fenótipos:
@@ -2513,6 +2658,36 @@ _Casos particulares:_
 
 # Aula 11 - Estimação I: Efeitos Genéticos e Variâncias, Média e Análises One-Way
 ## Introdução
+Abordagem tradicional baseada apenas em dados fenotípicos para estudar populações, arquitetura gênica, definir estratégias de melhoramento.
+
+**Expectativa para média de linhas de cruzamento**
+
+- duas populações parentais: $P_1$ e $P_2$;
+
+- Cada loco em equilíbrio de HW e equilíbrio de fase gamética;
+
+- As populações não são ligadas;
+
+- $F_1$: cruzamento das linhas $P_1$ e $P_2$;
+
+- $F_1$: cruzamento entre indivíduos $F_1$.
+
+**Definições:**
+
+**S** - fração de genes $P_1$ em uma linha;
+
+**H** - probabilidade que um membro de uma linha tenha um $P_1$ e um $P_2$ em um loco;
+
+Frequência esperada das 3 classes genotípicas:
+
+- $S- \frac{H}{2}$: frequência de indivíduos com apenas alelos $P_1$;
+
+- H: frequência de indivíduos com um alelo $P_1$ e um $P_2$;
+
+- $1 - S - \frac{H}{2}$: frequência de indivíduos com apenas alelos $P_2$.
+
+**Efeito Composto**
+
 ## Expectativa para média de linhas de cruzamento
 ## Definições
 ## Efeito Composto
