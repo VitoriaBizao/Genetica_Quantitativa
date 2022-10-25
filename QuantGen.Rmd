@@ -2332,6 +2332,7 @@ Se o determinante da matriz for diferente de zero siginifica que a matriz é ort
 **Contrastes**
 
 ![Contrastes](imagens/img23.png)
+
 _No R_
 
 ```{r}
@@ -2494,7 +2495,7 @@ cbind(beta,beta2)
 
 ### Minha Resposta
 
-[Demostração Cockerham](Cockerham.pdf)
+[Demostração Cockerham](./tarefas/Cockerham.pdf)
 
 # Aula 09 - Semelhança Entre Parentes I: Coeficiente de Coancestria
 Assumindo ausência de GxE -> x e y são membros de uma relação particular (como meio-irmãos, irmãos-completo, etc). Os fenótipos:
@@ -2528,13 +2529,19 @@ Existem 3 medidas:
 
 _Exemplo:_
 
+![](imagens/img28.png)
+
 15 possibilidades de estados de identidade:
 
 - Dentro e entre indivíduos;
 
 - Conjunto de possibilidades dos diversos genótipos:
 
+![](imagens/img29.png)
+
 - x e y são 2 indivíduos com algum relacionamento, com 4 alelos, há 6 possíveis relacionamento (2 a 2). Eles seguem a relação transitivo.
+
+![](imagens/img30.png)
 
 - Ignorando a distinção entre genes maternais e paternais: 9 estados de identidade, cada um dos estados possui uma probabilidade ($\Delta_1$ à $\Delta_9$);
 
@@ -2549,9 +2556,53 @@ $$\theta_{xy} = \Delta_1 + \frac{1}{2} (\Delta_3 + \Delta_5 + \Delta_7) + \frac{
 
 quanto maior for essa probabilidade, mais aparentado eles são, ou seja, há uma covariância.
 
-
 ## Tarefa
+
+- Read chapter 7 from Lynch & Walsh (1998) until page 139.
+
+- (Optional) Read Jacquard (1972).
+
+- Explain the content of slides 12 for an undergraduated student that is seeing it for the first time (30 lines).
+
 ### Minha Resposta
+
+- Explain the content of slides 12 for an undergraduated student that is seeing it for the first time (30 lines).
+
+_Entender o grau de relacionamento entre indivíduos é válido, através dele pois é possível estimar indiretamente fenótipos que não estão sendo observados. Para alcançar esse grau primeiramente é preciso estabelecer um período de tempo de referência, pois, devido ao ancestral comum, se voltarmos muitas gerações algum grau de parentesco os indivíduos irão possuir. Podemos utilizar três medidas:_
+
+_- Identidade por descendência (IBD): alelos são cópias provenientes de um ancestral comum;_
+
+_- Identidade por estado (IBS): alelos que são idênticos porém não são provenientes de um ancestral comum;_
+
+_- Endogamia: par de alelos IBD em um indivíduo._
+
+_Considerando dois indivíduos (x e y) e um gene, seus 4 alelos possuem 15 possibilidades de relacionamento, que foram descritas por Jacquard (1972) - Δ1 à Δ9. A partir das descrições de Jacquard, temos um modelo generalizado para calcular o Coeficiente de Coancestria (Θxy) de qualquer população, que é uma medida de probabilidade ao se tomar um gene ao acaso de dois indivíduos eles serem IBD. Dada por:_                                                                                                                                    _Θxy = Δ1 + 1/2(Δ3 + Δ5 + Δ7) + 1/4Δ8_ 
+
+_Em que Δ é a probabilidade de dado estado de identidade. E quanto maior o Θxy, mais aparentados os indivíduos são._
+
+_No slide 10, são apresentados 3 casos específicos e o seu coeficiente de coancestria._
+
+_No primeiro caso, a medida é entre parentais e sua progênie. Nesse caso, o único estado de identidade possível é o Δ8. Seja x o parental e y, a progênie e que eles não são endogâmicos, já se exclui os Δ1 ao Δ6. O Δ7 é excluído pois o parental só pode passar 1 dos alelos à progênie, e nesse estado 2 são IBD. O Δ9 é excluído, pois pelo menos 1 alelo deve ser passado pela progênie, e nesse estado nenhum é IBD. Assim sobra apenas o estado Δ8.  Dessa forma, a probabilidade se ser meio será 1 e o Θxy  0,25._
+
+_O segundo caso, os indivíduos x e y são irmãos completos. Nesse caso, eles podem compartilhar por IBD 2 alelos provenientes dos parentais (Δ7), 1 alelo (Δ8), ou nenhum (Δ9)._
+
+![Genótipos possíveis](imagens/img31.png){height="200px" width="250px"}
+
+_Dado o indivíduo x ter um alelo, a probabilidade do y ter o mesmo é 0,5, assim, a probabilidade dos indivíduos possuírem o alelo maternal e o paternal iguais é 0,25. Dessa forma, Δ7 será 0,25._
+
+![Δ7](imagens/img32.png){height="200px" width="250px"}
+
+_Para o Δ8 a probabilidade é dado o indivíduo x ter um alelo o indivíduo y ter o mesmo, ou seja, é 0,5._
+
+![Δ8 para irmãos completos.](imagens/img33.png){height="200px" width="250px"}
+
+_E para o Δ9 a probabilidade será a a probabilidade dos indivíduos possuírem os alelos maternal e o paternal diferentes, ou seja, 0,25. Assim, aplicando o modelo geral temos que Θxy é 0,25._
+
+![Δ9 para irmãos completos.](imagens/img34.png){height="200px" width="250px"}
+
+_No terceiro caso, os indivíduos são meio-irmãos, dessa forma, há a possibilidade deles compartilharem 1 alelo IBD (Δ8) ou nenhum (Δ9). Para o Δ9, seu valor será a probabilidade do alelo parental compartilhado ser diferente, ou seja, 0,5. Assim, aplicando o modelo geral temos que Θxy é 0,125._
+
+![Δ9 para meio-irmãos.](imagens/img35.png){height="200px" width="250px"}
 
 # Aula 10 - Semelhança Entre Parentes II: Fraternidade entre Parentes
 ## Coeficiente de Endogamia
