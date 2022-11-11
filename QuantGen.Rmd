@@ -1172,7 +1172,7 @@ O fenótipo médio dos pais pode ser dado pela seguinte fórmula em que:
 
 $$Z_{mp} = \frac{Z_m + Z_f}{2}$$
 
-Sabemos que o modelo gamético é dado por: $ G_{ij} = \mu_G + \alpha_i + \alpha_j + \delta_{ij}$. No entanto, aqui viemos desconsiderar a $\mu_G$ porque a covariância do intercepto é igual a zero e iremos desconsiderar a dominância porque ela não é herdável. Portanto,
+Sabemos que o modelo gamético é dado por: $G_{ij} = \mu_G + \alpha_i + \alpha_j + \delta_{ij}$. No entanto, aqui viemos desconsiderar a $\mu_G$ porque a covariância do intercepto é igual a zero e iremos desconsiderar a dominância porque ela não é herdável. Portanto,
 
 $$Z_m = g_m + g_{m'} + E_m$$
 
@@ -1184,7 +1184,7 @@ Qual é a **covariância** entre o fenótipo da média dos pais e o fenótipo da
 
 
 $$\sigma(Z_{mp}, Z_0) = \frac{\sigma^2(g_m) + \sigma^2(g_f)}{2}$$
-$\sigma^2(g_m) + \sigma^2(g_f)$ é a variânci total e nesse caso é a variância genética aditiva.
+$\sigma^2(g_m) + \sigma^2(g_f)$ é a variância total e nesse caso é a variância genética aditiva.
 
 $$\therefore \ \sigma(Z_{mp}, Z_0) = \frac{\sigma_A^2}{2}$$
 Qual é a **variância** do fenótipo? (x)
@@ -1529,12 +1529,12 @@ Efeitos que surgem da interação dos efeitos principais. Ajustesequencial pelo 
 ### Epistasia Dominância x Dominância
 Genótipo do loco A interagindo com genótipo do loco B.
 
-$$(δδ)_{ijkl} = G_{ijkl} − \mu_G − α_i − α_j − α_k − α_l − δ_{ij} − δ_{kl} − (αα)_{ik} − (αα)_{il} − (αα)_{jk} − (αα)_{jl} − (αδ)_{ikl} − (αδ)_{jkl} − (αδ)_{ijk} − (αδ)_{ijl}$$
+$$(δδ)_{ijkl} = G_{ijkl} − \mu_G − α_i − α_j − α_k − α_l − δ_{ij} − δ_{kl} − (αα)_{ik} \\ − (αα)_{il} − (αα)_{jk} − (αα)_{jl} − (αδ)_{ikl} − (αδ)_{jkl} − (αδ)_{ijk} − (αδ)_{ijl}$$
 
 ## Variância para Epistasia
 Sob cruzamento aleatório, a decomposição pode ser feita da seguinte maneira:
 
-$$σ^2_G = σ^2_A + σ^2_D + σ^2_{AA} + σ^2_{AD} + σ^2_{DD}+...$$
+$$σ^2_G = σ^2_A + σ^2_D + σ^2_{AA} + σ^2_{AD} + σ^2_{DD} + ...$$
 com maior número de locus, temos uma ordem maior de interações. Interações epistáticas podem inflar os componentes aditivos/dominância da variância genética.
 
 ## Introdução à Mapeamento QTL (Conjunto de dados de milho)
@@ -2608,28 +2608,28 @@ _No terceiro caso, os indivíduos são meio-irmãos, dessa forma, há a possibil
 ## Coeficiente de Endogamia
 Considere um indivíduo z que é progênie de x e y. $\theta_{xy}$ é a probabilidade de 2 genes em um loco de z forem ibd. O coeficiente de endogamia é dado o indivíduo z ser progênie de x e y a probabilidade de 2 genes serem ibd, ou seja, mede o grau de parentesco entre x e y, pois eles serão iguais se os parentais tiverem algum grau de parentesco.
 
-$$f_z =  \theta_{xy}$$
+$$f_z =  \Theta_{xy}$$
 
 ## Algumas derivações
 **Indivíduo com ele mesmo**
 
 - Sem endogamia ($A_1$, $A_2$):
 
-$$\theta_{xy} = \frac{1}{4} + \frac{1}{4} = \frac{1}{2}$$
+$$\Theta_{xy} = \frac{1}{4} + \frac{1}{4} = \frac{1}{2}$$
 
 - Com endogamia ($A_1$, $A_2$):
 
-$$\theta_{xy} = \frac{1}{4} + \frac{1}{4}f_x + \frac{1}{4} + \frac{1}{4}f_x = \frac{1}{2}(1+f_x)$$
+$$\Theta_{xy} = \frac{1}{4} + \frac{1}{4}f_x + \frac{1}{4} + \frac{1}{4}f_x = \frac{1}{2}(1+f_x)$$
 
 **Pais e Filhos:**
-$$\theta_{po} = \frac{1}{4} (1 + f_p + 2f_o)$$
+$$\Theta_{po} = \frac{1}{4} (1 + f_p + 2f_o)$$
 
-**Irmãos Completos(m: mãe, p: pai):**
-$$\theta_{xy} = \frac{1}{8} (2 + f_m + f_f + 4\theta_{mf})$$
+**Irmãos Completos(m: mãe, f: pai):**
+$$\Theta_{xy} = \frac{1}{8} (2 + f_m + f_f + 4\Theta_{mf})$$
 
 Sem endogamia:
 
-$$\theta_{xy} = \frac{1}{4}$$
+$$\Theta_{xy} = \frac{1}{4}$$
 
 ## Cálculo (Falconer e Mackay, 1996)
 
@@ -2638,15 +2638,19 @@ $$f_z = \sum \frac{1}{2}^n.(1+ f_{ancentral})$$
 n = número de indivíduos no caminho.
 
 ## Coeficiente de fraternidade
-Probabilidade de genótipos de indivíduo sejam ibd:
+Probabilidade de um genótipo de loco único de dois indivíduos sejam ibd (probabilidade que dois idivíduos sejam ibd's pro genótipo):
 
-$$\Delta_{xy} = \theta_{m_xm_y}.\theta_{f_xf_y} + \theta_{m_xf_y}.\theta_{f_xm_y}$$
+_Notação:_ mães de x e y são $m_{x}$ e $m_{y}$, pais são $f_{x}$ e $f_{y}$
+
+Portanto,
+
+$$\Delta_{xy} = \Theta_{m_xm_y}.\Theta_{f_xf_y} + \Theta_{m_xf_y}.\Theta_{f_xm_y}$$
 
 ou
 
 $$\Delta_{xy} = \Delta_1 + \Delta_7$$
 
-_Sem endogamia:_$\Delta_{xy} = \Delta_7$
+_Sem endogamia:_ $\Delta_{xy} = \Delta_7$
 
 ## Covariância genética entre indivíduos aparentados
 **Pressupostos:**
@@ -2662,23 +2666,27 @@ _Sem endogamia:_$\Delta_{xy} = \Delta_7$
 Pegamos 2 indivíduos de uma população onde todos os membros têm o mesmo relacionamento:
 
 $$\sigma_G(x,y) = \sigma_A(x,y) + \sigma_D(x,y) + \sigma_{AA}(x,y) + \sigma_{AD}(x,y) + \sigma_{DD}(x,y) \ ...$$
+
 ## Covariância Genética Aditiva
+
 A covariância entre x e y causada pelos efeitos aditivos é:
 
 $$E[(\alpha_i^x + \alpha_j^x)(\alpha_i^y + \alpha_j^y)]$$
 
-A única forma da esperaça nãe ser 0 é se o alelo i for o mesmo nos indivíduos x e y, se isso ocorrer, então:
+A única forma da esperaça não ser 0 é se o alelo i for o mesmo nos indivíduos x e y, se isso ocorrer, então:
 
 $$E[(\alpha_i^x + \alpha_i^y) = E(\alpha_i^2)$$
 
 (metade da variância genética aditiva)
 
-E a probabilidade de i ser igal é $\theta_{xy}$, dessa forma temos a esperança como:
+E a probabilidade de i ser o mesmo é $\Theta_{xy}$, dessa forma temos a esperança como:
 
-$$4\theta_{xy}E(\alpha_i^2)$$
+$$4\Theta_{xy}E(\alpha_i^2)$$
+
+(Duas vezes a variância genética aditiva para o loco vezes $\Theta_{xy}$)
 
 _para todos os locus:_
-$$\sigma_A(x,y) = 2\theta_{xy}\sigma_A^2$$
+$$\sigma_A(x,y) = 2\Theta_{xy}\sigma_A^2$$
 
 ## Covariância Genética de Dominância
 
@@ -2695,9 +2703,9 @@ $$\sigma_D(x,y) = \Delta_{xy}\sigma_D^2$$
 ## Covariância Epistática
 Precisa ter o mesmo alelo ibd:
 
-$$\sigma_{AA}(x,y) = (2\theta_{xy})^2 \sigma_{AA}^2$$
+$$\sigma_{AA}(x,y) = (2\Theta_{xy})^2 \sigma_{AA}^2$$
 
-$$\therefore \ \sigma_G(x,y) = 2\theta_{xy}\sigma_{A}^2 + \Delta_{xy} \sigma_{D}^2 + (2\theta_{xy})^2 \sigma_{AA}^2 + 2\theta_{xy} \Delta_{xy} \sigma_{AD}^2 + \Delta_{xy}^2 \sigma_{DD}^2$$
+$$\therefore \ \sigma_G(x,y) = 2\Theta_{xy}\sigma_{A}^2 + \Delta_{xy} \sigma_{D}^2 + (2\Theta_{xy})^2 \sigma_{AA}^2 + 2\Theta_{xy} \Delta_{xy} \sigma_{AD}^2 + \Delta_{xy}^2 \sigma_{DD}^2$$
 
 ## Componentes de Variância
 Essa covariâncias podem ser usadas para estimar os componentes de variância:
@@ -2731,7 +2739,7 @@ Abordagem tradicional baseada apenas em dados fenotípicos para estudar populaç
 
 Frequência esperada das 3 classes genotípicas:
 
-- $S- \frac{H}{2}$: frequência de indivíduos com apenas alelos $P_1$;
+- $S - \frac{H}{2}$: frequência de indivíduos com apenas alelos $P_1$;
 
 - H: frequência de indivíduos com um alelo $P_1$ e um $P_2$;
 
@@ -2739,28 +2747,316 @@ Frequência esperada das 3 classes genotípicas:
 
 **Efeito Composto**
 
-## Expectativa para média de linhas de cruzamento
-## Definições
-## Efeito Composto
-## Efeitos Aditivos Compostos
-## Efeitos Aditivos e de Dominância Compostos
+Diferença dos efeitos aditivos dos alelos $P_1$ e $P_2$ somado para todos os locu. Se uma população com efeitos complementares pode haver um cancelamento de efeitos. 
+
+**Efeitos Aditivos Compostos**
+
+$F_2$: frequência de alelos contrastante é 1/2.
+
+Efeito de $P_1 = \frac{+ \alpha^c}{2}$ 
+
+Efeito de $P_2 = \frac{- \alpha^c}{2}$ 
+
+Efeito aditivo composto total: $\frac{\alpha^c - \alpha^c}{2}$
+
+Isso é conveniente para uma população de referência.
+
+**Efeitos Aditivos e de Dominância Compostos**
+
+Contribuição do composto aditivo na média do valor genotípico de qualquer linha de cruzamento derivada de: (todas populações)
+
+$$\left(S - \frac{H}{2} \right)(\alpha^c) + (H)(0) + (1  - S - \frac{H}{2})(- \alpha^c) \\
+= (2S-1)(\alpha^c) = \theta_S \alpha^c$$
+
+- $\theta_s = 2S - 1$: indice de onde veio o alelo (fonte de origem);
+
+- $\theta_s$: contraste do número esperado de alelos $P_1$ em um loco em uma linha particular (2S) em uma população de referência $F_2$.
+
+Lembrando que $\delta$ são desvios, temos que:
+
+$$\left(S - \frac{H}{2} \right)(- \delta^c) + (H)(+ \delta^c) + (1  - S - \frac{H}{2})(- \delta^c) \\
+= (2H-1)(\delta^c) = \theta_H \delta^c$$
+
+**Média do valor genotípico**
+
+Eu posso definir a média de qualquer população por:
+
+$$\mu = \mu_0 + \theta_S \alpha_1^c + \theta_H \delta_1^c + \theta_S \alpha_2^c + \theta_S \theta_H(\alpha_1^c\delta_1^c) + \theta_H^2 \delta_2^c + \cdots +$$
+
+- $\alpha_2^c$ está relacionado com $\alpha_{11}$ e $\alpha_{22}$ (epistasia axa);
+
+- Esses índices são interpopulacionais.
+
+_Exemplo:_
+
+$B_1 = S = 3/4 (1/2AA : 1/2 Aa)$, $\theta_S = (2.\frac{3}{4}) - 1 = 1/2$
+
+$\theta_S$ e $\theta_H$ são indices que vão depender da população, por exemplo, em $P_1$ quantos indivíduos tem $P_1$? 100%. Ou seja, S = 1. 
+
+$\therefore \theta_S = 2.1 -1 = 1$
+
+quantos indivíduos na $P_1$ são homozigotos? Nenhum, ou seja H = 0.
+
+$\therefore \theta_H = 2.0 -1 = -1$
+
+Então substituindo $\theta_S$ e $\theta_H$ na fórmula geral da média esperada, eu consigo calcular a média esperada de qualquer população.
+
 ## Heterose
+Quanto $F_1$ diverge da média dos pais
+
+- Quantos é a média dos pais?
+
+$$\mu(P_1, P_2) = \mu_0 - \delta_1^c + \alpha_2^c + \delta_2^c$$
+
+**Heterose**
+
+$$H = F_1  - \mu(P_1, P_2) = 2\delta_1^c - \alpha_2^c$$
+
+ou
+
+$$H = \delta_1^c - \frac{\alpha_2^c}{2}$$
+
+$\therefore$ os alelos de uma população depende da dominância sobre a outra. Uma dominância composta, ou seja global. Além disso, preciso de interação $\alpha$ x $\alpha$. (EPISTASIA!!)
+
+Ou seja, a heterose surge em função do genótipo de população ter um efeito de dominância de uma população sobre a outra ou efeito aditivo. O hibrido tem heterose quando os alelos de uma população estão dominando sobre o alelo de outra população.
+
+A heterose é definida em relação ao cruzamento entre populações, não entre linhagens.
+
 ## Estimação dos Efeitos Compostos
+Com um número de cruzamento, é possível estimar os efeitos compostos.
+
+**Exemplo**
+$P_1$, $P_2$ e $F_1$ (ignorando a epistasia):
+
+- $\mu (P_1) = \mu_0 + \alpha_1^c - \delta_1^c$
+
+- $\mu (P_1) = \mu_0 - \alpha_1^c - \delta_1^c$
+
+- $\mu (P_1) = \mu_0 + \delta_1^c$
+
+Para incluir mais parâmetros é necessário mais cruzamentos. Essa abordagem é muito utilizada paa características onde os parentais são bem divergentes, então a maioria dos alelos favoráveis se concentram em $P_1$ ou $P_2$. Por exemplo, resistência à doenças.
+
 ## Estimação dos Componentes de Variância
-## Princípios
+Delineamentos de Cruzamento - One-Factor Desing:
+
+- Baseado na covariância entre parentes, permite a estimação das variâncias genéticas. 
+
+- Necessitam de cruzamentos e experimentos.
+
+- Baseados apenas em dados fenotípicos.
+
+- É uma abordagem simples e comum para estimar os componentes de variância e pode auxiliar melhoristas, relacionando á práticas comuns.
+
+
+**Princípios**
+
+- Iniciar com um experimento com um número de indivíduos com algum grau de parentesco. Por exemplo, n famílias de meio-irmãos.
+
+- Assumir que eles são avaliados em um experimento CRD.
+
+- Modelo:
+
+$$y_{ij} = \mu + t_i + e_{ij}$$
+$y_{ij}$: fenótipo do j progênie do i parental
+
+$t_i$: efeito do i parental.
+
+**Fisher (1918)**
+A análise de variância particionando a variância fenotípica total na soma das variâncias de cada fator:
+
+$$\therefore \sigma_y^2 = \sigma_t^2 + \sigma_e^2$$
+
+- Variância fenotípica é igual a genética mais a ambiental (essa é uma decomposição ortogonal);
+
+Covariância entre membros do mesmo grupo:
+
+$$\sigma(y_{ij}, y_{ij'}) = \sigma[(\mu + t_i + e_{ij}), (\mu + t_i + e_{ij'})] \\ 
+= \sigma(t_i, t_i) + \sigma(t_i, e_{ij}') + \sigma(e_{ij}, t_i) + \sigma(e_{ij}, e_{ij'}) \\
+= \sigma_t^2$$
+
+Portanto, a covariância entre indivíduos que possuem algum grau de parentesco é igual a variância entre os membros desse grupo.
+
+_A covariância fenotípica entre membros de um mesmo grupo é igual à variância entre os grupos._
+
+Por exemplo, em meios-irmãos (HS):
+
+$$\sigma_{(HS)} = \sigma_{(HS)}^2$$
+
 ## ANOVA
+Então é necessário estimar $\sigma_e^2$, um delineamento experimental geralmente é utilizado, com replicações (Bernardo, 2010).
+
+Começando com um experimento casualizado:
+
+t - meios-irmãos
+y - repetições
+
 ## Componentes de Variância
+$$y_{ij} = \mu + t_i + e_{ij}$$
+**Decomposições:**
+
+$$SS_T = \sum_{i=1}^{t} \sum_{i=1}^{r} (y_{ij} - \bar{y})^2$$
+
+$$SS_T = SS_t + SS_e$$
+É possível mostrar que:
+
+$$E(MS_e) = \sigma_e^2$$
+
+$$E(MS_t) = \sigma_e^2 + r \sigma_t^2$$
+
+Métodos dos momentos:
+
+$$\sigma_t^2 = \frac{MS_t - MS_e}{r}$$
+
 ## Tarefa
 ### Minha Resposta
 
 # Aula 12 - Estimação II: Variancias Genéticas - Um fator, Desing I e II, Dialelo
 ## Introdução
+A estimação de parâmetros é muito importante para estratégia de melhoramento e estudos de arquitetura genética. Esses métodos nos permitem explorar melhor a arquitetura. A partir dos delineamentos podemos:
+
+- Estimar a resposta à seleção;
+
+- Estimar a performance de um dado cruzamento;
+
+- Tipos de progênies são desenvolvidas e testadas em diversos ambientes;
+
+- Componentes de variância são estimados a partir de quadrados mínimos.
+
 ## Pressupostos
+- Indivíduos aparentados: membros aleatórios de uma população com cruzamento aleatório;
+
+- Diplóide, herança mendeliana;
+
+- Sem covariância ambiental entre ambiente e os indivíduos
+
+$$\sigma_G(x,y) = 2 \Theta_{xy} \sigma_A^2 + \Delta_{xy} \sigma_D^2 + (2 \Theta_{xy})^2 \sigma_{AA}^2 + \\ 
+2 \Theta_{xy} \sigma_A^2 \Delta_{xy} \sigma_{AD}^2 + \Delta_{xy}^2 \sigma_{DD}^2 + ...$$
+
 ## Desing 1-factor
+Em geral, um tipo de progênie em um ambiente. 
+
+- O quadrado mínimo médio esperado: variância entre progênies;
+
+- Covariância entre membros de um mesmo grupo: covariância dentro do grupo.
+
+$$\sigma(y_{ij},y_{ij'}) = \sigma[(\mu + t_i + e_{ij}),(\mu + t_i + e_{ij'})] \\ = \sigma_t^2$$
+
 ### Meios-Irmãos
+**Sem epistasia**
+$$\sigma_p^2 = \frac{1}{4}\sigma_A^2$$
+
+**Se os parentais são endogâmicos**
+$$\sigma_p^2 = \frac{1 + f}{4}\sigma_A^2$$
+
+_Exemplo (Bernardo, 2010):_
+
+- Progênie n;
+
+- Delineamento de blocos ao acaso;
+
+- r, repetições;
+
+- e, ambientes;
+
+- Efeitos aleatórios: progênie, repetições e ambiente
+
+
+$$\sigma_p^2 = \frac{MS_{p} - MS_{PE}}{re}$$
+
+Uma limitação desse delineamento é o desbalanceamento. E eu parto do pressuposto que os efeitos são aleatórios, e as esperanças usam essa suposição.
+
 ### Tipos de Progênie
+Assumindo sem endogamia
+
+- **Meio-irmãos**
+$$\sigma_p^2 = \frac{1}{4}\sigma_A^2$$
+
+- **Test-crosses**
+$$\sigma_p^2= \frac{1}{2} \sigma_{\alpha_i^T}^2$$
+
+$\alpha_i^T$: variância do efeito médio dos alelos 
+
+- **Irmãos Completos**
+$$\sigma_p^2 = \frac{1}{2}\sigma_A^2 + \frac{1}{4}\sigma_D^2$$
+
+não é possível separar $\sigma_A^2$ e $\sigma_D^2$, mas é possível definir limites superiores e inferiores.
+
+### Uma estratégia melhor
+Geralmente, em situações reais, n (tamanho da progênie) é muito grande, o que resulta em blocos grandes, o que não é tão eficiente. Uma estratégia é dividir o experimento em conjuntos. Por exemplo, n = 150 pode ser dividido em s = 6 de 25 progênies.
+
 ## Delineamento Fatorial - North Carolina II
+Concluiram que era necessário indivíduos com diferentes relações de parentesco, para que pudese ser possível estimar mais componentes de variância. Mais de um grau de parentesco no mesmo experimento.
+
+Fatorial de um grupo de indivíduos usados como machos e fêmeas, por exemplo: planta 1, 2 e 3 usadas como macho e planta 4 e 5 como fêmea, então tem-se os cruzamentos 1x4, 1x5, 2x4, 2x5, 3x4, 3x5. Comparação da progênie dos cruzamentos.
+
+Efeitos aleatórios: macho, fêmea, cruzamentos, repetições, conjuntos e ambiente. Consigo calcular a interação. 
+
+Temos:
+
+$\sigma_M^2 = \frac{1}{4}\sigma_A^2$ e $\sigma_F^2 = \frac{1}{4}\sigma_A^2$
+
+Interação:
+
+$$\sigma_{MF}^2 = \sigma_{full-sibs}^2 - \sigma_M^2 - \sigma_F^2 \\ 
+= \sigma_{(FS)} - 2\sigma_{(HS)} \\ 
+= \frac{1}{4} \sigma_D^2$$
+
+**Estimativas (para esse experimento)**
+
+- $\hat\sigma_{M}^2 = \frac{1}{ref}[(MS_{M/sets} + MS_{E\text{x}M\text{x}F/sets}) - ((MS_{M \text{x} F/sets} + MS_{E\text{x}M/sets})]$
+
+- $\hat\sigma_{M}^2 = \frac{1}{rem}[(MS_{F/sets} + MS_{E\text{x}M\text{x}F/sets}) - ((MS_{M \text{x} F/sets} + MS_{E\text{x}F/sets})]$
+
+- $\hat\sigma_{MF}^2 = \frac{1}{re}(MS_{M\text{x}F/sets}) - MS_{E \text{x} M \text{x} F/sets})]$
+
 ## Delineamento I (Hierárquico)
+Diversos parentais machos são cruzados com um diferente conjunto de fêmeas. Por exemplo: 1x3, 1x4, 1x5, 2x6, 2x7, 2x8.
+
+$\sigma_{M}^2 = \frac{1}{4}\sigma_A^2$, porém não conseguimos estimar $\sigma_{MF}^2$ uma vez que não é um fatorial. Porém é possível as variâncias $\sigma_{F}^2$, $\sigma_{MF}^2$ em $\sigma_{F/M}^2$.
+
+Então,
+
+$$\sigma_{F/M}^2 = \sigma_{F}^2 + \sigma_{F/M}^2 \\ 
+= \sigma_{HS} + \sigma_{FS} - 2\sigma_{HS} \\
+= \sigma_{FS} - \sigma_{HS}$$
+
+Portanto,
+
+$$\sigma_{F/M}^2 = \frac{1}{2} \sigma_{A}^2 + \frac{1}{4}\sigma_{D}^2 - \frac{1}{4}\sigma_{A}^2 \\
+= \frac{1}{4}\sigma_{A}^2 + \frac{1}{4}\sigma_{D}^2$$
+
 ## Delineamento Dialelo
+Cruzamento entre todas combinações possíveis de parentais, há diversas variações e modificações.
+
+Aleatório: parentais amostrados em uma população, útil para estimar variância geral de combinação ($\sigma_{GCA}^2$) e a variância da capacidade específica de combinação $\sigma_{SCA}^2$. Com epistasia $\sigma_{GCA}^2$ é função da $\sigma_{A}^2$ e a $\sigma_{SCA}^2$ em função de $\sigma_{D}^2$.
+
+**Variações:**
+
+- Com ou sem os pais;
+
+- Com ou sem cruzamentos recíprocos;
+
+- Linhas encogâmicas ou não.
+
+Um problema é que o npumero de cruzamentos aumenta com o número de pais, seguindo:
+
+$$\frac{1}{2}p (p-1)$$
+
+uma opção é dividir os pais em conjuntos (sets).
+
+- $\sigma_{GCA}^2$ é devido a variância entre a progênie com um pai comum.
+
+$$\sigma_{GCA}^2 = \frac{1 + f}{4} \sigma_A^2$$
+
+- $\sigma_{SCA}^2$ é igual a variância devido à interação.
+
+$$\sigma_{SCA}^2 = \sigma_{FS} - 2\sigma_{HS} = \frac{(1 + f)^2}{4} \sigma_D^2$$
+
+### Dialelo e Delineamento II
+- Ambos permitem encontrar $\sigma_A^2$ e $\sigma_D^2$;
+
+- Delineamento fatorial possui 2 vantagens: pode ser usado em 1 ou 2 populações; necessita de menos cruzamentos.
+
+- Pequenas diferenças nos graus de liberdade, eu consigo estimar os mesmos parâmetros.
 
 # Aula 13 - Estimating Genetic Effects and Variances for Phenotype Data Desing III and Heterosis

@@ -2582,6 +2582,7 @@ border-bottom: 1px solid #fcfcfc;
       <li><a href="#cálculo-falconer-e-mackay-1996">Cálculo (Falconer e Mackay, 1996)</a></li>
       <li><a href="#coeficiente-de-fraternidade">Coeficiente de fraternidade</a></li>
       <li><a href="#covariância-genética-entre-indivíduos-aparentados">Covariância genética entre indivíduos aparentados</a></li>
+      <li><a href="#covariância-genética-aditiva">Covariância Genética Aditiva</a></li>
       <li><a href="#covariância-genética-de-dominância">Covariância Genética de Dominância</a></li>
       <li><a href="#covariância-epistática">Covariância Epistática</a></li>
       <li><a href="#componentes-de-variância">Componentes de Variância</a></li>
@@ -3483,12 +3484,12 @@ border-bottom: 1px solid #fcfcfc;
 <h2>Regressão dos filhos no fenótipo parental médio</h2>
 <p>O fenótipo médio dos pais pode ser dado pela seguinte fórmula em que:</p>
 <p><span class="math display">\[Z_{mp} = \frac{Z_m + Z_f}{2}\]</span></p>
-<p>Sabemos que o modelo gamético é dado por: $ G_{ij} = _G + _i + <em>j + </em>{ij}$. No entanto, aqui viemos desconsiderar a <span class="math inline">\(\mu_G\)</span> porque a covariância do intercepto é igual a zero e iremos desconsiderar a dominância porque ela não é herdável. Portanto,</p>
+<p>Sabemos que o modelo gamético é dado por: <span class="math inline">\(G_{ij} = \mu_G + \alpha_i + \alpha_j + \delta_{ij}\)</span>. No entanto, aqui viemos desconsiderar a <span class="math inline">\(\mu_G\)</span> porque a covariância do intercepto é igual a zero e iremos desconsiderar a dominância porque ela não é herdável. Portanto,</p>
 <p><span class="math display">\[Z_m = g_m + g_{m&#39;} + E_m\]</span></p>
 <p><span class="math display">\[Z_f = g_f + g_{f&#39;} + E_f\]</span></p>
 <p><span class="math display">\[Z_0 = g_m + g_{f} + E_0\]</span></p>
 <p>Qual é a <strong>covariância</strong> entre o fenótipo da média dos pais e o fenótipo da progênie? Para isso, temos que:</p>
-<p><span class="math display">\[\sigma(Z_{mp}, Z_0) = \frac{\sigma^2(g_m) + \sigma^2(g_f)}{2}\]</span> <span class="math inline">\(\sigma^2(g_m) + \sigma^2(g_f)\)</span> é a variânci total e nesse caso é a variância genética aditiva.</p>
+<p><span class="math display">\[\sigma(Z_{mp}, Z_0) = \frac{\sigma^2(g_m) + \sigma^2(g_f)}{2}\]</span> <span class="math inline">\(\sigma^2(g_m) + \sigma^2(g_f)\)</span> é a variância total e nesse caso é a variância genética aditiva.</p>
 <p><span class="math display">\[\therefore \ \sigma(Z_{mp}, Z_0) = \frac{\sigma_A^2}{2}\]</span> Qual é a <strong>variância</strong> do fenótipo? (x)</p>
 <p><span class="math display">\[\sigma^2(Z_{mp}) = \sigma^2 \left(\frac{Z_m + Z_f}{2} \right) \\
 =\frac{\sigma^2(Z_m) + \sigma^2(Z_f)}{4}\]</span></p>
@@ -3768,13 +3769,13 @@ border-bottom: 1px solid #fcfcfc;
 <div id="epistasia-dominância-x-dominância" class="section level3">
 <h3>Epistasia Dominância x Dominância</h3>
 <p>Genótipo do loco A interagindo com genótipo do loco B.</p>
-<p><span class="math display">\[(δδ)_{ijkl} = G_{ijkl} − \mu_G − α_i − α_j − α_k − α_l − δ_{ij} − δ_{kl} − (αα)_{ik} − (αα)_{il} − (αα)_{jk} − (αα)_{jl} − (αδ)_{ikl} − (αδ)_{jkl} − (αδ)_{ijk} − (αδ)_{ijl}\]</span></p>
+<p><span class="math display">\[(δδ)_{ijkl} = G_{ijkl} − \mu_G − α_i − α_j − α_k − α_l − δ_{ij} − δ_{kl} − (αα)_{ik} \\ − (αα)_{il} − (αα)_{jk} − (αα)_{jl} − (αδ)_{ikl} − (αδ)_{jkl} − (αδ)_{ijk} − (αδ)_{ijl}\]</span></p>
 </div>
 </div>
 <div id="variância-para-epistasia" class="section level2">
 <h2>Variância para Epistasia</h2>
 <p>Sob cruzamento aleatório, a decomposição pode ser feita da seguinte maneira:</p>
-<p><span class="math display">\[σ^2_G = σ^2_A + σ^2_D + σ^2_{AA} + σ^2_{AD} + σ^2_{DD}+...\]</span> com maior número de locus, temos uma ordem maior de interações. Interações epistáticas podem inflar os componentes aditivos/dominância da variância genética.</p>
+<p><span class="math display">\[σ^2_G = σ^2_A + σ^2_D + σ^2_{AA} + σ^2_{AD} + σ^2_{DD} + ...\]</span> com maior número de locus, temos uma ordem maior de interações. Interações epistáticas podem inflar os componentes aditivos/dominância da variância genética.</p>
 </div>
 <div id="introdução-à-mapeamento-qtl-conjunto-de-dados-de-milho" class="section level2">
 <h2>Introdução à Mapeamento QTL (Conjunto de dados de milho)</h2>
@@ -5046,7 +5047,7 @@ W_3 = \left \{ \begin{matrix} 1 &amp; \mbox{p/ BB} \\ 0 &amp; \mbox{p/ Bb} \\ -1
 <div id="coeficiente-de-endogamia" class="section level2">
 <h2>Coeficiente de Endogamia</h2>
 <p>Considere um indivíduo z que é progênie de x e y. <span class="math inline">\(\theta_{xy}\)</span> é a probabilidade de 2 genes em um loco de z forem ibd. O coeficiente de endogamia é dado o indivíduo z ser progênie de x e y a probabilidade de 2 genes serem ibd, ou seja, mede o grau de parentesco entre x e y, pois eles serão iguais se os parentais tiverem algum grau de parentesco.</p>
-<p><span class="math display">\[f_z =  \theta_{xy}\]</span></p>
+<p><span class="math display">\[f_z =  \Theta_{xy}\]</span></p>
 </div>
 <div id="algumas-derivações" class="section level2">
 <h2>Algumas derivações</h2>
@@ -5054,15 +5055,15 @@ W_3 = \left \{ \begin{matrix} 1 &amp; \mbox{p/ BB} \\ 0 &amp; \mbox{p/ Bb} \\ -1
 <ul>
 <li>Sem endogamia (<span class="math inline">\(A_1\)</span>, <span class="math inline">\(A_2\)</span>):</li>
 </ul>
-<p><span class="math display">\[\theta_{xy} = \frac{1}{4} + \frac{1}{4} = \frac{1}{2}\]</span></p>
+<p><span class="math display">\[\Theta_{xy} = \frac{1}{4} + \frac{1}{4} = \frac{1}{2}\]</span></p>
 <ul>
 <li>Com endogamia (<span class="math inline">\(A_1\)</span>, <span class="math inline">\(A_2\)</span>):</li>
 </ul>
-<p><span class="math display">\[\theta_{xy} = \frac{1}{4} + \frac{1}{4}f_x + \frac{1}{4} + \frac{1}{4}f_x = \frac{1}{2}(1+f_x)\]</span></p>
-<p><strong>Pais e Filhos:</strong> <span class="math display">\[\theta_{po} = \frac{1}{4} (1 + f_p + 2f_o)\]</span></p>
-<p><strong>Irmãos Completos(m: mãe, p: pai):</strong> <span class="math display">\[\theta_{xy} = \frac{1}{8} (2 + f_m + f_f + 4\theta_{mf})\]</span></p>
+<p><span class="math display">\[\Theta_{xy} = \frac{1}{4} + \frac{1}{4}f_x + \frac{1}{4} + \frac{1}{4}f_x = \frac{1}{2}(1+f_x)\]</span></p>
+<p><strong>Pais e Filhos:</strong> <span class="math display">\[\Theta_{po} = \frac{1}{4} (1 + f_p + 2f_o)\]</span></p>
+<p><strong>Irmãos Completos(m: mãe, f: pai):</strong> <span class="math display">\[\Theta_{xy} = \frac{1}{8} (2 + f_m + f_f + 4\Theta_{mf})\]</span></p>
 <p>Sem endogamia:</p>
-<p><span class="math display">\[\theta_{xy} = \frac{1}{4}\]</span></p>
+<p><span class="math display">\[\Theta_{xy} = \frac{1}{4}\]</span></p>
 </div>
 <div id="cálculo-falconer-e-mackay-1996" class="section level2">
 <h2>Cálculo (Falconer e Mackay, 1996)</h2>
@@ -5071,11 +5072,13 @@ W_3 = \left \{ \begin{matrix} 1 &amp; \mbox{p/ BB} \\ 0 &amp; \mbox{p/ Bb} \\ -1
 </div>
 <div id="coeficiente-de-fraternidade" class="section level2">
 <h2>Coeficiente de fraternidade</h2>
-<p>Probabilidade de genótipos de indivíduo sejam ibd:</p>
-<p><span class="math display">\[\Delta_{xy} = \theta_{m_xm_y}.\theta_{f_xf_y} + \theta_{m_xf_y}.\theta_{f_xm_y}\]</span></p>
+<p>Probabilidade de um genótipo de loco único de dois indivíduos sejam ibd (probabilidade que dois idivíduos sejam ibd’s pro genótipo):</p>
+<p><em>Notação:</em> mães de x e y são <span class="math inline">\(m_{x}\)</span> e <span class="math inline">\(m_{y}\)</span>, pais são <span class="math inline">\(f_{x}\)</span> e <span class="math inline">\(f_{y}\)</span></p>
+<p>Portanto,</p>
+<p><span class="math display">\[\Delta_{xy} = \Theta_{m_xm_y}.\Theta_{f_xf_y} + \Theta_{m_xf_y}.\Theta_{f_xm_y}\]</span></p>
 <p>ou</p>
 <p><span class="math display">\[\Delta_{xy} = \Delta_1 + \Delta_7\]</span></p>
-<p><em>Sem endogamia:</em><span class="math inline">\(\Delta_{xy} = \Delta_7\)</span></p>
+<p><em>Sem endogamia:</em> <span class="math inline">\(\Delta_{xy} = \Delta_7\)</span></p>
 </div>
 <div id="covariância-genética-entre-indivíduos-aparentados" class="section level2">
 <h2>Covariância genética entre indivíduos aparentados</h2>
@@ -5087,14 +5090,19 @@ W_3 = \left \{ \begin{matrix} 1 &amp; \mbox{p/ BB} \\ 0 &amp; \mbox{p/ Bb} \\ -1
 <li><p>Sem GxE e covariância G,E.</p></li>
 </ul>
 <p>Pegamos 2 indivíduos de uma população onde todos os membros têm o mesmo relacionamento:</p>
-<p><span class="math display">\[\sigma_G(x,y) = \sigma_A(x,y) + \sigma_D(x,y) + \sigma_{AA}(x,y) + \sigma_{AD}(x,y) + \sigma_{DD}(x,y) \ ...\]</span> ## Covariância Genética Aditiva A covariância entre x e y causada pelos efeitos aditivos é:</p>
+<p><span class="math display">\[\sigma_G(x,y) = \sigma_A(x,y) + \sigma_D(x,y) + \sigma_{AA}(x,y) + \sigma_{AD}(x,y) + \sigma_{DD}(x,y) \ ...\]</span></p>
+</div>
+<div id="covariância-genética-aditiva" class="section level2">
+<h2>Covariância Genética Aditiva</h2>
+<p>A covariância entre x e y causada pelos efeitos aditivos é:</p>
 <p><span class="math display">\[E[(\alpha_i^x + \alpha_j^x)(\alpha_i^y + \alpha_j^y)]\]</span></p>
-<p>A única forma da esperaça nãe ser 0 é se o alelo i for o mesmo nos indivíduos x e y, se isso ocorrer, então:</p>
+<p>A única forma da esperaça não ser 0 é se o alelo i for o mesmo nos indivíduos x e y, se isso ocorrer, então:</p>
 <p><span class="math display">\[E[(\alpha_i^x + \alpha_i^y) = E(\alpha_i^2)\]</span></p>
 <p>(metade da variância genética aditiva)</p>
-<p>E a probabilidade de i ser igal é <span class="math inline">\(\theta_{xy}\)</span>, dessa forma temos a esperança como:</p>
-<p><span class="math display">\[4\theta_{xy}E(\alpha_i^2)\]</span></p>
-<p><em>para todos os locus:</em> <span class="math display">\[\sigma_A(x,y) = 2\theta_{xy}\sigma_A^2\]</span></p>
+<p>E a probabilidade de i ser o mesmo é <span class="math inline">\(\Theta_{xy}\)</span>, dessa forma temos a esperança como:</p>
+<p><span class="math display">\[4\Theta_{xy}E(\alpha_i^2)\]</span></p>
+<p>(Duas vezes a variância genética aditiva para o loco vezes <span class="math inline">\(\Theta_{xy}\)</span>)</p>
+<p><em>para todos os locus:</em> <span class="math display">\[\sigma_A(x,y) = 2\Theta_{xy}\sigma_A^2\]</span></p>
 </div>
 <div id="covariância-genética-de-dominância" class="section level2">
 <h2>Covariância Genética de Dominância</h2>
