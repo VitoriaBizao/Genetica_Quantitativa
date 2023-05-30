@@ -13,7 +13,7 @@ editor_options:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Esse material contem minhas anotações da disciplina de Genética Quantitativa (LGN5810) ministrada pelo professor Antonio Augusto Franco Garcia na ESALQ/USP. 
+Esse material contem minhas anotações da disciplina de Genética Quantitativa (LGN5810) ministrada pelo professor Antonio Augusto Franco Garcia na ESALQ/USP.
 
 # Aula 01 - Introdução à Genética Quantitativa
 ## Características Quantitativas
