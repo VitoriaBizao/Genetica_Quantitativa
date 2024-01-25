@@ -2714,6 +2714,12 @@ Essa covariâncias podem ser usadas para estimar os componentes de variância:
 
 _Casos particulares:_
 
+| Relação          | $\sigma_{A}^{2}$ | $\sigma_{D}^{2}$ | $\sigma_{AA}^{2}$ | $\sigma_{AD}^{2}$ | $\sigma_{DD}^{2}$ |
+|------------------|------------------|------------------|-------------------|-------------------|-------------------|
+| Pais e filhos    | $\frac{1}{2}$    |                  | $\frac{1}{4}$     |                   |                   |
+| Meios-irmãos     | $\frac{1}{4}$    |                  | $\frac{1}{16}$    |                   |                   |
+| Irmãos completos | $\frac{1}{2}$    | $\frac{1}{4}$    | $\frac{1}{4}$     | $\frac{1}{8}$     | $\frac{1}{16}$    |
+
 ## Tarefa
 ### Minha Resposta
 
@@ -2779,6 +2785,8 @@ Lembrando que $\delta$ são desvios, temos que:
 $$\left(S - \frac{H}{2} \right)(- \delta^c) + (H)(+ \delta^c) + (1  - S - \frac{H}{2})(- \delta^c) \\
 = (2H-1)(\delta^c) = \theta_H \delta^c$$
 
+- $\theta_H = 2H -1$ é o índice do híbrido.
+
 **Média do valor genotípico**
 
 Eu posso definir a média de qualquer população por:
@@ -2790,6 +2798,15 @@ $$\mu = \mu_0 + \theta_S \alpha_1^c + \theta_H \delta_1^c + \theta_S \alpha_2^c 
 - Esses índices são interpopulacionais.
 
 _Exemplo:_
+
+| **Linha**           | **$\theta_S = 2S - 1$** | **$\theta_H = 2H - 1$** |                                          **Média esperada**                                          |
+|---------------------|:-----------------------:|:-----------------------:|:----------------------------------------------------------------------------------------------------:|
+| $P_1$               |            1            |            -1           | $\mu_0 + \sigma_1^{c} - \delta_1^{c} + \sigma_2^{c} - \sigma_1^{c}\delta_1^{c} + \delta_2^{c} + ...$ |
+| $P_2$               |            -1           |            -1           | $\mu_0 + \sigma_1^{c} - \delta_1^{c} + \sigma_2^{c} - \sigma_1^{c}\delta_1^{c} + \delta_2^{c} + ...$ |
+| $F_1$               |            0            |            1            |                                 $\mu_0 + \delta_1^{c} + \delta_2^{c}$                                |
+| $F_2$               |            0            |            0            |                                                $\mu_0$                                               |
+| $B_1 = (P_1 x F_1)$ |      $\frac{1}{2}$      |            0            |                  $\mu_0 + \frac{1}{2} \alpha_1^{c} + \frac{1}{4} \alpha_2^{c} + ...                  |
+| $B_2 = (P_2 x F_1)$ |     $- \frac{1}{2}$     |            0            |                  $\mu_0 - \frac{1}{2} \alpha_1^{c} + \frac{1}{4} \alpha_2^{c} + ...                  |
 
 $B_1 = S = 3/4 (1/2AA : 1/2 Aa)$, $\theta_S = (2.\frac{3}{4}) - 1 = 1/2$
 
@@ -2812,7 +2829,7 @@ $$\mu(P_1, P_2) = \mu_0 - \delta_1^c + \alpha_2^c + \delta_2^c$$
 
 **Heterose**
 
-$$H = F_1  - \mu(P_1, P_2) = 2\delta_1^c - \alpha_2^c$$
+$$H = F_1  - \mu(P_1, P_2) \\ = 2\delta_1^c - \alpha_2^c$$
 
 ou
 
